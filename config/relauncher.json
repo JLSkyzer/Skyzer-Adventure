@@ -1,6 +1,8 @@
 {
-  "selectedVersion": "0.3.35-alpha",
-  "latestVersion": "0.4.4-alpha",
+  "selectedVersion": "0.5.12-alpha",
+  "latestVersion": "0.5.12-alpha",
   "javaPath": "C:\\Program Files\\Java\\jdk-25\\bin\\javaw.exe",
-  "args": "-XX:+UseCompactObjectHeaders -XX:+UseZGC"
+  "args": "-XX:+UseCompactObjectHeaders -XX:+UseZGC ",
+  "autoSetup": false,
+  "enableRelauncher": true
 }
