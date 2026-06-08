@@ -1,0 +1,18 @@
+{
+  "id": "objectiv_-1716,63,917",
+  "name": "objectiv",
+  "icon": "waypoint-normal.png",
+  "x": -1716,
+  "y": 63,
+  "z": 917,
+  "r": 3,
+  "g": 127,
+  "b": 185,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

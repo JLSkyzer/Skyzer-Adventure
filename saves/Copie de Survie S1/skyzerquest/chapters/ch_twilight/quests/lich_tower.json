@@ -1,0 +1,54 @@
+{
+  "id": "lich_tower",
+  "title": "Lich Tower",
+  "description": "Climb the lich tower and defeat the undead sorcerer to claim its powerful scepter.",
+  "icon": {
+    "item": "twilightforest:lifedrain_scepter"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#7C4DFF"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [
+    "naga_slayer"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "twilightforest:lich",
+      "amount": 1,
+      "localized_name": "twilightforest:lich"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "item",
+      "item": "twilightforest:lifedrain_scepter",
+      "amount": 1,
+      "localized_name": "Scepter of Life Draining"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

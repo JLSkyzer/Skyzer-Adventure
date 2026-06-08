@@ -1,0 +1,52 @@
+{
+  "id": "osmium_discovery",
+  "title": "Osmium Discovery",
+  "description": "Discover osmium, the key material for Mekanism technology. Collect 32 osmium ingots.",
+  "icon": {
+    "item": "mekanism:ingot",
+    "meta": 1
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#0D47A1",
+    "border": "#42A5F5"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_mekanism",
+  "dependencies": [
+    "ch_deep_miner/iron_vein"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mekanism:ingot",
+      "amount": 32,
+      "consume": true,
+      "meta": 1,
+      "localized_name": "Osmium Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    },
+    {
+      "type": "item",
+      "item": "minecraft:redstone",
+      "amount": 16,
+      "localized_name": "Redstone"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

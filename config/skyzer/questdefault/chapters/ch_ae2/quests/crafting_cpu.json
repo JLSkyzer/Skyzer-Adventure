@@ -1,0 +1,62 @@
+{
+  "id": "crafting_cpu",
+  "title": "Crafting CPU",
+  "description": "Set up automated crafting with a Crafting CPU. Add co-processing units for faster crafting speeds!",
+  "icon": {
+    "item": "appliedenergistics2:crafting_unit"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#006064",
+    "border": "#80CBC4"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_ae2",
+  "dependencies": [
+    "me_controller"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:crafting_unit",
+      "amount": 4,
+      "consume": false,
+      "localized_name": "Crafting Unit"
+    },
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:crafting_accelerator",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Crafting Co-Processing Unit"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "item",
+      "item": "appliedenergistics2:storage_cell_4k",
+      "amount": 2,
+      "localized_name": "§e4k§r ME Storage Cell"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

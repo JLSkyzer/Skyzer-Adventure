@@ -1,0 +1,56 @@
+{
+  "id": "inferium_farming",
+  "title": "Inferium Farming",
+  "description": "Start your essence farming journey! Mine Inferium ore and collect essence to begin growing resources.",
+  "icon": {
+    "item": "mysticalagriculture:crafting"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#33691E",
+    "border": "#8BC34A"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_mystical_ag",
+  "dependencies": [
+    "prosperity_shard"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:crafting",
+      "amount": 64,
+      "consume": false,
+      "localized_name": "§eInferium Essence"
+    },
+    {
+      "type": "break",
+      "block": "mysticalagriculture:inferium_ore",
+      "amount": 32,
+      "localized_name": "§eInferium Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "mysticalagriculture:tier1_inferium_seeds",
+      "amount": 16,
+      "localized_name": "Inferium Seeds"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

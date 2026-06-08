@@ -1,0 +1,11 @@
+{
+  "id": "ch_homestead",
+  "name": "Homestead",
+  "description": "A true adventurer needs a worthy base. Build, decorate, and fortify your home.",
+  "icon": {
+    "item": "minecraft:brick_block"
+  },
+  "order": 2,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

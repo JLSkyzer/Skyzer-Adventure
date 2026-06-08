@@ -1,0 +1,53 @@
+{
+  "id": "shyrelands_ascent",
+  "title": "Shyrelands Ascent",
+  "description": "Ascend to the floating islands of the Shyrelands, one of the most challenging dimensions.",
+  "icon": {
+    "item": "aoa3:shyrelands_realmstone"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 400,
+    "y": 50
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [
+    "iromine_tech"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "aoa3:shyrelands_realmstone",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Shyrelands Realmstone"
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 820
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 5000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 40
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

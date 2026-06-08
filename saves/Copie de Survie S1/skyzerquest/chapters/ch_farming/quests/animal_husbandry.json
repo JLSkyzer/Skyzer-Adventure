@@ -1,0 +1,70 @@
+{
+  "id": "animal_husbandry",
+  "title": "Animal Husbandry",
+  "description": "Establish a ranch to breed animals for resources. Gather leather from cows, beef for sustenance, and chicken for variety. With wheat in hand, you can lure and breed animals to create a thriving farm.",
+  "icon": {
+    "item": "minecraft:leather"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#5D4037",
+    "border": "#A1887F"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_farming",
+  "dependencies": [
+    "first_harvest"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:leather",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Leather"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:beef",
+      "amount": 32,
+      "consume": false,
+      "localized_name": "Raw Beef"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:chicken",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Raw Chicken"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:saddle",
+      "amount": 1,
+      "localized_name": "Saddle"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:lead",
+      "amount": 1,
+      "localized_name": "Lead"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

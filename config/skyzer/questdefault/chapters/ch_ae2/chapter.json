@@ -1,0 +1,11 @@
+{
+  "id": "ch_ae2",
+  "name": "Applied Energistics",
+  "description": "Master digital storage and automate everything with ME networks and quantum technology.",
+  "icon": {
+    "item": "appliedenergistics2:controller"
+  },
+  "order": 1,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

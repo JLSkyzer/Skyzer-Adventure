@@ -1,0 +1,57 @@
+{
+  "id": "first_harvest",
+  "title": "First Harvest",
+  "description": "Begin your agricultural journey by growing wheat. Break tall grass to find seeds, plant them in tilled soil near water, and wait for your first harvest. Fresh bread awaits!",
+  "icon": {
+    "item": "minecraft:wheat"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#827717",
+    "border": "#CDDC39"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_farming",
+  "dependencies": [
+    "ch_first_steps/stone_age"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:wheat",
+      "amount": 32,
+      "consume": false,
+      "localized_name": "Wheat"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:wheat_seeds",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Seeds"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 150.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:bread",
+      "amount": 16,
+      "localized_name": "Bread"
+    },
+    {
+      "type": "xp_level",
+      "amount": 5
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

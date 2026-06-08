@@ -1,0 +1,50 @@
+{
+  "id": "twilight_portal",
+  "title": "Twilight Portal",
+  "description": "Create a portal and enter the mystical Twilight Forest dimension.",
+  "icon": {
+    "item": "twilightforest:twilight_log"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#1B5E20",
+    "border": "#66BB6A"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "explore_dimension",
+      "dimension": 7
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:torch",
+      "amount": 16,
+      "localized_name": "Torch"
+    },
+    {
+      "type": "item",
+      "item": "twilightforest:ironwood_pickaxe",
+      "amount": 1,
+      "localized_name": "Ironwood Pick"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

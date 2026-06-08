@@ -1,0 +1,57 @@
+{
+  "id": "spider_slayer",
+  "title": "Spider Slayer",
+  "description": "Eight-legged nightmares lurk in the shadows. Hunt down 30 spiders and collect 24 string from their corpses.",
+  "icon": {
+    "item": "minecraft:spider_eye"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#1A237E",
+    "border": "#536DFE"
+  },
+  "position": {
+    "x": 0,
+    "y": 100
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [
+    "night_watch"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialspider",
+      "amount": 30,
+      "localized_name": "specialmobs:specialspider"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:string",
+      "amount": 24,
+      "consume": false,
+      "localized_name": "String"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 200.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:lead",
+      "amount": 3,
+      "localized_name": "Lead"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "common_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

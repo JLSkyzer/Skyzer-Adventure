@@ -1,0 +1,59 @@
+{
+  "id": "biome_master",
+  "title": "Biome Master",
+  "description": "Explore the world\u0027s most diverse biomes. From scorching deserts to magical cherry groves, discover them all!",
+  "icon": {
+    "item": "minecraft:map"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#006064",
+    "border": "#4DD0E1"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "explore_biome",
+      "biome": "minecraft:desert"
+    },
+    {
+      "type": "explore_biome",
+      "biome": "minecraft:jungle"
+    },
+    {
+      "type": "explore_biome",
+      "biome": "minecraft:mushroom_island"
+    },
+    {
+      "type": "explore_biome",
+      "biome": "minecraft:mesa"
+    },
+    {
+      "type": "explore_biome",
+      "biome": "biomesoplenty:cherry_blossom_grove"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 3000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 3
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

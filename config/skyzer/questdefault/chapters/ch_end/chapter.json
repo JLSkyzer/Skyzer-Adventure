@@ -1,0 +1,11 @@
+{
+  "id": "ch_end",
+  "name": "The End",
+  "description": "Journey to the void dimension and face the dragon. What lies beyond the gateway?",
+  "icon": {
+    "item": "minecraft:end_stone"
+  },
+  "order": 2,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

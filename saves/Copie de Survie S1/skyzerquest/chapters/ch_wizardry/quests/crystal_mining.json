@@ -1,0 +1,53 @@
+{
+  "id": "crystal_mining",
+  "title": "Crystal Mining",
+  "description": "Mine crystal ore to begin your journey into wizardry.",
+  "icon": {
+    "item": "ebwizardry:magic_crystal"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#AB47BC"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_wizardry",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "break",
+      "block": "ebwizardry:crystal_ore",
+      "amount": 32,
+      "localized_name": "Crystal Ore"
+    },
+    {
+      "type": "collect",
+      "item": "ebwizardry:magic_crystal",
+      "amount": 32,
+      "consume": true,
+      "localized_name": "Magic Crystal"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 200.0
+    },
+    {
+      "type": "item",
+      "item": "ebwizardry:wizard_handbook",
+      "amount": 1,
+      "localized_name": "The Wizard\u0027s Handbook"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

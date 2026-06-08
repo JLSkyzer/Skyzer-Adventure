@@ -1,0 +1,1058 @@
+{
+  "categories": [
+    {
+      "id": "building",
+      "name": "Building Blocks",
+      "icon": "minecraft:stone",
+      "display_order": 1,
+      "items": [
+        {
+          "id": "cobblestone",
+          "item": "minecraft:cobblestone",
+          "amount": 1,
+          "buy_price": 2,
+          "sell_price": 0.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "stone",
+          "item": "minecraft:stone",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "stone_bricks",
+          "item": "minecraft:stonebrick",
+          "amount": 1,
+          "buy_price": 4,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "oak_planks",
+          "item": "minecraft:planks",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "spruce_planks",
+          "item": "minecraft:planks:1",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "birch_planks",
+          "item": "minecraft:planks:2",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "jungle_planks",
+          "item": "minecraft:planks:3",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "acacia_planks",
+          "item": "minecraft:planks:4",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "dark_oak_planks",
+          "item": "minecraft:planks:5",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "glass",
+          "item": "minecraft:glass",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "glass_pane",
+          "item": "minecraft:glass_pane",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "bricks",
+          "item": "minecraft:brick_block",
+          "amount": 1,
+          "buy_price": 6,
+          "sell_price": 2,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "sandstone",
+          "item": "minecraft:sandstone",
+          "amount": 1,
+          "buy_price": 4,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "red_sandstone",
+          "item": "minecraft:red_sandstone",
+          "amount": 1,
+          "buy_price": 4,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "nether_brick",
+          "item": "minecraft:nether_brick",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 2.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "quartz_block",
+          "item": "minecraft:quartz_block",
+          "amount": 1,
+          "buy_price": 10,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "end_stone",
+          "item": "minecraft:end_stone",
+          "amount": 1,
+          "buy_price": 12,
+          "sell_price": 4,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "prismarine",
+          "item": "minecraft:prismarine",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "obsidian",
+          "item": "minecraft:obsidian",
+          "amount": 1,
+          "buy_price": 20,
+          "sell_price": 8,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    },
+    {
+      "id": "wood",
+      "name": "Logs & Wood",
+      "icon": "minecraft:log",
+      "display_order": 2,
+      "items": [
+        {
+          "id": "oak_log",
+          "item": "minecraft:log",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "spruce_log",
+          "item": "minecraft:log:1",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "birch_log",
+          "item": "minecraft:log:2",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "jungle_log",
+          "item": "minecraft:log:3",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "acacia_log",
+          "item": "minecraft:log2:0",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "dark_oak_log",
+          "item": "minecraft:log2:1",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    },
+    {
+      "id": "ores",
+      "name": "Ores & Minerals",
+      "icon": "minecraft:iron_ingot",
+      "display_order": 3,
+      "items": [
+        {
+          "id": "coal",
+          "item": "minecraft:coal",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_ingot",
+          "item": "minecraft:iron_ingot",
+          "amount": 1,
+          "buy_price": 10,
+          "sell_price": 4,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "gold_ingot",
+          "item": "minecraft:gold_ingot",
+          "amount": 1,
+          "buy_price": 20,
+          "sell_price": 8,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "redstone",
+          "item": "minecraft:redstone",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 2,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "lapis_lazuli",
+          "item": "minecraft:dye:4",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "emerald",
+          "item": "minecraft:emerald",
+          "amount": 1,
+          "buy_price": 50,
+          "sell_price": 20,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "quartz",
+          "item": "minecraft:quartz",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "copper_ingot",
+          "item": "thermalfoundation:material:128",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "tin_ingot",
+          "item": "thermalfoundation:material:129",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "silver_ingot",
+          "item": "thermalfoundation:material:130",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 6,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "lead_ingot",
+          "item": "thermalfoundation:material:131",
+          "amount": 1,
+          "buy_price": 12,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "nickel_ingot",
+          "item": "thermalfoundation:material:133",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 6,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "osmium_ingot",
+          "item": "mekanism:ingot:1",
+          "amount": 1,
+          "buy_price": 12,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    },
+    {
+      "id": "deco",
+      "name": "Decoration",
+      "icon": "minecraft:red_flower",
+      "display_order": 4,
+      "items": [
+        {
+          "id": "white_wool",
+          "item": "minecraft:wool:0",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "orange_wool",
+          "item": "minecraft:wool:1",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "magenta_wool",
+          "item": "minecraft:wool:2",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "light_blue_wool",
+          "item": "minecraft:wool:3",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "yellow_wool",
+          "item": "minecraft:wool:4",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "lime_wool",
+          "item": "minecraft:wool:5",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "pink_wool",
+          "item": "minecraft:wool:6",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "gray_wool",
+          "item": "minecraft:wool:7",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "light_gray_wool",
+          "item": "minecraft:wool:8",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "cyan_wool",
+          "item": "minecraft:wool:9",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "purple_wool",
+          "item": "minecraft:wool:10",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "blue_wool",
+          "item": "minecraft:wool:11",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "brown_wool",
+          "item": "minecraft:wool:12",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "green_wool",
+          "item": "minecraft:wool:13",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "red_wool",
+          "item": "minecraft:wool:14",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "black_wool",
+          "item": "minecraft:wool:15",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "torch",
+          "item": "minecraft:torch",
+          "amount": 1,
+          "buy_price": 1,
+          "sell_price": 0.25,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "glowstone",
+          "item": "minecraft:glowstone",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "sea_lantern",
+          "item": "minecraft:sea_lantern",
+          "amount": 1,
+          "buy_price": 20,
+          "sell_price": 7,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "white_carpet",
+          "item": "minecraft:carpet:0",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 0.75,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Farming",
+      "icon": "minecraft:bread",
+      "display_order": 5,
+      "items": [
+        {
+          "id": "bread",
+          "item": "minecraft:bread",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "cooked_beef",
+          "item": "minecraft:cooked_beef",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 2.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "cooked_porkchop",
+          "item": "minecraft:cooked_porkchop",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 2.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "cooked_chicken",
+          "item": "minecraft:cooked_chicken",
+          "amount": 1,
+          "buy_price": 6,
+          "sell_price": 2,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "golden_carrot",
+          "item": "minecraft:golden_carrot",
+          "amount": 1,
+          "buy_price": 25,
+          "sell_price": 10,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "apple",
+          "item": "minecraft:apple",
+          "amount": 1,
+          "buy_price": 4,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "melon_slice",
+          "item": "minecraft:melon",
+          "amount": 1,
+          "buy_price": 2,
+          "sell_price": 0.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "seeds",
+          "item": "minecraft:wheat_seeds",
+          "amount": 1,
+          "buy_price": 1,
+          "sell_price": 0.25,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "wheat",
+          "item": "minecraft:wheat",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "sugar_cane",
+          "item": "minecraft:reeds",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "bone_meal",
+          "item": "minecraft:dye:15",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    },
+    {
+      "id": "redstone",
+      "name": "Redstone & Utilities",
+      "icon": "minecraft:redstone",
+      "display_order": 6,
+      "items": [
+        {
+          "id": "redstone",
+          "item": "minecraft:redstone",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 2,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "redstone_torch",
+          "item": "minecraft:redstone_torch",
+          "amount": 1,
+          "buy_price": 4,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "repeater",
+          "item": "minecraft:repeater",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "comparator",
+          "item": "minecraft:comparator",
+          "amount": 1,
+          "buy_price": 12,
+          "sell_price": 4,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "piston",
+          "item": "minecraft:piston",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "sticky_piston",
+          "item": "minecraft:sticky_piston",
+          "amount": 1,
+          "buy_price": 25,
+          "sell_price": 10,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "hopper",
+          "item": "minecraft:hopper",
+          "amount": 1,
+          "buy_price": 20,
+          "sell_price": 8,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "dropper",
+          "item": "minecraft:dropper",
+          "amount": 1,
+          "buy_price": 10,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "dispenser",
+          "item": "minecraft:dispenser",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "observer",
+          "item": "minecraft:observer",
+          "amount": 1,
+          "buy_price": 20,
+          "sell_price": 7,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "lever",
+          "item": "minecraft:lever",
+          "amount": 1,
+          "buy_price": 2,
+          "sell_price": 0.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "stone_button",
+          "item": "minecraft:stone_button",
+          "amount": 1,
+          "buy_price": 2,
+          "sell_price": 0.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Basic Tools",
+      "icon": "minecraft:iron_pickaxe",
+      "display_order": 7,
+      "items": [
+        {
+          "id": "iron_pickaxe",
+          "item": "minecraft:iron_pickaxe",
+          "amount": 1,
+          "buy_price": 50,
+          "sell_price": 15,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_axe",
+          "item": "minecraft:iron_axe",
+          "amount": 1,
+          "buy_price": 50,
+          "sell_price": 15,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_shovel",
+          "item": "minecraft:iron_shovel",
+          "amount": 1,
+          "buy_price": 40,
+          "sell_price": 12,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_sword",
+          "item": "minecraft:iron_sword",
+          "amount": 1,
+          "buy_price": 55,
+          "sell_price": 18,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_helmet",
+          "item": "minecraft:iron_helmet",
+          "amount": 1,
+          "buy_price": 60,
+          "sell_price": 20,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_chestplate",
+          "item": "minecraft:iron_chestplate",
+          "amount": 1,
+          "buy_price": 80,
+          "sell_price": 25,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_leggings",
+          "item": "minecraft:iron_leggings",
+          "amount": 1,
+          "buy_price": 70,
+          "sell_price": 22,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "iron_boots",
+          "item": "minecraft:iron_boots",
+          "amount": 1,
+          "buy_price": 50,
+          "sell_price": 15,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "shield",
+          "item": "minecraft:shield",
+          "amount": 1,
+          "buy_price": 30,
+          "sell_price": 10,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "bucket",
+          "item": "minecraft:bucket",
+          "amount": 1,
+          "buy_price": 20,
+          "sell_price": 6,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "shears",
+          "item": "minecraft:shears",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "fishing_rod",
+          "item": "minecraft:fishing_rod",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "lead",
+          "item": "minecraft:lead",
+          "amount": 1,
+          "buy_price": 10,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "name_tag",
+          "item": "minecraft:name_tag",
+          "amount": 1,
+          "buy_price": 50,
+          "sell_price": 20,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "name": "Miscellaneous",
+      "icon": "minecraft:chest",
+      "display_order": 8,
+      "items": [
+        {
+          "id": "chest",
+          "item": "minecraft:chest",
+          "amount": 1,
+          "buy_price": 10,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "furnace",
+          "item": "minecraft:furnace",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 2.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "crafting_table",
+          "item": "minecraft:crafting_table",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "ender_chest",
+          "item": "minecraft:ender_chest",
+          "amount": 1,
+          "buy_price": 100,
+          "sell_price": 40,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "experience_bottle",
+          "item": "minecraft:experience_bottle",
+          "amount": 1,
+          "buy_price": 15,
+          "sell_price": 5,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "arrow",
+          "item": "minecraft:arrow",
+          "amount": 1,
+          "buy_price": 2,
+          "sell_price": 0.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "string",
+          "item": "minecraft:string",
+          "amount": 1,
+          "buy_price": 3,
+          "sell_price": 1,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "slimeball",
+          "item": "minecraft:slime_ball",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "gunpowder",
+          "item": "minecraft:gunpowder",
+          "amount": 1,
+          "buy_price": 6,
+          "sell_price": 2,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "blaze_powder",
+          "item": "minecraft:blaze_powder",
+          "amount": 1,
+          "buy_price": 20,
+          "sell_price": 8,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "ender_pearl",
+          "item": "minecraft:ender_pearl",
+          "amount": 1,
+          "buy_price": 25,
+          "sell_price": 10,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "paper",
+          "item": "minecraft:paper",
+          "amount": 1,
+          "buy_price": 2,
+          "sell_price": 0.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "book",
+          "item": "minecraft:book",
+          "amount": 1,
+          "buy_price": 8,
+          "sell_price": 3,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "saddle",
+          "item": "minecraft:saddle",
+          "amount": 1,
+          "buy_price": 40,
+          "sell_price": 15,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        },
+        {
+          "id": "rail",
+          "item": "minecraft:rail",
+          "amount": 1,
+          "buy_price": 5,
+          "sell_price": 1.50,
+          "stock": -1,
+          "max_stack_per_transaction": 64
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "ghast_buster",
+  "title": "Ghast Buster",
+  "description": "Face the floating terrors of the Nether and collect their precious tears.",
+  "icon": {
+    "item": "minecraft:ghast_tear"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#212121",
+    "border": "#E0E0E0"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_nether",
+  "dependencies": [
+    "blaze_hunter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialghast",
+      "amount": 5,
+      "localized_name": "specialmobs:specialghast"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:ghast_tear",
+      "amount": 3,
+      "consume": true,
+      "localized_name": "Ghast Tear"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:end_crystal",
+      "amount": 4,
+      "localized_name": "End Crystal"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

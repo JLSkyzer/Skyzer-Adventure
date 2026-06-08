@@ -1,0 +1,56 @@
+{
+  "id": "resonating_wand",
+  "title": "Resonating Wand",
+  "description": "Craft your first resonating wand to begin manipulating starlight.",
+  "icon": {
+    "item": "astralsorcery:itemwand"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#283593",
+    "border": "#5C6BC0"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_astral",
+  "dependencies": [
+    "stargazer"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemwand",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Resonating Wand"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "astralsorcery:itemcraftingcomponent",
+      "amount": 8,
+      "localized_name": "Aquamarine"
+    },
+    {
+      "type": "item",
+      "item": "astralsorcery:itemhandtelescope",
+      "amount": 1,
+      "localized_name": "Looking Glass"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

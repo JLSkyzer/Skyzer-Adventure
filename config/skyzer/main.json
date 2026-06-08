@@ -1,0 +1,104 @@
+{
+  "teleport": {
+    "home": {
+      "maxHomes": 15,
+      "cooldown": 60,
+      "aetherCost": 0,
+      "warmupTime": 3,
+      "cancelOnMove": true
+    },
+    "spawn": {
+      "cooldown": 120,
+      "aetherCost": 0,
+      "warmupTime": 5,
+      "invulnerabilityTime": 5
+    },
+    "rtp": {
+      "cooldown": 300,
+      "minRadius": 1000,
+      "maxRadius": 10000,
+      "aetherCost": 500,
+      "safetyCheck": true
+    }
+  },
+  "economy": {
+    "paymentCooldown": 5,
+    "minTransaction": 1,
+    "maxTransaction": 1000000
+  },
+  "skills": {
+    "maxSkillPoints": 250,
+    "resetCost": 10,
+    "resetItem": "minecraft:nether_star"
+  },
+  "aether": {
+    "crystalToMachineAether": 1000,
+    "crystalToPlayerBalance": 1000,
+    "withdrawCooldown": 1
+  },
+  "damageNumbers": {
+    "enabled": true,
+    "duration": 2.0,
+    "sizeMultiplier": 1.0
+  },
+  "deathWaypoint": {
+    "enabled": true,
+    "teleportCost": 1000
+  },
+  "comboSystem": {
+    "comboTimeout": 500,
+    "milestone10Bonus": 0.25,
+    "milestone25LifestealPercent": 5,
+    "milestone50CritEnabled": true,
+    "overlayOpacity": 0.8,
+    "overlayScale": 1.0
+  },
+  "killStreak": {
+    "milestone5": 5,
+    "milestone10": 10,
+    "milestone25": 25,
+    "milestone50": 50,
+    "milestone100": 100
+  },
+  "lastStand": {
+    "hpThreshold": 0.1,
+    "invincibilityDuration": 40,
+    "strengthDuration": 100,
+    "speedDuration": 100,
+    "aetherCost": 1000
+  },
+  "dodgeRoll": {
+    "cooldownTicks": 40,
+    "iFrameDuration": 10,
+    "cost": 50,
+    "speed": 1.5
+  },
+  "tattoo": {
+    "switchCost": 50000,
+    "removeCost": 10000
+  },
+  "livingTools": {
+    "xpPerBlock": 1,
+    "xpPerKill": 10,
+    "xpPerLog": 2,
+    "xpPerDig": 1,
+    "level10EfficiencyBonus": 0.1,
+    "level25DamageSpeedBonus": 0.1,
+    "level50XPMultiplier": 1.5,
+    "level75EfficiencyBonus": 0.5,
+    "level100FortuneBonus": 1
+  },
+  "guards": {
+    "whitelist": {
+      "description": "List of mobs that guards will NEVER attack, even in any situation. Use entity names like \u0027minecraft:dog\u0027, \u0027doggytalents:dog\u0027, etc.",
+      "entities": [
+        "doggytalents:dog",
+        "minecraft:player"
+      ]
+    }
+  },
+  "webServer": {
+    "port": 8080,
+    "serverIP": ""
+  }
+}

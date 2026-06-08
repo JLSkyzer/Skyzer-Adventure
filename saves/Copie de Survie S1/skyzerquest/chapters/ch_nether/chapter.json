@@ -1,0 +1,11 @@
+{
+  "id": "ch_nether",
+  "name": "Nether Expedition",
+  "description": "Cross the fiery threshold into the hellish Nether. Survive the heat and claim its treasures.",
+  "icon": {
+    "item": "minecraft:netherrack"
+  },
+  "order": 1,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

@@ -1,0 +1,78 @@
+{
+  "id": "mob_genocide",
+  "title": "Mob Genocide",
+  "description": "A repeatable massacre for the truly bloodthirsty. Eliminate 100 zombies, 100 skeletons, 50 creepers, 50 spiders, and 30 endermen.",
+  "icon": {
+    "item": "minecraft:diamond_sword"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#FF1744"
+  },
+  "position": {
+    "x": 300,
+    "y": 50
+  },
+  "chapter_id": "ch_boss_hunter",
+  "dependencies": [
+    "wither_slayer",
+    "dragon_slayer"
+  ],
+  "dependency_type": "one_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialzombie",
+      "amount": 100,
+      "localized_name": "specialmobs:specialzombie"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialskeleton",
+      "amount": 100,
+      "localized_name": "specialmobs:specialskeleton"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialcreeper",
+      "amount": 50,
+      "localized_name": "specialmobs:specialcreeper"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialspider",
+      "amount": 50,
+      "localized_name": "specialmobs:specialspider"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialenderman",
+      "amount": 30,
+      "localized_name": "specialmobs:specialenderman"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 8000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 1
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 40
+    }
+  ],
+  "repeatable": true,
+  "cooldown": 86400,
+  "hidden_until_unlocked": false
+}

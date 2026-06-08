@@ -1,0 +1,43 @@
+{
+  "id": "millionaire",
+  "title": "Millionaire",
+  "description": "Walk across the world and earn your fortune. Those who travel far are rewarded greatly!",
+  "icon": {
+    "item": "minecraft:gold_block"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "walking",
+      "distance": 10000
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 10000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 50
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

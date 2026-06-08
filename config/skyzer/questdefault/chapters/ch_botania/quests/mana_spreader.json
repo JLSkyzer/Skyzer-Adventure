@@ -1,0 +1,57 @@
+{
+  "id": "mana_spreader",
+  "title": "Mana Network",
+  "description": "Establish your first mana network with spreaders and pools.",
+  "icon": {
+    "item": "botania:spreader"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#00695C",
+    "border": "#26A69A"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_botania",
+  "dependencies": [
+    "living_materials"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "botania:spreader",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Mana Spreader"
+    },
+    {
+      "type": "collect",
+      "item": "botania:pool",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Mana Pool"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "botania:manatablet",
+      "amount": 4,
+      "localized_name": "Mana Tablet"
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

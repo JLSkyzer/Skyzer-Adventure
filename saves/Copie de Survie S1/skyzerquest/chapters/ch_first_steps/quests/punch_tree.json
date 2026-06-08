@@ -1,0 +1,40 @@
+{
+  "id": "punch_tree",
+  "title": "Punch a Tree",
+  "description": "Welcome to your adventure! Start by gathering wood from oak trees. Punch the trunk with your bare hands to collect logs. This is the foundation of everything you\u0027ll build.",
+  "icon": {
+    "item": "minecraft:log"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#1B5E20",
+    "border": "#4CAF50"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_first_steps",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:log",
+      "amount": 5,
+      "localized_name": "Oak Wood"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 50.0
+    },
+    {
+      "type": "xp_level",
+      "amount": 5
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

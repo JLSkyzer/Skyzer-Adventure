@@ -1,0 +1,66 @@
+{
+  "id": "enderium_forge",
+  "title": "Enderium Forge",
+  "description": "Forge the ultimate thermal alloys: enderium and signalum. Reach the pinnacle of thermal technology.",
+  "icon": {
+    "item": "thermalfoundation:material",
+    "meta": 167
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#AB47BC"
+  },
+  "position": {
+    "x": 500,
+    "y": 0
+  },
+  "chapter_id": "ch_thermal",
+  "dependencies": [
+    "alloy_master"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 8,
+      "consume": true,
+      "meta": 167,
+      "localized_name": "Enderium Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 8,
+      "consume": true,
+      "meta": 165,
+      "localized_name": "Signalum Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 2000.0
+    },
+    {
+      "type": "item",
+      "item": "thermalfoundation:upgrade",
+      "amount": 1,
+      "meta": 3,
+      "localized_name": "Resonant Upgrade Kit"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

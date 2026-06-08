@@ -1,0 +1,49 @@
+{
+  "id": "machine_frame",
+  "title": "Machine Frame",
+  "description": "Craft your first thermal machine: the redstone furnace. The gateway to industrial processing.",
+  "icon": {
+    "item": "thermalexpansion:machine"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#BF360C",
+    "border": "#FF7043"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_thermal",
+  "dependencies": [
+    "copper_tin_age"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "thermalexpansion:machine",
+      "amount": 1,
+      "localized_name": "Redstone Furnace (Basic)"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:coal",
+      "amount": 16,
+      "localized_name": "Coal"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

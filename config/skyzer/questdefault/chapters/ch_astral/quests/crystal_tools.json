@@ -1,0 +1,57 @@
+{
+  "id": "crystal_tools",
+  "title": "Crystal Artisan",
+  "description": "Craft crystal tools infused with starlight for superior performance.",
+  "icon": {
+    "item": "astralsorcery:itemcrystalpickaxe"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#311B92",
+    "border": "#B388FF"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_astral",
+  "dependencies": [
+    "starmetal_forge"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemcrystalpickaxe",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Crystal Pickaxe"
+    },
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemcrystalsword",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Crystal Sword"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "astralsorcery:itemchargedcrystalpickaxe",
+      "amount": 1,
+      "localized_name": "Infused Crystal Pickaxe"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

@@ -1,0 +1,10 @@
+{
+  "id": "combat",
+  "name": "Combat & Hunting",
+  "description": "Sharpen your blade and face the monsters that lurk in the dark. Prove yourself against fearsome bosses.",
+  "icon": {
+    "item": "minecraft:diamond_sword"
+  },
+  "display_order": 2,
+  "chapters": ["ch_monster_slayer", "ch_boss_hunter"]
+}

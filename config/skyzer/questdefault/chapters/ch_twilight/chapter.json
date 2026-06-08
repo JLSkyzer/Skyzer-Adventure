@@ -1,0 +1,11 @@
+{
+  "id": "ch_twilight",
+  "name": "Twilight Forest",
+  "description": "Step through the enchanted portal into a realm of eternal dusk, ancient castles, and legendary beasts.",
+  "icon": {
+    "item": "twilightforest:twilight_log"
+  },
+  "order": 3,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

@@ -1,0 +1,46 @@
+{
+  "id": "coal_rush",
+  "title": "Coal Rush",
+  "description": "Coal is the foundation of any mining operation. Break 64 coal ore to fuel your journey.",
+  "icon": {
+    "item": "minecraft:coal_ore"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#37474F",
+    "border": "#78909C"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:coal_ore",
+      "amount": 64,
+      "localized_name": "Coal Ore"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 100.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:torch",
+      "amount": 32,
+      "localized_name": "Torch"
+    },
+    {
+      "type": "xp_level",
+      "amount": 5
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

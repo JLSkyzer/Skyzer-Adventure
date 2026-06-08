@@ -1,0 +1,64 @@
+{
+  "id": "iron_will",
+  "title": "Iron Will",
+  "description": "Venture deep into the earth and mine iron ore. Smelt it into ingots to unlock powerful new possibilities. Iron is the backbone of advanced tools, armor, and machinery.",
+  "icon": {
+    "item": "minecraft:iron_ingot"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#455A64",
+    "border": "#B0BEC5"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_first_steps",
+  "dependencies": [
+    "stone_age"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:iron_ingot",
+      "amount": 24,
+      "consume": false,
+      "localized_name": "Iron Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:iron_helmet",
+      "amount": 1,
+      "localized_name": "Iron Helmet"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:iron_chestplate",
+      "amount": 1,
+      "localized_name": "Iron Chestplate"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:iron_leggings",
+      "amount": 1,
+      "localized_name": "Iron Leggings"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:iron_boots",
+      "amount": 1,
+      "localized_name": "Iron Boots"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

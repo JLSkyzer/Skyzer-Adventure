@@ -1,0 +1,11 @@
+{
+  "id": "ch_botania",
+  "name": "Botanical Studies",
+  "description": "Nature holds immense magical potential. Learn to cultivate mystical flora and harness mana.",
+  "icon": {
+    "item": "botania:lexicon"
+  },
+  "order": 2,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

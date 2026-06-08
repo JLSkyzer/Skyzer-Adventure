@@ -1,0 +1,60 @@
+{
+  "id": "snow_queen_battle",
+  "title": "Snow Queen",
+  "description": "Brave the frozen Aurora Palace and defeat the icy Snow Queen.",
+  "icon": {
+    "item": "minecraft:packed_ice"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#0D47A1",
+    "border": "#90CAF9"
+  },
+  "position": {
+    "x": 400,
+    "y": 100
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [
+    "hydra_vanquisher"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "twilightforest:snow_queen",
+      "amount": 1,
+      "localized_name": "twilightforest:snow_queen"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 4000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:packed_ice",
+      "amount": 32,
+      "localized_name": "Packed Ice"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:ice",
+      "amount": 16,
+      "localized_name": "Ice"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

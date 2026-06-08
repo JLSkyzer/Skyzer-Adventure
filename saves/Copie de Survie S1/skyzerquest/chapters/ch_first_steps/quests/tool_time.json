@@ -1,0 +1,57 @@
+{
+  "id": "tool_time",
+  "title": "Tool Time",
+  "description": "With wood in hand, it\u0027s time to craft your first tools. Create a wooden pickaxe to mine stone and an axe to chop wood more efficiently. These humble tools will serve you well in the early days.",
+  "icon": {
+    "item": "minecraft:wooden_pickaxe"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#3E2723",
+    "border": "#795548"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_first_steps",
+  "dependencies": [
+    "punch_tree"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "minecraft:wooden_pickaxe",
+      "amount": 1,
+      "localized_name": "Wooden Pickaxe"
+    },
+    {
+      "type": "craft",
+      "item": "minecraft:wooden_axe",
+      "amount": 1,
+      "localized_name": "Wooden Axe"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 75.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:cobblestone",
+      "amount": 16,
+      "localized_name": "Cobblestone"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:torch",
+      "amount": 8,
+      "localized_name": "Torch"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

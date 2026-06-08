@@ -1,0 +1,57 @@
+{
+  "id": "terrasteel_mastery",
+  "title": "Terrasteel Mastery",
+  "description": "Master the creation of terrasteel, the ultimate botanical material.",
+  "icon": {
+    "item": "botania:manaresource",
+    "meta": 4
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#1B5E20",
+    "border": "#00E676"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_botania",
+  "dependencies": [
+    "runic_altar"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "botania:manaresource",
+      "amount": 8,
+      "consume": false,
+      "meta": 4,
+      "localized_name": "Terrasteel Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 2000.0
+    },
+    {
+      "type": "item",
+      "item": "botania:terrasword",
+      "amount": 1,
+      "localized_name": "Terra Blade"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

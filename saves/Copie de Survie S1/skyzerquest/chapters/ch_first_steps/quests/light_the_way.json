@@ -1,0 +1,55 @@
+{
+  "id": "light_the_way",
+  "title": "Light the Way",
+  "description": "Darkness breeds danger. Craft plenty of torches and place them liberally around your base and in caves. A well-lit area is a safe area, keeping hostile mobs at bay.",
+  "icon": {
+    "item": "minecraft:torch"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#F57F17",
+    "border": "#FFEB3B"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_first_steps",
+  "dependencies": [
+    "tool_time"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "place",
+      "block": "minecraft:torch",
+      "amount": 50,
+      "localized_name": "Torch"
+    },
+    {
+      "type": "craft",
+      "item": "minecraft:torch",
+      "amount": 64,
+      "localized_name": "Torch"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 100.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:glowstone_dust",
+      "amount": 32,
+      "localized_name": "Glowstone Dust"
+    },
+    {
+      "type": "xp_level",
+      "amount": 5
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

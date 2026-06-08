@@ -1,0 +1,51 @@
+{
+  "id": "starmetal_forge",
+  "title": "Starmetal Forge",
+  "description": "Harness the power of fallen stars to create starmetal ingots.",
+  "icon": {
+    "item": "astralsorcery:itemcraftingcomponent",
+    "meta": 1
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#1A237E",
+    "border": "#3F51B5"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_astral",
+  "dependencies": [
+    "resonating_wand"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemcraftingcomponent",
+      "amount": 8,
+      "consume": true,
+      "meta": 1,
+      "localized_name": "Starmetal Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

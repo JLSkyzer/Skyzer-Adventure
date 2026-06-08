@@ -1,0 +1,11 @@
+{
+  "id": "ch_deep_miner",
+  "name": "Deep Miner",
+  "description": "The earth holds untold riches for those brave enough to dig deep.",
+  "icon": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "order": 1,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

@@ -1,0 +1,78 @@
+{
+  "id": "ultimate_collector",
+  "title": "Ultimate Collector",
+  "description": "Amass the rarest treasures in Minecraft. Diamonds, emeralds, nether stars, and even a dragon egg!",
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 500,
+    "y": 0
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:diamond",
+      "amount": 64,
+      "consume": false,
+      "localized_name": "Diamond"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:emerald",
+      "amount": 64,
+      "consume": false,
+      "localized_name": "Emerald"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:gold_ingot",
+      "amount": 64,
+      "consume": false,
+      "localized_name": "Gold Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:nether_star",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Nether Star"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:dragon_egg",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Dragon Egg"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 20000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 3
+    },
+    {
+      "type": "xp_level",
+      "amount": 50
+    },
+    {
+      "type": "command",
+      "command": "give {player} minecraft:beacon 1"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

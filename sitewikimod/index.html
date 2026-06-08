@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyzer Adventure - Guide Complet pour Débutants</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .navigation {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+        
+        .navigation h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .nav-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .nav-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .phase {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .phase-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .phase-icon {
+            font-size: 3em;
+            margin-right: 20px;
+        }
+        
+        .phase-title h2 {
+            color: #1e3c72;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        
+        .phase-title p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .mod-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .mod-section h3 {
+            color: #2a5298;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .mod-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        .mod-description {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .features {
+            background: linear-gradient(135deg, #e0f7fa 0%, #e1f5fe 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .features h4 {
+            color: #0277bd;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .features ul {
+            margin-left: 20px;
+        }
+        
+        .features li {
+            margin-bottom: 8px;
+            color: #01579b;
+        }
+        
+        .tips {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .tips h4 {
+            color: #e65100;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .tips p, .tips ul {
+            color: #bf360c;
+        }
+        
+        .tips ul {
+            margin-left: 20px;
+        }
+        
+        .tips li {
+            margin-bottom: 8px;
+        }
+        
+        .danger {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 5px solid #c62828;
+        }
+        
+        .danger h4 {
+            color: #b71c1c;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .danger p {
+            color: #c62828;
+        }
+        
+        .progression {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .progression h4 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .progression ol {
+            margin-left: 20px;
+        }
+        
+        .progression li {
+            margin-bottom: 8px;
+            color: #1b5e20;
+            font-weight: 500;
+        }
+        
+        .difficulty-indicator {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .difficulty-easy {
+            background: #c8e6c9;
+            color: #2e7d32;
+        }
+        
+        .difficulty-medium {
+            background: #fff9c4;
+            color: #f57f17;
+        }
+        
+        .difficulty-hard {
+            background: #ffccbc;
+            color: #d84315;
+        }
+        
+        .difficulty-expert {
+            background: #f8bbd0;
+            color: #880e4f;
+        }
+        
+        .difficulty-master {
+            background: #d1c4e9;
+            color: #4a148c;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.5em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .nav-buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .phase-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .phase-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="top">
+            <h1>🌟 SKYZER ADVENTURE 🌟</h1>
+            <p>Guide Complet pour Débutants - De l'Arbre au Dragon et Au-delà !</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Modpack version 1.12.2 - Plus de 250 mods</p>
+        </header>
+
+        <div class="navigation">
+            <h2>📚 Navigation Rapide</h2>
+            <div class="nav-buttons">
+                <a href="#phase1" class="nav-button">Phase 1: Débuts</a>
+                <a href="#phase2" class="nav-button">Phase 2: Premiers Outils</a>
+                <a href="#phase3" class="nav-button">Phase 3: Métallurgie</a>
+                <a href="#phase4" class="nav-button">Phase 4: Magie & Tech</a>
+                <a href="#phase5" class="nav-button">Phase 5: Nether</a>
+                <a href="#phase6" class="nav-button">Phase 6: End & Dragon</a>
+                <a href="#phase7" class="nav-button">Phase 7: Post-Dragon</a>
+                <a href="#phase8" class="nav-button">Phase 8: Dimensions</a>
+                <a href="#phase9" class="nav-button">Phase 9: Projets Avancés</a>
+            </div>
+        </div>
+
+        <!-- PHASE 1: LES DÉBUTS -->
+        <div class="phase" id="phase1">
+            <div class="phase-header">
+                <div class="phase-icon">🌳</div>
+                <div class="phase-title">
+                    <h2>Phase 1: Les Premiers Pas</h2>
+                    <p>De votre premier arbre à votre première maison</p>
+                </div>
+            </div>
+
+            <!-- AppleSkin -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🍎</span>
+                    AppleSkin
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Un mod qui affiche des informations sur votre nourriture et votre saturation.</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Fonctionnalités Principales</h4>
+                    <ul>
+                        <li>Affiche combien de faim chaque aliment restaure</li>
+                        <li>Montre votre niveau de saturation (la barre jaune derrière votre faim)</li>
+                        <li>Aide à optimiser votre alimentation</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils pour Débutants</h4>
+                    <ul>
+                        <li>Survolez un aliment pour voir ses valeurs nutritives</li>
+                        <li>La saturation détermine combien de temps avant d'avoir faim à nouveau</li>
+                        <li>Les aliments cuisinés donnent plus de saturation que les aliments crus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tree Harvester -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🪓</span>
+                    Tree Harvester
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Coupe automatiquement tout l'arbre quand vous cassez un bloc de bois !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Fonctionnalités Principales</h4>
+                    <ul>
+                        <li>Maintenir Shift + clic pour couper un arbre entier</li>
+                        <li>Tous les bûches tombent d'un coup</li>
+                        <li>Gagne énormément de temps</li>
+                        <li>Fonctionne avec tous les types d'arbres</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils pour Débutants</h4>
+                    <ul>
+                        <li>Commencez toujours par la base de l'arbre</li>
+                        <li>Assurez-vous d'avoir assez d'espace dans votre inventaire</li>
+                        <li>Utilisez une hache pour maximiser l'effet</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Cassez votre premier arbre avec ce mod</li>
+                        <li>Collectez rapidement du bois pour votre premier établi</li>
+                        <li>Créez vos premiers outils en bois</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Nature's Compass -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🧭</span>
+                    Nature's Compass
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Une boussole magique pour trouver n'importe quel biome !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Fonctionnalités Principales</h4>
+                    <ul>
+                        <li>Recherche de biomes spécifiques</li>
+                        <li>Affiche la distance et la direction</li>
+                        <li>Indispensable pour l'exploration</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Recette et Utilisation</h4>
+                    <p><strong>Recette :</strong> 4 Planches + 1 Boussole + 4 Pousses (Saplings)</p>
+                    <ul>
+                        <li>Clic droit pour ouvrir l'interface</li>
+                        <li>Sélectionnez le biome recherché</li>
+                        <li>Suivez la flèche verte !</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Starter Kit -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🎁</span>
+                    Starter Kit
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Vous donne des objets de départ pour faciliter vos débuts !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Ce que vous recevez</h4>
+                    <ul>
+                        <li>Outils de base (pioche, hache, etc.)</li>
+                        <li>Nourriture de départ</li>
+                        <li>Torches pour éclairer</li>
+                        <li>Quelques blocs de construction</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils</h4>
+                    <ul>
+                        <li>Ne gaspillez pas vos outils de départ</li>
+                        <li>Utilisez-les pour créer rapidement vos premiers outils en pierre</li>
+                        <li>Les torches sont précieuses au début</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Inventaire & Organisation -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">📦</span>
+                    Inventory HUD & Mouse Tweaks
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Inventory HUD :</strong> Affiche votre inventaire sur l'écran. <strong>Mouse Tweaks :</strong> Améliore la gestion des objets.</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Fonctionnalités</h4>
+                    <ul>
+                        <li><strong>Inventory HUD :</strong> Votre inventaire toujours visible</li>
+                        <li><strong>Mouse Tweaks :</strong> Glisser-déposer amélioré</li>
+                        <li>Molette de souris pour déplacer des stacks</li>
+                        <li>Clic droit pour répartir équitablement</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Raccourcis Utiles</h4>
+                    <ul>
+                        <li>Shift + Clic = Déplacer rapidement</li>
+                        <li>Molette sur un stack = Déplacer 1 objet</li>
+                        <li>Clic droit glisser = Répartir dans plusieurs slots</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 2: PREMIERS OUTILS & MAISON -->
+        <div class="phase" id="phase2">
+            <div class="phase-header">
+                <div class="phase-icon">⛏️</div>
+                <div class="phase-title">
+                    <h2>Phase 2: Premiers Outils & Établissement</h2>
+                    <p>Construction de votre base et amélioration de vos outils</p>
+                </div>
+            </div>
+
+            <!-- Storage Drawers -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🗄️</span>
+                    Storage Drawers
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Des tiroirs de stockage visuels et pratiques pour organiser vos ressources !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Types de Tiroirs</h4>
+                    <ul>
+                        <li><strong>1x1 Drawer :</strong> Stocke un seul type d'objet (beaucoup d'espace)</li>
+                        <li><strong>2x2 Drawer :</strong> Stocke 4 types d'objets différents</li>
+                        <li><strong>Compacting Drawer :</strong> Convertit automatiquement (ex: cobblestone → compressed cobblestone)</li>
+                        <li><strong>Controller :</strong> Accède à tous les tiroirs connectés d'un seul endroit</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils d'Utilisation</h4>
+                    <ul>
+                        <li>Clic gauche = Prendre des objets</li>
+                        <li>Clic droit = Déposer des objets</li>
+                        <li>Ajoutez des <strong>Drawer Upgrades</strong> pour augmenter la capacité</li>
+                        <li>Utilisez une <strong>Drawer Key</strong> pour verrouiller un tiroir vide</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Craftez vos premiers tiroirs basiques (2x2)</li>
+                        <li>Créez des tiroirs 1x1 pour vos ressources abondantes (cobblestone, dirt)</li>
+                        <li>Ajoutez un Controller pour centraliser l'accès</li>
+                        <li>Upgradez avec des améliorations (Iron, Gold, Diamond, Emerald)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Iron Chests -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">📦</span>
+                    Iron Chests
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Des coffres améliorés avec plus de stockage !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Types de Coffres</h4>
+                    <ul>
+                        <li><strong>Iron Chest :</strong> 54 slots (Double coffre normal)</li>
+                        <li><strong>Gold Chest :</strong> 81 slots</li>
+                        <li><strong>Diamond Chest :</strong> 108 slots</li>
+                        <li><strong>Crystal Chest :</strong> Transparent, voir le contenu</li>
+                        <li><strong>Obsidian Chest :</strong> Résistant aux explosions</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuce d'Upgrade</h4>
+                    <p>Vous pouvez upgrader vos coffres sans perdre leur contenu !</p>
+                    <ul>
+                        <li>Craftez un <strong>Iron to Gold Upgrade</strong></li>
+                        <li>Clic droit sur le coffre pour l'améliorer</li>
+                        <li>Le contenu reste intact</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Chisel -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🔨</span>
+                    Chisel
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Transformez vos blocs en centaines de variantes décoratives !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Fonctionnalités</h4>
+                    <ul>
+                        <li>Des milliers de variantes de blocs</li>
+                        <li>Pierre, bois, verre, métaux, etc.</li>
+                        <li>Idéal pour la décoration</li>
+                        <li>Ne change pas les propriétés du bloc</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Utilisation</h4>
+                    <p><strong>Recette du Chisel :</strong> 1 Bâton + 1 Lingot de Fer</p>
+                    <ul>
+                        <li>Clic droit avec un Chisel pour ouvrir l'interface</li>
+                        <li>Placez vos blocs dans le slot</li>
+                        <li>Choisissez la variante désirée</li>
+                        <li>Utilisez le <strong>Auto-Chisel</strong> pour automatiser</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Decocraft -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🪑</span>
+                    Decocraft & CFM (Furniture Mod)
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Des centaines de meubles et décorations pour votre maison !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Catégories de Décorations</h4>
+                    <ul>
+                        <li><strong>Meubles :</strong> Chaises, tables, canapés, lits</li>
+                        <li><strong>Cuisine :</strong> Four, frigo, évier, placards</li>
+                        <li><strong>Électronique :</strong> TV, ordinateurs, lampes</li>
+                        <li><strong>Extérieur :</strong> Lampadaires, boîtes aux lettres, clôtures</li>
+                        <li><strong>Divers :</strong> Plantes, cadres, tapis</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils de Décoration</h4>
+                    <ul>
+                        <li>Utilisez JEI pour voir toutes les recettes</li>
+                        <li>Beaucoup de décorations sont fonctionnelles (stockage)</li>
+                        <li>Combinez avec Chisel pour des designs uniques</li>
+                        <li>Les meubles CFM peuvent être teints avec des colorants</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bibliocraft -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">📚</span>
+                    Bibliocraft
+                    <span class="difficulty-indicator difficulty-easy">Facile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Meubles fonctionnels et stockage esthétique !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Objets Principaux</h4>
+                    <ul>
+                        <li><strong>Bookshelves :</strong> Bibliothèques fonctionnelles</li>
+                        <li><strong>Weapon Rack :</strong> Exposez vos armes</li>
+                        <li><strong>Armor Stand :</strong> Exposez vos armures</li>
+                        <li><strong>Display Case :</strong> Vitrine pour objets précieux</li>
+                        <li><strong>Label :</strong> Étiquettes pour organiser</li>
+                        <li><strong>Desk :</strong> Bureau avec stockage</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Fonctionnalités Spéciales</h4>
+                    <ul>
+                        <li><strong>Reading Glasses :</strong> Lisez vos livres dans l'interface du jeu</li>
+                        <li><strong>Printing Press :</strong> Copiez vos livres écrits</li>
+                        <li>Tous les meubles existent en 8 types de bois</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 3: MÉTALLURGIE & RAFFINAGE -->
+        <div class="phase" id="phase3">
+            <div class="phase-header">
+                <div class="phase-icon">⚒️</div>
+                <div class="phase-title">
+                    <h2>Phase 3: Âge du Métal</h2>
+                    <p>Mines, fours et premiers systèmes automatisés</p>
+                </div>
+            </div>
+
+            <!-- Thermal Series (Foundation, Expansion, etc.) -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">⚡</span>
+                    Thermal Series (Foundation, Expansion, Dynamics)
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> La suite de mods tech la plus importante ! Machines, énergie RF, automatisation.</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Machines Essentielles (Thermal Expansion)</h4>
+                    <ul>
+                        <li><strong>Redstone Furnace :</strong> Four rapide alimenté par RF</li>
+                        <li><strong>Pulverizer :</strong> Double vos minerais (1 minerai → 2 dusts)</li>
+                        <li><strong>Induction Smelter :</strong> Combine minerais et sable pour bonus</li>
+                        <li><strong>Magma Crucible :</strong> Fait fondre les objets en liquides</li>
+                        <li><strong>Fluid Transposer :</strong> Remplit/vide les liquides</li>
+                        <li><strong>Energetic Infuser :</strong> Charge vos objets RF</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>⚡ Génération d'Énergie</h4>
+                    <ul>
+                        <li><strong>Steam Dynamo :</strong> Charbon + Eau = RF (débutant)</li>
+                        <li><strong>Compression Dynamo :</strong> Utilise des liquides (fuel, etc.)</li>
+                        <li><strong>Magmatic Dynamo :</strong> Utilise la lave (excellent mid-game)</li>
+                        <li><strong>Numismatic Dynamo :</strong> Utilise des émeraudes</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>📦 Transport (Thermal Dynamics)</h4>
+                    <ul>
+                        <li><strong>Itemducts :</strong> Tuyaux pour objets</li>
+                        <li><strong>Fluiducts :</strong> Tuyaux pour liquides</li>
+                        <li><strong>Energy Conduits :</strong> Câbles pour RF</li>
+                        <li><strong>Servos & Retrievers :</strong> Contrôle du flux</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Craftez un <strong>Steam Dynamo</strong> (votre première source RF)</li>
+                        <li>Créez une <strong>Redstone Furnace</strong></li>
+                        <li>Ajoutez un <strong>Pulverizer</strong> pour doubler vos minerais</li>
+                        <li>Installez des <strong>Itemducts</strong> pour connecter vos machines</li>
+                        <li>Construisez un <strong>Magmatic Dynamo</strong> avec de la lave</li>
+                        <li>Expandez avec <strong>Induction Smelter</strong> et autres machines</li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuces Importantes</h4>
+                    <ul>
+                        <li>Les machines peuvent être upgradées (Hardened, Reinforced, Signalum, Resonant)</li>
+                        <li>Utilisez des <strong>Augments</strong> pour améliorer les machines</li>
+                        <li>Le <strong>Leadstone Energy Cell</strong> stocke votre RF</li>
+                        <li>Les <strong>Servos</strong> contrôlent la vitesse d'extraction dans les ducts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mekanism -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🔬</span>
+                    Mekanism
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Mod tech ultra-puissant pour multiplication de minerais x2, x3, x4, x5 et énergie massive !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Traitement des Minerais</h4>
+                    <ul>
+                        <li><strong>x2 :</strong> Enrichment Chamber (simple)</li>
+                        <li><strong>x3 :</strong> Enrichment Chamber → Purification Chamber → Crusher</li>
+                        <li><strong>x4 :</strong> + Chemical Injection Chamber</li>
+                        <li><strong>x5 :</strong> + Chemical Dissolution Chamber + Chemical Crystallizer</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>⚡ Énergie & Câbles</h4>
+                    <ul>
+                        <li><strong>Heat Generator :</strong> Brûle du combustible simple</li>
+                        <li><strong>Gas-Burning Generator :</strong> Utilise de l'hydrogène</li>
+                        <li><strong>Bio-Generator :</strong> Utilise la bio-fuel</li>
+                        <li><strong>Solar Generator :</strong> Énergie solaire</li>
+                        <li><strong>Universal Cables :</strong> Transportent l'énergie</li>
+                        <li><strong>Energy Cubes :</strong> Stockage massif d'énergie</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🛠️ Machines Utiles</h4>
+                    <ul>
+                        <li><strong>Metallurgic Infuser :</strong> Alliages et enrichissements</li>
+                        <li><strong>Osmium Compressor :</strong> Crée des objets compressés</li>
+                        <li><strong>Combiner :</strong> Combine des objets</li>
+                        <li><strong>Digital Miner :</strong> Mine automatiquement avec filtres</li>
+                        <li><strong>Electrolytic Separator :</strong> Sépare l'eau en H2 et O2</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Minez de l'<strong>Osmium</strong> (minerai bleu-gris)</li>
+                        <li>Créez un <strong>Metallurgic Infuser</strong> (pour le Steel)</li>
+                        <li>Craftez une <strong>Enrichment Chamber</strong> (x2 minerais)</li>
+                        <li>Construisez des <strong>Energy Cubes</strong> pour stocker l'énergie</li>
+                        <li>Progressez vers les machines avancées pour x3, x4, x5</li>
+                        <li>Automatisez avec le <strong>Digital Miner</strong> pour miner automatiquement</li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuces</h4>
+                    <ul>
+                        <li>Le x5 nécessite beaucoup de ressources, commencez par le x3</li>
+                        <li>L'Hydrogène (H2) est votre ami pour l'énergie</li>
+                        <li>Utilisez des <strong>Speed Upgrades</strong> dans vos machines</li>
+                        <li>Les <strong>Factory</strong> versions traitent plusieurs objets à la fois</li>
+                    </ul>
+                </div>
+
+                <div class="danger">
+                    <h4>⚠️ Attention</h4>
+                    <p>Mekanism consomme BEAUCOUP d'énergie. Assurez-vous d'avoir une production suffisante avant de construire les machines avancées !</p>
+                </div>
+            </div>
+
+            <!-- Extra Utilities 2 -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🔧</span>
+                    Extra Utilities 2
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Collection d'utilitaires pratiques pour l'automatisation et la génération d'énergie.</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Générateurs</h4>
+                    <ul>
+                        <li><strong>Furnace Generator :</strong> Brûle du combustible comme du charbon</li>
+                        <li><strong>Lava Generator :</strong> Utilise de la lave</li>
+                        <li><strong>Solar Generator :</strong> Énergie solaire (8 tiers)</li>
+                        <li><strong>Wind Generator :</strong> Énergie éolienne</li>
+                        <li><strong>Rainbow Generator :</strong> Utilise des colorants</li>
+                        <li><strong>Netherstar Generator :</strong> Ultra-puissant (end-game)</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🛠️ Objets Utiles</h4>
+                    <ul>
+                        <li><strong>Transfer Nodes :</strong> Transfèrent objets/fluides automatiquement</li>
+                        <li><strong>Transfer Pipes :</strong> Tuyaux simples et efficaces</li>
+                        <li><strong>Filing Cabinet :</strong> Stockage compact avec filtres</li>
+                        <li><strong>Angel Ring :</strong> Vol créatif en survie !</li>
+                        <li><strong>Mechanical User :</strong> Simule un clic de joueur</li>
+                        <li><strong>Magical Snow :</strong> Génère de l'eau infiniment</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Craftez des <strong>Transfer Nodes</strong> pour l'automatisation simple</li>
+                        <li>Créez un <strong>Furnace Generator</strong> ou <strong>Lava Generator</strong></li>
+                        <li>Montez vers les <strong>Solar Generators</strong> (passifs)</li>
+                        <li>Objectif ultime : l'<strong>Angel Ring</strong> pour voler !</li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Recette Angel Ring</h4>
+                    <p>L'Angel Ring nécessite :</p>
+                    <ul>
+                        <li>4 Flight Wings (différents types selon la source d'énergie)</li>
+                        <li>4 Ender Stars</li>
+                        <li>1 Elytra</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- PHASE 4: MAGIE & TECHNOLOGIE AVANCÉE -->
+        <div class="phase" id="phase4">
+            <div class="phase-header">
+                <div class="phase-icon">✨</div>
+                <div class="phase-title">
+                    <h2>Phase 4: Magie & Technologie Avancée</h2>
+                    <p>Premiers pas dans la magie et la tech complexe</p>
+                </div>
+            </div>
+
+            <!-- Botania -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🌸</span>
+                    Botania
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Mod de magie basé sur les fleurs et le Mana. Esthétique et puissant !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Système de Base</h4>
+                    <ul>
+                        <li><strong>Pétales Mystiques :</strong> Base de toutes les recettes (obtenus en jetant des pétales dans une Petal Apothecary)</li>
+                        <li><strong>Mana :</strong> L'énergie de Botania, générée par les fleurs</li>
+                        <li><strong>Mana Pool :</strong> Stocke le Mana</li>
+                        <li><strong>Livingrock & Livingwood :</strong> Créés en jetant pierre/bois près d'un Mana Pool</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🌺 Fleurs Génératrices (Génèrent du Mana)</h4>
+                    <ul>
+                        <li><strong>Endoflame :</strong> Brûle du combustible solide (charbon, bois)</li>
+                        <li><strong>Hydroangeas :</strong> Consomme l'eau autour d'elle</li>
+                        <li><strong>Thermalily :</strong> Utilise la lave (puissant mais cooldown)</li>
+                        <li><strong>Gourmaryllis :</strong> Mange de la nourriture variée</li>
+                        <li><strong>Spectrolus :</strong> Consomme de la laine colorée (très puissant)</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🌻 Fleurs Fonctionnelles (Utilisent du Mana)</h4>
+                    <ul>
+                        <li><strong>Hopperhock :</strong> Ramasse les objets au sol</li>
+                        <li><strong>Rannuncarpus :</strong> Place des blocs automatiquement</li>
+                        <li><strong>Agricarnation :</strong> Accélère la croissance des plantes</li>
+                        <li><strong>Orechid :</strong> Transforme pierre en minerais (end-game)</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🎯 Objets Utiles</h4>
+                    <ul>
+                        <li><strong>Mana Tablet :</strong> Batterie portable de Mana</li>
+                        <li><strong>Terrasteel :</strong> Alliage magique puissant (armure et outils)</li>
+                        <li><strong>Ring of the Mantle :</strong> Mineur 3x3</li>
+                        <li><strong>Sash of Mana :</strong> Augmente vos points de vie</li>
+                        <li><strong>Band of Aura :</strong> Régénération de Mana</li>
+                        <li><strong>Lexica Botania :</strong> Le livre guide (INDISPENSABLE)</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Craftez le <strong>Lexica Botania</strong> (votre bible)</li>
+                        <li>Créez une <strong>Petal Apothecary</strong> et fabriquez des <strong>Pétales Mystiques</strong></li>
+                        <li>Construisez votre première fleur : <strong>Endoflame</strong></li>
+                        <li>Craftez une <strong>Mana Pool</strong> et un <strong>Mana Spreader</strong></li>
+                        <li>Créez du <strong>Livingrock</strong> et du <strong>Livingwood</strong></li>
+                        <li>Progressez vers le <strong>Terrasteel</strong></li>
+                        <li>Construisez des <strong>Fleurs Fonctionnelles</strong> pour automatiser</li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuces</h4>
+                    <ul>
+                        <li>Lisez le Lexica Botania ! Tout y est expliqué avec des images</li>
+                        <li>Les <strong>Mana Spreaders</strong> doivent pointer vers la Mana Pool</li>
+                        <li>Utilisez des <strong>Lens</strong> sur les Spreaders pour des effets spéciaux</li>
+                        <li>Le <strong>Spark</strong> permet le transfert automatique de Mana</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Astral Sorcery -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">⭐</span>
+                    Astral Sorcery
+                    <span class="difficulty-indicator difficulty-hard">Difficile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Magie basée sur les constellations et la lumière des étoiles. Très atmosphérique !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Système de Progression</h4>
+                    <ul>
+                        <li><strong>Astral Tome :</strong> Votre guide (se débloque progressivement)</li>
+                        <li><strong>Starlight :</strong> L'énergie, collectée la nuit</li>
+                        <li><strong>Rock Crystals :</strong> Trouvés dans le monde, améliorables</li>
+                        <li><strong>Constellations :</strong> À découvrir en observant le ciel</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🏛️ Structures Principales</h4>
+                    <ul>
+                        <li><strong>Luminous Crafting Table :</strong> Table de craft améliorée</li>
+                        <li><strong>Attunement Altar :</strong> Synchronisation avec les constellations</li>
+                        <li><strong>Starlight Infuser :</strong> Infuse des objets avec Starlight</li>
+                        <li><strong>Iridescent Altar :</strong> Crafts avancés (multiblocs complexe)</li>
+                        <li><strong>Collector Crystal :</strong> Collecte et amplifie la Starlight</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🎯 Objets & Perks</h4>
+                    <ul>
+                        <li><strong>Resonating Wand :</strong> Outil pour construire les structures</li>
+                        <li><strong>Illumination Powder :</strong> Révèle les constellations</li>
+                        <li><strong>Mantle of Stars :</strong> Cape magique avec des perks</li>
+                        <li><strong>Attunement :</strong> Alignez-vous avec une constellation pour des bonus permanents</li>
+                        <li><strong>Perks Tree :</strong> Arbre de compétences massif</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Trouvez du <strong>Marble</strong> et <strong>Aquamarine</strong> dans le monde</li>
+                        <li>Craftez l'<strong>Astral Tome</strong></li>
+                        <li>Créez une <strong>Luminous Crafting Table</strong></li>
+                        <li>Construisez votre premier <strong>Altar</strong></li>
+                        <li>Trouvez des <strong>Rock Crystals</strong> dans le monde</li>
+                        <li>Découvrez les <strong>Constellations</strong> la nuit</li>
+                        <li>Attunez-vous à une constellation</li>
+                        <li>Progressez dans l'<strong>Arbre de Perks</strong></li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuces</h4>
+                    <ul>
+                        <li>Utilisez le <strong>Telescope</strong> pour observer les constellations</li>
+                        <li>Les structures doivent être construites la nuit pour recevoir la Starlight</li>
+                        <li>Le <strong>Linking Tool</strong> connecte les cristaux aux structures</li>
+                        <li>Les perks se débloquent en gagnant de l'XP</li>
+                    </ul>
+                </div>
+
+                <div class="danger">
+                    <h4>⚠️ Attention</h4>
+                    <p>Astral Sorcery est complexe ! Prenez votre temps et lisez bien l'Astral Tome. Chaque étape débloque la suivante.</p>
+                </div>
+            </div>
+
+
+
+            <!-- Applied Energistics 2 (AE2) -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">💾</span>
+                    Applied Energistics 2 (AE2)
+                    <span class="difficulty-indicator difficulty-hard">Difficile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> LE système de stockage et d'automatisation ultime. Stockez des millions d'objets dans un seul bloc !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Composants de Base</h4>
+                    <ul>
+                        <li><strong>ME Drive :</strong> Stocke les cellules de stockage</li>
+                        <li><strong>Storage Cells :</strong> 1k, 4k, 16k, 64k items</li>
+                        <li><strong>ME Terminal :</strong> Interface pour accéder à vos objets</li>
+                        <li><strong>ME Controller :</strong> Cœur du système (optionnel pour petits réseaux)</li>
+                        <li><strong>Energy Acceptor :</strong> Connecte l'énergie RF au réseau ME</li>
+                        <li><strong>ME Glass Cable :</strong> Connecte tout ensemble</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🔧 Automatisation</h4>
+                    <ul>
+                        <li><strong>ME Import Bus :</strong> Importe des objets depuis un inventaire</li>
+                        <li><strong>ME Export Bus :</strong> Exporte des objets vers un inventaire</li>
+                        <li><strong>ME Storage Bus :</strong> Utilise un coffre comme stockage ME</li>
+                        <li><strong>ME Interface :</strong> Crafter automatique + stockage patterns</li>
+                        <li><strong>Molecular Assembler :</strong> Effectue le crafting</li>
+                        <li><strong>ME Level Emitter :</strong> Émet un signal redstone selon stock</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>⚙️ Crafting Automatique</h4>
+                    <ul>
+                        <li><strong>Pattern Terminal :</strong> Crée des recettes (patterns)</li>
+                        <li><strong>Encoded Pattern :</strong> Recette enregistrée</li>
+                        <li><strong>ME Interface + Molecular Assembler :</strong> Combo pour auto-craft</li>
+                        <li><strong>Crafting Monitor :</strong> Affiche les crafts en cours</li>
+                        <li><strong>Crafting Storage :</strong> Stocke les crafts complexes</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Trouvez du <strong>Certus Quartz</strong> dans le monde</li>
+                        <li>Créez une <strong>Inscriber</strong> pour les processors</li>
+                        <li>Fabriquez vos premiers <strong>Logic Processors</strong></li>
+                        <li>Construisez un <strong>ME Drive</strong> et une <strong>Storage Cell 1k</strong></li>
+                        <li>Ajoutez un <strong>ME Terminal</strong></li>
+                        <li>Connectez avec des <strong>ME Glass Cables</strong></li>
+                        <li>Ajoutez l'<strong>Energy Acceptor</strong> pour l'alimentation</li>
+                        <li>Expandez avec Import/Export Bus</li>
+                        <li>Automatisez le crafting avec Interface + Assembler</li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuces</h4>
+                    <ul>
+                        <li>Les <strong>Pure Certus Quartz</strong> se créent en jetant des seeds dans l'eau</li>
+                        <li>Utilisez des <strong>P2P Tunnels</strong> pour économiser des channels</li>
+                        <li>Les <strong>Dense Cables</strong> supportent 32 channels (vs 8 pour les normaux)</li>
+                        <li>Le <strong>ME Controller</strong> augmente drastiquement votre capacité</li>
+                        <li>Les <strong>Upgrades</strong> (Speed, Capacity) améliorent vos bus</li>
+                    </ul>
+                </div>
+
+                <div class="danger">
+                    <h4>⚠️ Attention</h4>
+                    <p>AE2 est complexe ! Commencez petit avec un simple Drive + Terminal. Apprenez progressivement les channels et l'automatisation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 5: LE NETHER -->
+        <div class="phase" id="phase5">
+            <div class="phase-header">
+                <div class="phase-icon">🔥</div>
+                <div class="phase-title">
+                    <h2>Phase 5: Conquête du Nether</h2>
+                    <p>Préparez-vous pour l'enfer !</p>
+                </div>
+            </div>
+
+            <!-- Better Nether -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🌋</span>
+                    Better Nether
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Améliore le Nether avec de nouveaux biomes, structures et ressources !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Nouveaux Biomes</h4>
+                    <ul>
+                        <li><strong>Soul Plains :</strong> Plaines d'âmes avec des arbres spectraux</li>
+                        <li><strong>Wart Forest :</strong> Forêts de Nether Wart géantes</li>
+                        <li><strong>Bone Reef :</strong> Récifs d'os</li>
+                        <li><strong>Gravel Desert :</strong> Déserts de gravier</li>
+                        <li>Et bien d'autres biomes uniques</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🏛️ Nouvelles Structures</h4>
+                    <ul>
+                        <li><strong>Nether Cities :</strong> Villes en ruines</li>
+                        <li><strong>Fortresses améliorées :</strong> Plus grandes et dangereuses</li>
+                        <li><strong>Temples :</strong> Avec des trésors uniques</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils de Survie</h4>
+                    <ul>
+                        <li>Apportez beaucoup de nourriture et d'armure</li>
+                        <li>Les nouveaux biomes contiennent des ressources uniques</li>
+                        <li>Explorez pour trouver les structures avec du loot</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Nether Ores & Mods avec contenu Nether -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">⛏️</span>
+                    Ressources du Nether
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Objectifs dans le Nether :</strong></p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Ressources Essentielles</h4>
+                    <ul>
+                        <li><strong>Blaze Rods :</strong> Pour les potions et l'Ender Eye</li>
+                        <li><strong>Nether Wart :</strong> Base des potions</li>
+                        <li><strong>Ghast Tears :</strong> Potions de régénération</li>
+                        <li><strong>Magma Cream :</strong> Résistance au feu</li>
+                        <li><strong>Glowstone :</strong> Éclairage puissant</li>
+                        <li><strong>Quartz :</strong> Redstone et décoration</li>
+                    </ul>
+                </div>
+
+
+
+                <div class="tips">
+                    <h4>💡 Stratégie</h4>
+                    <ul>
+                        <li>Construisez un portail sécurisé avec une base protégée</li>
+                        <li>Apportez des <strong>Fire Resistance Potions</strong></li>
+                        <li>Utilisez des <strong>Bow</strong> pour les Ghasts</li>
+                        <li>Collectez du Quartz et de la Glowstone</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 6: THE END & DRAGON -->
+        <div class="phase" id="phase6">
+            <div class="phase-header">
+                <div class="phase-icon">🐉</div>
+                <div class="phase-title">
+                    <h2>Phase 6: The End & L'Ender Dragon</h2>
+                    <p>Le combat ultime du jeu vanilla</p>
+                </div>
+            </div>
+
+            <!-- Préparation pour le Dragon -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">⚔️</span>
+                    Préparation pour le Combat
+                    <span class="difficulty-indicator difficulty-hard">Difficile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Checklist avant d'affronter le Dragon :</strong></p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Équipement Recommandé</h4>
+                    <ul>
+                        <li><strong>Armure Complète :</strong> Diamond minimum (ou Terrasteel, etc.)</li>
+                        <li><strong>Arme :</strong> Diamond Sword+ avec Sharpness V</li>
+                        <li><strong>Arc :</strong> Power V, Infinity I</li>
+                        <li><strong>Flèches :</strong> Minimum 64 (ou 1 avec Infinity)</li>
+                        <li><strong>Pioche :</strong> Pour casser l'Obsidian des piliers</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🧪 Potions & Nourriture</h4>
+                    <ul>
+                        <li><strong>Slow Falling Potions :</strong> Pour éviter les chutes</li>
+                        <li><strong>Strength II :</strong> Plus de dégâts</li>
+                        <li><strong>Regeneration II :</strong> Guérison</li>
+                        <li><strong>Golden Apples :</strong> 64 minimum (Enchanted si possible)</li>
+                        <li><strong>Healing Potions :</strong> Pour urgences</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🛠️ Autres Objets</h4>
+                    <ul>
+                        <li><strong>Ender Pearls :</strong> 16+ pour le téléportation</li>
+                        <li><strong>Blocks :</strong> 5+ stacks de Cobblestone pour construire</li>
+                        <li><strong>Beds :</strong> Pour détruire les cristaux (explosion)</li>
+                        <li><strong>Water Bucket :</strong> MLG clutch</li>
+                        <li><strong>Pumpkin Head :</strong> Les Endermen ne vous attaqueront pas</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Stratégie de Combat</h4>
+                    <ol>
+                        <li>Détruisez tous les <strong>End Crystals</strong> sur les piliers (utilisez des beds)</li>
+                        <li>Restez mobile et évitez les charges du Dragon</li>
+                        <li>Tirez au arc quand il vole, épée quand il atterrit</li>
+                        <li>Utilisez les potions et Golden Apples généreusement</li>
+                        <li>Construisez des plateformes pour atteindre les cristaux hauts</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Into The End -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🌌</span>
+                    Into The End
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Améliore l'End avec de nouveaux biomes et structures post-Dragon !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Nouveaux Biomes</h4>
+                    <ul>
+                        <li>Multiples biomes uniques dans les îles extérieures</li>
+                        <li>Nouvelles plantes et ressources</li>
+                        <li>Structures mystérieuses à explorer</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Après le Dragon</h4>
+                    <ul>
+                        <li>Explorez les îles extérieures via les portails End Gateway</li>
+                        <li>Cherchez les End Cities et les Elytra</li>
+                        <li>Collectez les nouvelles ressources pour vos projets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 7: POST-DRAGON -->
+        <div class="phase" id="phase7">
+            <div class="phase-header">
+                <div class="phase-icon">🚀</div>
+                <div class="phase-title">
+                    <h2>Phase 7: Ère Post-Dragon</h2>
+                    <p>L'aventure ne fait que commencer !</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- PHASE 8: DIMENSIONS MODÉES -->
+        <div class="phase" id="phase8">
+            <div class="phase-header">
+                <div class="phase-icon">🌍</div>
+                <div class="phase-title">
+                    <h2>Phase 8: Exploration des Dimensions</h2>
+                    <p>Voyagez vers des mondes inconnus !</p>
+                </div>
+            </div>
+
+            <!-- Twilight Forest -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🌲</span>
+                    Twilight Forest
+                    <span class="difficulty-indicator difficulty-medium">Moyen</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Dimension magique remplie de boss, donjons et trésors !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Accès</h4>
+                    <p><strong>Créer le Portail :</strong></p>
+                    <ul>
+                        <li>Creusez un trou 2x2 rempli d'eau</li>
+                        <li>Entourez-le de fleurs (n'importe lesquelles)</li>
+                        <li>Jetez un diamant dans l'eau</li>
+                        <li>Un éclair frappe et le portail s'active !</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🏰 Boss & Progression</h4>
+                    <ul>
+                        <li><strong>Naga :</strong> Premier boss (serpent géant)</li>
+                        <li><strong>Lich :</strong> Boss magique dans une tour</li>
+                        <li><strong>Minoshroom :</strong> Minotaure dans un labyrinthe</li>
+                        <li><strong>Hydra :</strong> Hydre à 3 têtes</li>
+                        <li><strong>Ur-Ghast :</strong> Ghast géant dans Dark Tower</li>
+                        <li><strong>Snow Queen :</strong> Reine des glaces</li>
+                        <li>Et bien d'autres...</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🎁 Récompenses Uniques</h4>
+                    <ul>
+                        <li><strong>Charm of Keeping :</strong> Gardez vos objets à la mort</li>
+                        <li><strong>Steeleaf :</strong> Matériau pour armure et outils</li>
+                        <li><strong>Fiery Ingots :</strong> Armure résistante au feu</li>
+                        <li><strong>Maze Map Focus :</strong> Révèle les labyrinthes</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils</h4>
+                    <ul>
+                        <li>La progression est <strong>bloquée</strong> : tuez les boss dans l'ordre</li>
+                        <li>Apportez de la bonne nourriture et armure</li>
+                        <li>Explorez pour trouver les structures de boss</li>
+                        <li>Les donjons contiennent d'excellents loots</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Advent of Ascension (AoA3) -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🗡️</span>
+                    Advent of Ascension (AoA3)
+                    <span class="difficulty-indicator difficulty-expert">Expert</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Mod RPG massif avec 20+ dimensions, des centaines de boss et 2500+ items !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Système RPG</h4>
+                    <ul>
+                        <li><strong>Skills :</strong> Anima, Butchery, Creation, etc. (niveau jusqu'à 100)</li>
+                        <li><strong>Resources :</strong> Energy, Rage, Soul Power, Spirit</li>
+                        <li><strong>Armures par Set :</strong> Bonus complets quand vous portez tout le set</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🌍 Quelques Dimensions</h4>
+                    <ul>
+                        <li><strong>Precasia :</strong> Dimension préhistorique (T1)</li>
+                        <li><strong>Mysterium :</strong> Dimension mystique (T2)</li>
+                        <li><strong>Barathos :</strong> Dimension de lave (T2)</li>
+                        <li><strong>Creeponia :</strong> Monde de Creepers (T2)</li>
+                        <li><strong>Deeplands :</strong> Monde souterrain (T3)</li>
+                        <li><strong>Haven :</strong> Paradis flottant (T3)</li>
+                        <li>+15 autres dimensions...</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>⚔️ Types d'Armes</h4>
+                    <ul>
+                        <li><strong>Guns :</strong> Armes à distance avec munitions</li>
+                        <li><strong>Bows :</strong> Arcs magiques</li>
+                        <li><strong>Swords :</strong> Épées avec capacités spéciales</li>
+                        <li><strong>Greatblades :</strong> Épées lourdes ultra-puissantes</li>
+                        <li><strong>Staffs :</strong> Bâtons magiques</li>
+                        <li><strong>Shotguns, Cannons, Snipers...</strong></li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Commencez par le <strong>Overworld</strong> : tuez des mobs pour XP et loot</li>
+                        <li>Craftez votre premier portail vers <strong>Precasia</strong></li>
+                        <li>Montez vos <strong>Skills</strong> progressivement</li>
+                        <li>Explorez les dimensions Tier 1, puis Tier 2, puis Tier 3</li>
+                        <li>Tuez les <strong>Boss</strong> pour débloquer des portails vers d'autres dimensions</li>
+                        <li>Collectez les <strong>Tokens</strong> pour échanger contre des items</li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuces</h4>
+                    <ul>
+                        <li>Chaque dimension a un <strong>niveau recommandé</strong> (Tier)</li>
+                        <li>Les <strong>Realmstones</strong> créent les portails</li>
+                        <li>Utilisez le <strong>AoA Wiki</strong> : le mod est MASSIF</li>
+                        <li>Les <strong>Guns</strong> nécessitent des munitions spécifiques</li>
+                    </ul>
+                </div>
+
+                <div class="danger">
+                    <h4>⚠️ Attention</h4>
+                    <p>AoA3 est TRÈS difficile ! Ne vous aventurez pas dans les dimensions sans préparation. Les mobs sont puissants et nombreux.</p>
+                </div>
+            </div>
+
+            <!-- Galacticraft & Extra Planets -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🚀</span>
+                    Galacticraft & Extra Planets
+                    <span class="difficulty-indicator difficulty-hard">Difficile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Voyagez dans l'espace ! Visitez la Lune, Mars, et au-delà !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Planètes Disponibles</h4>
+                    <ul>
+                        <li><strong>Moon :</strong> Première destination (faible gravité)</li>
+                        <li><strong>Mars :</strong> Planète rouge avec donjons</li>
+                        <li><strong>Asteroids :</strong> Ceinture d'astéroïdes</li>
+                        <li><strong>Venus :</strong> Planète hostile et chaude</li>
+                        <li><strong>Jupiter, Saturne, Uranus, Neptune :</strong> Géantes gazeuses</li>
+                        <li><strong>Pluton, Mercure, et leurs lunes</strong></li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🚀 Progression Spatiale</h4>
+                    <ul>
+                        <li><strong>Tier 1 Rocket :</strong> Pour la Lune</li>
+                        <li><strong>Tier 2 Rocket :</strong> Pour Mars</li>
+                        <li><strong>Tier 3+ Rockets :</strong> Pour les planètes lointaines</li>
+                        <li><strong>Space Station :</strong> Créez votre propre station orbitale</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🛠️ Équipement Spatial</h4>
+                    <ul>
+                        <li><strong>Oxygen Gear :</strong> Masque, réservoirs, collecteur d'O2</li>
+                        <li><strong>Space Suit :</strong> Armure spatiale complète</li>
+                        <li><strong>Parachute :</strong> Pour atterrir en sécurité</li>
+                        <li><strong>Buggy :</strong> Véhicule pour explorer</li>
+                    </ul>
+                </div>
+
+                <div class="progression">
+                    <h4>📈 Ordre de Progression</h4>
+                    <ol>
+                        <li>Créez un <strong>NASA Workbench</strong></li>
+                        <li>Fabriquez votre <strong>Oxygen Gear</strong></li>
+                        <li>Construisez une <strong>Tier 1 Rocket</strong></li>
+                        <li>Lancez-vous vers la <strong>Lune</strong> avec un <strong>Launch Pad</strong></li>
+                        <li>Établissez une base lunaire avec production d'oxygène</li>
+                        <li>Progressez vers Mars et au-delà</li>
+                    </ol>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Astuces</h4>
+                    <ul>
+                        <li>L'oxygène est VITAL : apportez des réservoirs de backup</li>
+                        <li>Les planètes lointaines nécessitent des fusées avancées</li>
+                        <li>Chaque planète a des ressources uniques</li>
+                        <li>Construisez des <strong>Oxygen Sealers</strong> pour vos bases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Atum, Erebus, et autres dimensions -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🏜️</span>
+                    Autres Dimensions
+                    <span class="difficulty-indicator difficulty-hard">Difficile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Encore plus de dimensions à explorer !</strong></p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Atum 2</h4>
+                    <ul>
+                        <li><strong>Thème :</strong> Égypte antique dans le désert</li>
+                        <li><strong>Contenu :</strong> Pyramides, pharaons, trésors égyptiens</li>
+                        <li><strong>Portail :</strong> Construit avec Sandstone et activé avec un Scarab</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🕷️ Erebus</h4>
+                    <ul>
+                        <li><strong>Thème :</strong> Dimension d'insectes géants</li>
+                        <li><strong>Contenu :</strong> Araignées, fourmis, et autres insectes massifs</li>
+                        <li><strong>Portail :</strong> Construit avec des blocs spéciaux et activé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 9: PROJETS MASSIFS -->
+        <div class="phase" id="phase9">
+            <div class="phase-header">
+                <div class="phase-icon">🏗️</div>
+                <div class="phase-title">
+                    <h2>Phase 9: Projets Massifs & Créativité</h2>
+                    <p>Utilisez tout ce que vous avez appris !</p>
+                </div>
+            </div>
+
+            <!-- Create -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">⚙️</span>
+                    Create
+                    <span class="difficulty-indicator difficulty-hard">Difficile</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Qu'est-ce que c'est ?</strong> Mod d'ingénierie mécanique avec des machines rotatives et des contraptions incroyables !</p>
+                </div>
+
+                <div class="features">
+                    <h4>✨ Concepts de Base</h4>
+                    <ul>
+                        <li><strong>Rotational Force (RF) :</strong> L'énergie mécanique (différent du RF électrique)</li>
+                        <li><strong>Stress Units :</strong> Chaque machine consomme du stress</li>
+                        <li><strong>Shafts & Gearboxes :</strong> Transmettent la rotation</li>
+                        <li><strong>Belts & Chains :</strong> Connectent les machines</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🔧 Machines Principales</h4>
+                    <ul>
+                        <li><strong>Water Wheel :</strong> Génère de la rotation avec l'eau</li>
+                        <li><strong>Windmill :</strong> Génère de la rotation avec le vent</li>
+                        <li><strong>Mechanical Press :</strong> Compresse des objets</li>
+                        <li><strong>Mechanical Mixer :</strong> Mélange des ingrédients</li>
+                        <li><strong>Mechanical Saw :</strong> Coupe et traite</li>
+                        <li><strong>Deployer :</strong> Simule des clics</li>
+                        <li><strong>Encased Fan :</strong> Souffle ou aspire</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🚂 Contraptions</h4>
+                    <ul>
+                        <li><strong>Mechanical Bearing :</strong> Fait tourner des structures entières</li>
+                        <li><strong>Mechanical Piston :</strong> Bouge des structures linéairement</li>
+                        <li><strong>Gantry Carriage :</strong> Mouvement sur rails</li>
+                        <li><strong>Trains :</strong> Système de trains complet avec rails</li>
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Projets Créatifs</h4>
+                    <ul>
+                        <li>Créez une <strong>usine automatique</strong> avec des belts</li>
+                        <li>Construisez des <strong>ponts mobiles</strong> avec des pistons</li>
+                        <li>Fabriquez des <strong>moulins à vent géants</strong></li>
+                        <li>Concevez un <strong>système de trains</strong> pour le transport</li>
+                        <li>Expérimentez avec les <strong>Contraptions volantes</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Projets Finaux -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🎯</span>
+                    Idées de Projets Massifs
+                    <span class="difficulty-indicator difficulty-master">Maître</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Utilisez tous vos mods ensemble pour des projets épiques !</strong></p>
+                </div>
+
+                <div class="features">
+                    <h4>🏭 Automatisation Complète</h4>
+                    <ul>
+                        <li><strong>Usine auto-suffisante :</strong> Minage (Digital Miner), traitement (Mekanism x5), stockage (AE2)</li>
+                        <li><strong>Ferme automatique :</strong> Mystical Agriculture + Agricarnation (Botania) + Storage Drawers</li>
+                        <li><strong>Génération d'énergie infinie :</strong> Solar Generators massifs ou réacteurs Mekanism</li>
+                        <li><strong>Crafting auto :</strong> AE2 avec toutes les recettes encodées</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🏰 Construction & Décoration</h4>
+                    <ul>
+                        <li><strong>Base massive :</strong> Utilisez Chisel, Decocraft, CFM pour décorer</li>
+                        <li><strong>Château médiéval :</strong> Avec Millenaire pour les villageois</li>
+                        <li><strong>Ville futuriste :</strong> Tech mods + lumières modernes</li>
+                        <li><strong>Jardin botanique :</strong> Toutes les plantes de Botania et autres mods</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🌍 Exploration & Conquête</h4>
+                    <ul>
+                        <li><strong>Base dans chaque dimension :</strong> Nether, End, Twilight, AoA, Galacticraft</li>
+                        <li><strong>Collection complète :</strong> Tous les boss tués, tous les items collectés</li>
+                        <li><strong>Zoo de mobs :</strong> Capturez et exposez tous les mobs</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>⚡ Défis Techniques</h4>
+                    <ul>
+                        <li><strong>Énergie RF ultime :</strong> Générez 1 milliard RF/t</li>
+                        <li><strong>Stockage AE2 :</strong> 1 million d'items uniques</li>
+                        <li><strong>Automatisation complète :</strong> Digital Miner + Mekanism x5 + AE2</li>
+
+                    </ul>
+                </div>
+
+                <div class="tips">
+                    <h4>💡 Conseils pour Grands Projets</h4>
+                    <ul>
+                        <li>Planifiez à l'avance : dessinez un schéma</li>
+                        <li>Construisez progressivement, par phases</li>
+                        <li>Automatisez la production de ressources nécessaires</li>
+                        <li>Utilisez des <strong>Chunk Loaders</strong> pour garder vos machines actives</li>
+                        <li>Sauvegardez régulièrement !</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mods de Support & Qualité de Vie -->
+            <div class="mod-section">
+                <h3>
+                    <span class="mod-icon">🛠️</span>
+                    Mods Utilitaires & Qualité de Vie
+                    <span class="difficulty-indicator difficulty-easy">Toujours Utiles</span>
+                </h3>
+                
+                <div class="mod-description">
+                    <p><strong>Ces mods rendent votre expérience plus agréable à tous les stades !</strong></p>
+                </div>
+
+                <div class="features">
+                    <h4>📊 Information & Interface</h4>
+                    <ul>
+                        <li><strong>JEI (Just Enough Items) :</strong> Voir toutes les recettes (Indispensable !)</li>
+                        <li><strong>HWYLA (Waila) :</strong> Affiche info sur les blocs regardés</li>
+                        <li><strong>JourneyMap :</strong> Mini-map et carte du monde</li>
+                        <li><strong>ToroHealth :</strong> Affiche la vie des mobs</li>
+                        <li><strong>Neat :</strong> Barres de vie au-dessus des mobs</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>🎒 Inventaire & Stockage</h4>
+                    <ul>
+                        <li><strong>Inventory Pets :</strong> Pets qui donnent des bonus dans l'inventaire</li>
+                        <li><strong>Iron Backpacks :</strong> Sacs à dos avec stockage</li>
+                        <li><strong>Loot Bags :</strong> Sacs de butin aléatoires</li>
+                    </ul>
+                </div>
+
+                <div class="features">
+                    <h4>⚡ Performance</h4>
+                    <ul>
+                        <li><strong>OptiFine :</strong> Améliore FPS et ajoute shaders</li>
+                        <li><strong>FoamFix :</strong> Réduit utilisation RAM</li>
+                        <li><strong>VanillaFix :</strong> Fixe des bugs et améliore stabilité</li>
+                        <li><strong>Better FPS :</strong> Optimisations mathématiques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <h2>🎉 Félicitations !</h2>
+            <p>Vous avez maintenant toutes les connaissances pour maîtriser Skyzer Adventure !</p>
+            <p>Ce modpack contient 250+ mods avec des milliers d'heures de contenu.</p>
+            <p><strong>Conseil final :</strong> Prenez votre temps, explorez, expérimentez, et surtout... AMUSEZ-VOUS ! 🎮</p>
+            <br>
+            <p style="font-size: 0.9em; opacity: 0.8;">Guide créé pour Skyzer Adventure - Février 2026</p>
+            <p style="font-size: 0.9em; opacity: 0.8;">Pour toute question, consultez les wikis des mods ou la communauté Minecraft !</p>
+        </footer>
+
+        <!-- Bouton Retour en Haut -->
+        <a href="#top" class="back-to-top">↑</a>
+    </div>
+
+    <script>
+        // Smooth scrolling pour les liens d'ancrage
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Afficher/masquer le bouton "retour en haut"
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

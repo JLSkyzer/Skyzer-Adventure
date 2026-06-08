@@ -1,0 +1,57 @@
+{
+  "id": "interior_design",
+  "title": "Interior Design",
+  "description": "A house is not a home without furnishings. Craft the essential tools every base needs: a furnace for smelting, a crafting table for advanced recipes, and a chest to store your treasures.",
+  "icon": {
+    "item": "minecraft:bookshelf"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#5D4037",
+    "border": "#A1887F"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_homestead",
+  "dependencies": [
+    "humble_shelter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "minecraft:furnace",
+      "amount": 1,
+      "localized_name": "Furnace"
+    },
+    {
+      "type": "craft",
+      "item": "minecraft:crafting_table",
+      "amount": 1,
+      "localized_name": "Crafting Table"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:chest",
+      "amount": 1,
+      "localized_name": "Oak Chest"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 150.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:bookshelf",
+      "amount": 16,
+      "localized_name": "Oak Bookshelf"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

@@ -1,0 +1,62 @@
+{
+  "id": "blaze_hunter",
+  "title": "Blaze Hunter",
+  "description": "Hunt down blazes in Nether fortresses and collect their rods for brewing.",
+  "icon": {
+    "item": "minecraft:blaze_rod"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_nether",
+  "dependencies": [
+    "nether_arrival"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialblaze",
+      "amount": 15,
+      "localized_name": "specialmobs:specialblaze"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:blaze_rod",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Blaze Rod"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:blaze_powder",
+      "amount": 16,
+      "localized_name": "Blaze Powder"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:brewing_stand",
+      "amount": 1,
+      "localized_name": "Brewing Stand"
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

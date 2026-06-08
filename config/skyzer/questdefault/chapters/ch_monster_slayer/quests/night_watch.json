@@ -1,0 +1,46 @@
+{
+  "id": "night_watch",
+  "title": "Night Watch",
+  "description": "The undead rise when darkness falls. Slay 25 zombies to prove your worth against the shambling horde.",
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#F44336"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialzombie",
+      "amount": 25,
+      "localized_name": "specialmobs:specialzombie"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 150.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:rotten_flesh",
+      "amount": 16,
+      "localized_name": "Rotten Flesh"
+    },
+    {
+      "type": "xp_level",
+      "amount": 5
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

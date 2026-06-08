@@ -1,0 +1,57 @@
+{
+  "id": "nether_wart_farm",
+  "title": "Nether Wart Farm",
+  "description": "Gather nether wart and soul sand to start your potion brewing journey.",
+  "icon": {
+    "item": "minecraft:nether_wart"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#880E4F",
+    "border": "#F48FB1"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_nether",
+  "dependencies": [
+    "nether_arrival"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:nether_wart",
+      "amount": 32,
+      "consume": true,
+      "localized_name": "Nether Wart"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:soul_sand",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Soul Sand"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:glass_bottle",
+      "amount": 8,
+      "localized_name": "Glass Bottle"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

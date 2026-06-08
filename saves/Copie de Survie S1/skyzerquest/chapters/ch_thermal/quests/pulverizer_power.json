@@ -1,0 +1,59 @@
+{
+  "id": "pulverizer_power",
+  "title": "Pulverizer Power",
+  "description": "Craft a pulverizer to double your ore output by crushing them into dust.",
+  "icon": {
+    "item": "thermalexpansion:machine",
+    "meta": 1
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#DD2C00",
+    "border": "#FF6E40"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_thermal",
+  "dependencies": [
+    "machine_frame"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "thermalexpansion:machine",
+      "amount": 1,
+      "meta": 1,
+      "localized_name": "Pulverizer (Basic)"
+    },
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Pulverized Iron"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:gold_ingot",
+      "amount": 8,
+      "localized_name": "Gold Ingot"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

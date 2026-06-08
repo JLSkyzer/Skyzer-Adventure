@@ -1,0 +1,51 @@
+{
+  "id": "prudentium_essence",
+  "title": "Prudentium Essence",
+  "description": "Upgrade to Prudentium Essence! This tier unlocks better resource crops and more powerful farming.",
+  "icon": {
+    "item": "mysticalagriculture:crafting",
+    "meta": 1
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#2E7D32",
+    "border": "#66BB6A"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_mystical_ag",
+  "dependencies": [
+    "inferium_farming"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:crafting",
+      "amount": 64,
+      "consume": false,
+      "meta": 1,
+      "localized_name": "§aPrudentium Essence"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

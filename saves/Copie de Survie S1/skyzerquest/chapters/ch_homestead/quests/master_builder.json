@@ -1,0 +1,61 @@
+{
+  "id": "master_builder",
+  "title": "Master Builder",
+  "description": "Prove your architectural prowess by constructing a massive structure. Combine stone and wood in grand quantities. Only a true master builder can complete this monumental challenge.",
+  "icon": {
+    "item": "minecraft:golden_pickaxe"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#E65100",
+    "border": "#FFB74D"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_homestead",
+  "dependencies": [
+    "brick_by_brick",
+    "glass_house"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "place",
+      "block": "minecraft:stone",
+      "amount": 200,
+      "localized_name": "Stone"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:planks",
+      "amount": 100,
+      "localized_name": "Oak Wood Planks"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 750.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:diamond",
+      "amount": 16,
+      "localized_name": "Diamond"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

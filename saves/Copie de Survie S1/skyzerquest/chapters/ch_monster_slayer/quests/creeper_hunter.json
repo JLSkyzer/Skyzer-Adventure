@@ -1,0 +1,55 @@
+{
+  "id": "creeper_hunter",
+  "title": "Creeper Hunter",
+  "description": "That hissing sound spells doom. Face your fears and eliminate 20 creepers before they blow your base to bits.",
+  "icon": {
+    "item": "minecraft:gunpowder"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#1B5E20",
+    "border": "#66BB6A"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [
+    "night_watch"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialcreeper",
+      "amount": 20,
+      "localized_name": "specialmobs:specialcreeper"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:gunpowder",
+      "amount": 32,
+      "localized_name": "Gunpowder"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:tnt",
+      "amount": 16,
+      "localized_name": "TNT"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

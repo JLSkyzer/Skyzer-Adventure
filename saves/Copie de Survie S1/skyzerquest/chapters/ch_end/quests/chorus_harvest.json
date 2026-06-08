@@ -1,0 +1,69 @@
+{
+  "id": "chorus_harvest",
+  "title": "Chorus Harvest",
+  "description": "Harvest chorus plants from the End islands and process them into useful materials.",
+  "icon": {
+    "item": "minecraft:chorus_fruit"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#6A1B9A",
+    "border": "#BA68C8"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_end",
+  "dependencies": [
+    "end_arrival"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:chorus_plant",
+      "amount": 64,
+      "localized_name": "Chorus Plant"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:chorus_fruit",
+      "amount": 32,
+      "consume": true,
+      "localized_name": "Chorus Fruit"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:chorus_fruit_popped",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Popped Chorus Fruit"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:purpur_block",
+      "amount": 16,
+      "localized_name": "Purpur Block"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:end_rod",
+      "amount": 16,
+      "localized_name": "End Rod"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

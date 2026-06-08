@@ -1,0 +1,63 @@
+{
+  "id": "master_builder_supreme",
+  "title": "Master Builder Supreme",
+  "description": "Place thousands of blocks to construct your empire. Great builders shape the world around them!",
+  "icon": {
+    "item": "minecraft:golden_pickaxe"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#E65100",
+    "border": "#FFB74D"
+  },
+  "position": {
+    "x": 300,
+    "y": 100
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "place",
+      "block": "minecraft:stone",
+      "amount": 1000,
+      "localized_name": "Stone"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:planks",
+      "amount": 500,
+      "localized_name": "Oak Wood Planks"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:glass",
+      "amount": 200,
+      "localized_name": "Glass"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:wool",
+      "amount": 100,
+      "localized_name": "White Wool"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 5000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 30
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

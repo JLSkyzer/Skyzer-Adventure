@@ -1,0 +1,64 @@
+{
+  "id": "lapis_scholar",
+  "title": "Lapis Scholar",
+  "description": "Lapis lazuli unlocks the secrets of enchanting. Break 32 lapis ore and collect 64 lapis lazuli.",
+  "icon": {
+    "item": "minecraft:dye",
+    "meta": 4
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#1A237E",
+    "border": "#5C6BC0"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [
+    "iron_vein"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:lapis_ore",
+      "amount": 32,
+      "localized_name": "Lapis Lazuli Ore"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:dye",
+      "amount": 64,
+      "consume": false,
+      "meta": 4,
+      "localized_name": "Lapis Lazuli"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 350.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:enchanting_table",
+      "amount": 1,
+      "localized_name": "Enchantment Table"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:bookshelf",
+      "amount": 15,
+      "localized_name": "Oak Bookshelf"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

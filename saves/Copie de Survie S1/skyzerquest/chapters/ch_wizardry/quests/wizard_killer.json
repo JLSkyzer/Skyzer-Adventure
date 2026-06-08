@@ -1,0 +1,54 @@
+{
+  "id": "wizard_killer",
+  "title": "Dark Wizard Slayer",
+  "description": "Defeat evil wizards and claim their forbidden knowledge.",
+  "icon": {
+    "item": "ebwizardry:spectral_sword"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#FF5252"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_wizardry",
+  "dependencies": [
+    "first_wand"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "ebwizardry:evil_wizard",
+      "amount": 10,
+      "localized_name": "ebwizardry:evil_wizard"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "ebwizardry:ruined_spell_book",
+      "amount": 2,
+      "localized_name": "Ruined Spell Book"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

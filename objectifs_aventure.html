@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyzer Adventure - Objectifs Personnels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 30px;
+            background: #e2e8f0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78, #38a169);
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .stat-box .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .stat-box .label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #e2e8f0;
+            color: #2d3748;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover {
+            background: #cbd5e0;
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .category {
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .category-icon {
+            font-size: 2em;
+            margin-right: 15px;
+        }
+
+        .category-title {
+            font-size: 1.5em;
+            color: #2d3748;
+            font-weight: bold;
+            flex-grow: 1;
+        }
+
+        .category-progress {
+            font-size: 0.9em;
+            color: #718096;
+            background: #edf2f7;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        .toggle-icon {
+            font-size: 1.2em;
+            transition: transform 0.3s;
+        }
+
+        .toggle-icon.collapsed {
+            transform: rotate(-90deg);
+        }
+
+        .objectives {
+            display: grid;
+            gap: 12px;
+        }
+
+        .objectives.collapsed {
+            display: none;
+        }
+
+        .objective {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px;
+            background: #f7fafc;
+            border-radius: 8px;
+            transition: all 0.3s;
+            border-left: 4px solid #cbd5e0;
+        }
+
+        .objective:hover {
+            background: #edf2f7;
+            transform: translateX(5px);
+        }
+
+        .objective.completed {
+            opacity: 0.6;
+            border-left-color: #48bb78;
+            background: #f0fff4;
+        }
+
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            margin-right: 15px;
+            cursor: pointer;
+            accent-color: #48bb78;
+        }
+
+        .objective-content {
+            flex-grow: 1;
+        }
+
+        .objective-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .objective.completed .objective-title {
+            text-decoration: line-through;
+        }
+
+        .objective-description {
+            color: #4a5568;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .objective-rewards {
+            color: #805ad5;
+            font-size: 0.9em;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .difficulty {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .difficulty.facile {
+            background: #c6f6d5;
+            color: #22543d;
+        }
+
+        .difficulty.moyen {
+            background: #feebc8;
+            color: #7c2d12;
+        }
+
+        .difficulty.difficile {
+            background: #fed7d7;
+            color: #742a2a;
+        }
+
+        .difficulty.extreme {
+            background: #e9d8fd;
+            color: #44337a;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #cbd5e0;
+            border-radius: 10px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .reset-btn {
+            background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+
+        .reset-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .add-objective-btn {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .add-objective-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .manage-categories-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .manage-categories-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .modal-header h2 {
+            color: #2d3748;
+            margin: 0;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: #718096;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-btn:hover {
+            color: #2d3748;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #cbd5e0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 25px;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-cancel {
+            background: #e2e8f0;
+            color: #2d3748;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-cancel:hover {
+            background: #cbd5e0;
+        }
+
+        .delete-btn {
+            background: #fc8181;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: all 0.3s;
+        }
+
+        .delete-btn:hover {
+            background: #f56565;
+        }
+
+        .category-list {
+            max-height: 400px;
+            overflow-y: auto;
+            margin: 20px 0;
+        }
+
+        .category-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background: #f7fafc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .category-item-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-delete-btn {
+            background: #fc8181;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .category-delete-btn:hover {
+            background: #f56565;
+        }
+
+        .dropdown-filter {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #e2e8f0;
+            color: #2d3748;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dropdown-btn:hover {
+            background: #cbd5e0;
+            transform: translateY(-2px);
+        }
+
+        .dropdown-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 280px;
+            max-height: 400px;
+            overflow-y: auto;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 100;
+            margin-top: 5px;
+            padding: 10px;
+        }
+
+        .dropdown-content.show {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dropdown-item:hover {
+            background: #f7fafc;
+        }
+
+        .dropdown-item input[type="checkbox"] {
+            cursor: pointer;
+            accent-color: #667eea;
+        }
+
+        .dropdown-item label {
+            cursor: pointer;
+            flex: 1;
+            user-select: none;
+            font-size: 0.95em;
+        }
+
+        .dropdown-actions {
+            display: flex;
+            gap: 5px;
+            padding: 10px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 5px;
+        }
+
+        .dropdown-actions button {
+            flex: 1;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .select-all-btn {
+            background: #48bb78;
+            color: white;
+        }
+
+        .select-all-btn:hover {
+            background: #38a169;
+        }
+
+        .clear-all-btn {
+            background: #fc8181;
+            color: white;
+        }
+
+        .clear-all-btn:hover {
+            background: #f56565;
+        }
+
+        .category-badge {
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .custom-objective {
+            border-left-color: #48bb78 !important;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .stats {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Skyzer Adventure - Objectifs Personnels</h1>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar">0%</div>
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="number" id="totalCompleted">0</div>
+                    <div class="label">Complétés</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="totalObjectives">0</div>
+                    <div class="label">Total Objectifs</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="totalRemaining">0</div>
+                    <div class="label">Restants</div>
+                </div>
+            </div>
+            <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <button class="add-objective-btn" onclick="openModal()">➕ Créer un objectif</button>
+                <button class="manage-categories-btn" onclick="openCategoryModal()">📁 Gérer les catégories</button>
+                <button class="reset-btn" onclick="resetProgress()">🔄 Réinitialiser tout</button>
+            </div>
+        </header>
+
+        <input type="text" class="search-box" id="searchBox" placeholder="🔍 Rechercher un objectif...">
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="facile">Facile</button>
+            <button class="filter-btn" data-filter="moyen">Moyen</button>
+            <button class="filter-btn" data-filter="difficile">Difficile</button>
+            <button class="filter-btn" data-filter="extreme">Extrême</button>
+            <button class="filter-btn" data-filter="completed">Complétés</button>
+            <button class="filter-btn" data-filter="pending">En cours</button>
+            
+            <div class="dropdown-filter">
+                <button class="dropdown-btn" onclick="toggleDropdown()">
+                    📁 Catégories
+                    <span class="category-badge" id="categoryCount" style="display: none;">0</span>
+                    <span>▼</span>
+                </button>
+                <div class="dropdown-content" id="categoryDropdown">
+                    <div id="categoryCheckboxes"></div>
+                    <div class="dropdown-actions">
+                        <button class="select-all-btn" onclick="selectAllCategories()">✓ Tout</button>
+                        <button class="clear-all-btn" onclick="clearAllCategories()">✗ Aucun</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="categoriesContainer"></div>
+    </div>
+
+    <!-- Modal de gestion des catégories -->
+    <div id="categoryModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📁 Gérer les catégories</h2>
+                <button class="close-btn" onclick="closeCategoryModal()">&times;</button>
+            </div>
+            <div class="form-group">
+                <label for="newCategoryName">Créer une nouvelle catégorie</label>
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" id="newCategoryName" placeholder="Nom de la catégorie" style="flex: 1;">
+                    <input type="text" id="newCategoryIcon" placeholder="Emoji" style="width: 80px;">
+                    <button class="btn-submit" onclick="addNewCategory()" style="white-space: nowrap;">➕ Ajouter</button>
+                </div>
+            </div>
+            <div class="category-list" id="categoryList"></div>
+            <div class="form-actions">
+                <button type="button" class="btn-cancel" onclick="closeCategoryModal()">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de création d'objectif -->
+    <div id="objectiveModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>✨ Créer un objectif personnalisé</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <form id="objectiveForm" onsubmit="saveCustomObjective(event)">
+                <div class="form-group">
+                    <label for="objCategory">Catégorie *</label>
+                    <select id="objCategory" required>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="objTitle">Titre de l'objectif *</label>
+                    <input type="text" id="objTitle" required placeholder="Ex: Construire une ferme automatisée de slimes">
+                </div>
+                <div class="form-group">
+                    <label for="objDescription">Description détaillée *</label>
+                    <textarea id="objDescription" required placeholder="Décrivez précisément ce que vous devez accomplir, les étapes, les quantités exactes, etc."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="objRewards">Récompenses / Notes</label>
+                    <input type="text" id="objRewards" placeholder="🎁 Ex: Slimeballs illimités">
+                </div>
+                <div class="form-group">
+                    <label for="objDifficulty">Difficulté *</label>
+                    <select id="objDifficulty" required>
+                        <option value="facile">⭐ Facile</option>
+                        <option value="moyen" selected>⭐⭐ Moyen</option>
+                        <option value="difficile">⭐⭐⭐ Difficile</option>
+                        <option value="extreme">⭐⭐⭐⭐ Extrême</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Annuler</button>
+                    <button type="submit" class="btn-submit">💾 Créer l'objectif</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let objectives = [
+            {
+                category: "🌌 Advent of Ascension (Dimensions)",
+                icon: "🌌",
+                objectives: [
+                    {
+                        title: "Devenir Maître des Âmes d'Immortallis",
+                        description: "Collecter exactement 64 Soul Tablets dans Immortallis, construire un autel de 5x5 blocs en Ancient Rock, et invoquer Dracyon le boss dragon tout en portant une armure complète Achelos. Vaincre Dracyon sans utiliser de potions de régénération.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Débloquer les armes dimensionnelles légendaires"
+                    },
+                    {
+                        title: "Collection Complète des 7 Lottomen",
+                        description: "Trouver et trader avec les 7 différents Lottomen dispersés dans chaque dimension AoA3 (Abyss, Precasia, L'Vethea, etc.). Obtenir au moins 3 items légendaires différents de chacun d'eux.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Accès aux trades ultra-rares"
+                    },
+                    {
+                        title: "Champion de l'Arène de Creeponia",
+                        description: "Dans Creeponia, construire une arène de combat de 30x30 blocs, invoquer King BamBamBam ET Clunkhead simultanément, et les vaincre tous les deux sans mourir une seule fois. Temps limite: 10 minutes.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Double loot des boss + Trophée rare"
+                    },
+                    {
+                        title: "Maître Mineur de Deeplands",
+                        description: "Extraire 5 stacks complets (320 blocs) de chaque minerai unique de Deeplands: Amethyst Ore, Jade Ore, et Rosite Ore. Utiliser uniquement des outils en Skeletal armor (pas de Fortune).",
+                        difficulty: "difficile",
+                        rewards: "🎁 Fragments d'ascension x50"
+                    },
+                    {
+                        title: "Gardien des 20 Dimensions AoA3",
+                        description: "Visiter les 20 dimensions AoA3, construire un portail permanent pour chacune, et placer une beacon activée avec un bloc de Lunaver dans chaque dimension. Créer un livre journal avec screenshots de chaque beacon.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Titre 'Explorateur Dimensionnel'"
+                    },
+                    {
+                        title: "Chasseur de Bosses Ultime",
+                        description: "Vaincre tous les 21 boss AoA3 dans l'ordre de difficulté croissant en moins de 5 heures de temps de jeu total. Documenter chaque victoire avec l'heure exacte.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Essence divine + Staff légendaire"
+                    }
+                ]
+            },
+            {
+                category: "🏰 Millénaire (Civilisations)",
+                icon: "🏰",
+                objectives: [
+                    {
+                        title: "Empire Commercial Millénaire",
+                        description: "Établir des routes commerciales avec 5 villages Norman différents, 3 villages Byzantins, 2 villages Maya et 1 village Inuit. Maintenir une réputation de 'Respecté' (500+) avec chacun et générer 10,000 deniers par cycle de jour complet.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Accès aux plans de construction légendaires"
+                    },
+                    {
+                        title: "Architecte des 7 Cultures",
+                        description: "Construire une réplique fonctionnelle d'un bâtiment unique de chaque culture Millénaire étendue: Norman, Byzantine, Indien, Inuit, Maya, Hindi et Japonais. Chaque bâtiment doit avoir au moins 15x15 blocs et être fonctionnel avec des villageois assignés.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Plans exclusifs de toutes les cultures"
+                    },
+                    {
+                        title: "Libérateur de Villages Assiégés",
+                        description: "Défendre avec succès 10 villages Millénaire différents contre des raids ennemis sans qu'un seul villageois ne meure. Installer un système de défense automatisé avec des Turrets OpenModular dans chaque village.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Réputation +1000 toutes cultures"
+                    },
+                    {
+                        title: "Maître Fermier Multi-Culturel",
+                        description: "Créer une ferme géante qui produit tous les crops spéciaux de Millénaire: riz Norman (128), maïs Maya (64), patates Inuit (96), et épices Byzantine (32). Automatiser la récolte avec Create mod.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Outils agricoles enchantés"
+                    },
+                    {
+                        title: "Dynastie Royale Byzantine",
+                        description: "Atteindre le rang maximum dans une ville Byzantine, construire un palais impérial de 50x50 blocs avec 10 pièces différentes fonctionnelles, et avoir au moins 50 villageois vivant dans votre empire.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Couronne Byzantine + Cape royale"
+                    }
+                ]
+            },
+            {
+                category: "⚡ Mekanism & Tech Mods",
+                icon: "⚡",
+                objectives: [
+                    {
+                        title: "Usine de Fusion Nucléaire Ultime",
+                        description: "Construire un réacteur de fusion Mekanism produisant exactement 1 Million RF/t, avec système de refroidissement automatisé utilisant 16 Thermodynamic Conductors, et backup d'énergie avec 64 Induction Cells Ultimate.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Composants Mekanism Ultimate x128"
+                    },
+                    {
+                        title: "Système de Quadruple Ore Processing",
+                        description: "Mettre en place la chaîne complète Mekanism: Purification Chamber → Chemical Injection Chamber → Combiner → Crusher, produisant 4 lingots par minerai. Traiter 10 stacks de chaque minerai vanilla (fer, or, cuivre, etc.).",
+                        difficulty: "moyen",
+                        rewards: "🎁 Multiplier d'efficacité énergétique"
+                    },
+                    {
+                        title: "Armure Meka-Suit Parfaite",
+                        description: "Fabriquer un Meka-Suit complet (casque, plastron, jambières, bottes) avec TOUS les modules installés et améliorés au niveau maximum: Jetpack, Locomotion, Protection solaire, Vision nocturne, Nutritional Injection, Gravitational Modulation, et Elytra Unit.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Devenir littéralement invincible"
+                    },
+                    {
+                        title: "Usine Chimique Automatisée",
+                        description: "Créer une usine chimique Mekanism produisant automatiquement: Hydrofluoric Acid (64B), Sulfuric Acid (32B), Ethylene (128B), et Hydrogen Chloride (64B). Toutes les productions doivent être stockées dans des Ultimate Fluid Tanks.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Réacteur chimique quantique"
+                    },
+                    {
+                        title: "Expert en Logistique Thermale",
+                        description: "Construire un réseau Thermal Dynamics avec 50+ itemducts, 30+ fluidducts et 20+ cryo-stabilized fluxducts connectant 15 machines différentes. Le réseau doit transporter simultanément 10 types d'items et 5 fluides différents.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Servo Ultimate x16"
+                    },
+                    {
+                        title: "Maître de Pneumaticcraft",
+                        description: "Créer un système de pression pneumatique avec 32 Advanced Pressure Tubes maintenant exactement 20 bars de pression, alimentant simultanément: 4 Assembly Controllers, 2 Pressure Chamber interfaces, 1 Aerial Interface, et 1 Universal Sensor.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Drones programmables x4"
+                    }
+                ]
+            },
+            {
+                category: "🔮 Applied Energistics 2 & Storage",
+                icon: "🔮",
+                objectives: [
+                    {
+                        title: "Réseau ME Quantique Multi-Dimensionnel",
+                        description: "Construire un ME Network principal avec 16K Storage Cells (x32), 64K Fluid Cells (x16), et établir des connexions Quantum Ring vers 5 dimensions différentes (Overworld, Nether, End, Precasia, Deeplands). Chaque sous-réseau doit avoir son propre ME Controller.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Storage Cells créatives"
+                    },
+                    {
+                        title: "Auto-Crafting Extrême",
+                        description: "Programmer 50 patterns de crafting différents incluant: 10 recettes de machines complexes, 15 potions, 10 items AoA3, 10 composants Mekanism, et 5 recettes Create. Tous les crafts doivent se faire automatiquement via ME Interfaces.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Molecular Assemblers x16"
+                    },
+                    {
+                        title: "Système de Tri Universel",
+                        description: "Créer un système de tri automatique AE2 qui trie TOUS les items du modpack (37,600 items) en catégories. Utiliser Storage Buses, Type Cards, et Fuzzy Cards pour organiser par mod, rareté et type.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Capacité de stockage infinie"
+                    },
+                    {
+                        title: "Terminal Sans Fil Ultimate",
+                        description: "Fabriquer le Wireless Ultimate Terminal (WUT) avec Infinity Booster Card, et établir une connexion fonctionnelle depuis les dimensions les plus éloignées (Shyrelands, Immortallis). Tester l'accès dans 10 dimensions différentes.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Accès réseau illimité"
+                    },
+                    {
+                        title: "Maître des Crystal Seeds",
+                        description: "Cultiver et récolter 64 Pure Certus Quartz Crystal, 64 Pure Fluix Crystal, et 32 Pure Nether Quartz Crystal en utilisant 16 Crystal Growth Accelerators. Automatiser le processus avec Create mod.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Seeds mystiques infinies"
+                    }
+                ]
+            },
+            {
+                category: "🚂 Create & Engineering",
+                icon: "🚂",
+                objectives: [
+                    {
+                        title: "Usine de Production Rotative Massive",
+                        description: "Construire une méga-usine Create avec: 16 Water Wheels générant 8192 SU, 8 Crushing Wheels pour ore processing, 4 Mechanical Mixers, 2 Mechanical Presses, et 1 système de convoyeur automatisé transportant 10 items différents simultanément.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Blueprints d'usine légendaires"
+                    },
+                    {
+                        title: "Ligne de Chemin de Fer Intercontinentale",
+                        description: "Créer un réseau ferroviaire Create reliant 10 bases/villages différents avec des trains automatisés. Chaque train doit avoir: 1 locomotive, 3 wagons de cargo, 1 wagon passagers. Installer des gares avec systèmes d'embarquement automatiques.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Trains décorés + Rails illimités"
+                    },
+                    {
+                        title: "Ferme Automatisée Totale Create",
+                        description: "Automatiser avec Create: ferme de blé (9x9), canne à sucre (64 blocks), citrouilles/melons (11x11), arbres (16 arbres), animaux (10 de chaque type). Tout doit être récolté, stocké et transformé automatiquement.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Mechanical Harvesters x8"
+                    },
+                    {
+                        title: "Système de Production de Laiton Extrême",
+                        description: "Créer une chaîne complète: mine de cuivre → mine de zinc → crushing wheels → smelting → mechanical mixer pour Brass. Produire 10 stacks de Brass Ingots par heure avec système de stockage automatique.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Composants en laiton dorés"
+                    },
+                    {
+                        title: "Ascenseur Vertical Multi-Étages",
+                        description: "Construire un système d'ascenseurs Create avec Rope Pulleys connectant 10 étages différents (de Y=10 à Y=250). Chaque étage doit avoir une plateforme d'arrêt automatique et un système d'appel par bouton.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Systèmes de transport verticaux"
+                    }
+                ]
+            },
+            {
+                category: "🌙 Astral Sorcery & Magic",
+                icon: "🌙",
+                objectives: [
+                    {
+                        title: "Attunement aux 5 Constellations Majeures",
+                        description: "S'harmoniser personnellement avec les 5 constellations principales: Aevitas, Vicio, Evorsio, Armara et Discidia. Construire un Attunement Altar parfait de 15x15 avec Spectral Relays optimaux pour chaque constellation.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Capacités astrales permanentes"
+                    },
+                    {
+                        title: "Collection des 12 Constellations Zodiacales",
+                        description: "Découvrir et documenter les 12 constellations en observant le ciel nocturne. Créer des Constellation Papers pour chacune: Aquarius, Aries, Cancer, Capricorn, Gemini, Leo, Libra, Pisces, Sagittarius, Scorpio, Taurus, Virgo.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Livre des étoiles complété"
+                    },
+                    {
+                        title: "Réseau de Lentilles Prismatiques",
+                        description: "Construire un réseau starlight avec 20 Lenses différentes (Damage, Regeneration, Growth, etc.) connectées à un Collector Crystal parfait (900+ collectivity). Le réseau doit couvrir une zone de 50x50 blocs.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Cristaux parfaits x5"
+                    },
+                    {
+                        title: "Maître Forgeron Céleste",
+                        description: "Forger au Starlight Infuser: 16 Outils/Armes différents avec des pierres précieuses célestes (Resonating Gem), tous améliorés avec des Stellar Refraction Table upgrades optimaux pour chaque outil.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Équipement astral suprême"
+                    },
+                    {
+                        title: "Iridescent Altar Suprême",
+                        description: "Construire l'Iridescent Altar (tier 4 ultime) avec la structure complète: 29x29 blocs, 16 Spectral Relays, 4 Celestial Gateways, et marble structures parfaites. Crafter 10 items tier 4 différents.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Pouvoir de transmutation céleste"
+                    }
+                ]
+            },
+            {
+                category: "🐉 Draconic Evolution",
+                icon: "🐉",
+                objectives: [
+                    {
+                        title: "Vaincre le Chaos Guardian Légitimement",
+                        description: "Tuer le Chaos Guardian dans The End avec une armure Wyvern complète (pas Draconic), utilisant uniquement Draconic Staff of Power et Bow. Collecter tous les Chaos Shards (minimum 24) sans mourir.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Accès aux items Chaotic"
+                    },
+                    {
+                        title: "Arsenal Draconique Complet",
+                        description: "Crafter l'équipement complet Draconic: Armor set complet (4 pièces), Draconic Staff of Power, Draconic Bow, Draconic Sword, Draconic Pickaxe, Draconic Shovel, Draconic Axe, Draconic Hoe. Tous upgradés au maximum.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Devenir un demi-dieu"
+                    },
+                    {
+                        title: "Énergie Draconique Infinie",
+                        description: "Construire un Energy Core Draconic tier 8 (capacité 9.2 Trillion RF) avec 36 Energy Pylons, alimenté par 16 Draconic Reactors produisant collectivement 5 Million RF/t. Remplir le core à 100%.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Pouvoir énergétique illimité"
+                    },
+                    {
+                        title: "Ferme de Draconium Automatisée",
+                        description: "Créer une ferme End automatisée qui collecte Draconium Ore des End Stone. Utiliser 16 RFTools Builders avec quarry cards, transporter via EnderIO conduits, traiter avec Mekanism x4 ore processing. Production: 64 Draconium/heure.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Lingots draconiques x128"
+                    }
+                ]
+            },
+            {
+                category: "🚀 Galacticraft & Planètes",
+                icon: "🚀",
+                objectives: [
+                    {
+                        title: "Colonisateur Interplanétaire",
+                        description: "Établir des bases permanentes sur TOUTES les planètes: Moon, Mars, Venus (ExtraPlanets), Io, Europa, Ganymede, Callisto, Saturn, Uranus, Neptune, Pluto. Chaque base doit avoir: Oxygen Bubble (10x10), Crop Farm, Machine Room, Living Quarters.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Titre 'Empereur Galactique'"
+                    },
+                    {
+                        title: "Flotte Spatiale Multi-Types",
+                        description: "Construire et piloter: 1 Tier 1 Rocket (Moon), 1 Tier 2 Rocket (Mars), 1 Tier 3 Rocket (Asteroids), 1 Tier 4 Rocket (ExtraPlanets outer), 1 Space Station personnalisée avec 50+ blocs.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Schémas de vaisseaux avancés"
+                    },
+                    {
+                        title: "Mineur d'Astéroïdes Professionnel",
+                        description: "Miner dans la ceinture d'astéroïdes Galacticraft et collecter: 128 Ilmenite Ore, 64 Aluminum Ore, 32 Gold Ore (space), 16 Iron Ore (space), 8 Redstone Ore (space), et 4 Diamond Ore (space).",
+                        difficulty: "moyen",
+                        rewards: "🎁 Minerais spatiaux rares x64"
+                    },
+                    {
+                        title: "Station Orbitale Gigantesque",
+                        description: "Construire une Space Station de 100x100 blocs avec: Docking Bay (4 slots), Hydroponics Farm (32x32), Command Center, Sleeping Quarters (10 lits), Observation Deck vitré (20x20).",
+                        difficulty: "difficile",
+                        rewards: "🎁 QG spatial personnel"
+                    },
+                    {
+                        title: "Système de Terraformation Vénusienne",
+                        description: "Sur Venus, créer une zone terraformée de 50x50 blocs avec température contrôlée, atmosphère respirable (Oxygen Collectors x16), eau liquide, et faire pousser 10 types de plantes Overworld différentes.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Technologie de terraformation"
+                    }
+                ]
+            },
+            {
+                category: "⚔️ Combat & Armes",
+                icon: "⚔️",
+                objectives: [
+                    {
+                        title: "Maître des Armes à Feu CGM",
+                        description: "Collecter et upgrader toutes les armes CGM: Pistol, Shotgun, Rifle, Assault Rifle, Sniper Rifle, Bazooka, Grenade Launcher, Machine Gun, Heavy Rifle, et Mini Gun. Chacune avec au moins 3 attachments différents (scope, grip, barrel, etc.).",
+                        difficulty: "difficile",
+                        rewards: "🎁 Munitions infinies"
+                    },
+                    {
+                        title: "Collection d'Épées Légendaires",
+                        description: "Obtenir ces épées mythiques: Infinity Blade (AoA3), Draconic Sword, Bound Blade (Blood Magic), Starlight Infused Sword (Astral), Terra Blade (Botania), Elemental Sword (Wizardry). Toutes enchantées optimalement.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Salle d'armes légendaire"
+                    },
+                    {
+                        title: "Arsenal de Wizardry Complet",
+                        description: "Débloquer tous les sorts Electroblob's Wizardry (140+ sorts), créer 4 sets de robes maîtres (Fire, Ice, Lightning, Necromancy), et obtenir 10 Wands de tier Master avec upgrades complètes.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Grimoire de l'archimage"
+                    },
+                    {
+                        title: "Gladiateur des Boss",
+                        description: "Créer une arène de boss-fighting de 50x50 et vaincre en série (sans pause entre): Wither x3, Elder Guardian x5, Gaia Guardian (Botania), Chaos Guardian, King BamBamBam (AoA3), Nethengeic Wither. Sans mourir.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Trophées de champion"
+                    },
+                    {
+                        title: "Collection de Boucliers Spartan",
+                        description: "Fabriquer les 15 types de boucliers Spartan Shields: Wood, Stone, Iron, Gold, Diamond, Obsidian, Emerald, Bronze, Steel, Lead, Silver, Nickel, Invar, Aluminum, Constantan. Tous avec banners personnalisés.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Boucliers indestructibles"
+                    }
+                ]
+            },
+            {
+                category: "🏗️ Construction & Décoration",
+                icon: "🏗️",
+                objectives: [
+                    {
+                        title: "Manoir Multi-Mod de 200x200",
+                        description: "Construire un méga-manoir de 200x200 blocs incorporant des blocks de 20 mods différents: Chisel, Decocraft, MrCrayfish Furniture, Bibliocraft, etc. Minimum 50 pièces fonctionnelles différentes avec décoration complète.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Palais des merveilles"
+                    },
+                    {
+                        title: "Village Thématique Multi-Cultures",
+                        description: "Créer un village de 50x50 avec 4 quartiers représentant des architectures différentes: Médiéval (Norman), Oriental (Japonais), Moderne (MrCrayfish), Futuriste (Space stations). Chaque quartier avec 10+ bâtiments.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Plans architecturaux uniques"
+                    },
+                    {
+                        title: "Jardin Botanique Complet",
+                        description: "Créer un jardin exhibant TOUTES les plantes du modpack: 32 types Botania, 15 types AoA3, 20 types Biomes O'Plenty, 10 types Natura, organisés en sections thématiques avec chemins Macaw's Paths.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Serres automatisées"
+                    },
+                    {
+                        title: "Musée des Artefacts",
+                        description: "Construire un musée de 70x70 avec 20 salles d'exposition, chacune dédiée à un mod majeur. Utiliser Bibliocraft Display Cases, Item Frames, Armor Stands pour exposer 500+ items rares différents.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Collection complète documentée"
+                    },
+                    {
+                        title: "Système d'Éclairage Magique",
+                        description: "Installer dans une zone de 100x100: 64 Fairy Lights de couleurs variées, 32 Simply Lights modernes, 16 Luminator LED (IndustrialCraft), 8 Illuminators (Astral Sorcery), créant un spectacle lumineux nocturne.",
+                        difficulty: "facile",
+                        rewards: "🎁 Zone de lumière enchantée"
+                    }
+                ]
+            },
+            {
+                category: "🌿 Botania & Nature Magic",
+                icon: "🌿",
+                objectives: [
+                    {
+                        title: "Vaincre Gaia Guardian II Solo",
+                        description: "Invoquer et vaincre le Gaia Guardian en difficulté II (hardmode) sans armure Terrasteel, en utilisant uniquement les armes/outils Botania tier 1-2. Collecter les 8 drops Gaia Spirits minimum.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Essence de Gaia"
+                    },
+                    {
+                        title: "Jardin de Mana Automatisé",
+                        description: "Créer un système de génération de mana avec toutes les fleurs: Endoflame x16, Hydroangeas x12, Thermalily x8, Rosa Arcana x4, Munchdew x4, Dandelifeon x2. Production totale: 1M mana/minute.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Mana Pool créatif"
+                    },
+                    {
+                        title: "Équipement Terrasteel Ultime",
+                        description: "Forger un set complet Terrasteel: Armor (4 pièces), Terra Blade, Terra Shatterer, Terra Truncator, Terra Firma Rod, et les améliorer avec enchantements optimaux + Mana Infusion.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Pouvoir de la Terre"
+                    },
+                    {
+                        title: "Système de Crafting Corporea",
+                        description: "Mettre en place un réseau Corporea avec: 1 Corporea Index, 16 Corporea Funnels, 8 Corporea Interceptors, 32+ Corporea Sparks, connectant 50+ coffres différents. Intégrer avec AE2 via Storage Bus.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Stockage magique ultime"
+                    },
+                    {
+                        title: "Collection des 16 Pétales Mystiques",
+                        description: "Cultiver et collecter au moins 64 de chaque des 16 couleurs de Mystical Petals, créer un arc-en-ciel géant de fleurs Mystical, et utiliser tous les pétales pour crafter chaque type de Rune Botania.",
+                        difficulty: "facile",
+                        rewards: "🎁 Jardin mystique éternel"
+                    }
+                ]
+            },
+            {
+                category: "🌋 Nether & End",
+                icon: "🌋",
+                objectives: [
+                    {
+                        title: "Forteresse Nether Conquise",
+                        description: "Trouver une Nether Fortress, éliminer tous les Blazes et Wither Skeletons, convertir la forteresse en base fonctionnelle avec farms de Blaze Rods (16 spawners), Wither Skeleton Skulls (8 spawners), système de défense automatisé.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Forteresse infernale personnelle"
+                    },
+                    {
+                        title: "Route Sécurisée Nether de 5000 blocs",
+                        description: "Construire une route protégée traversant le Nether sur 5000 blocs avec: tunnel 3x3 en obsidienne, éclairage tous les 10 blocs, points de repos tous les 500 blocs avec coffres et lits, et portails connectés tous les 1000 blocs.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Réseau de transport infernal"
+                    },
+                    {
+                        title: "Ferme de Netherite Automatisée",
+                        description: "Créer une ferme Ancient Debris dans le Nether utilisant RFTools Builder avec Quarry Card (Y=8-22), processing automatique en Netherite Scraps, puis Netherite Ingots. Production: 16 Netherite Ingots/heure.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Netherite illimité"
+                    },
+                    {
+                        title: "Conquérant des Îles End",
+                        description: "Explorer et cartographier 20 îles End différentes, construire des ponts sécurisés entre chacune, et installer un Ender Chest + Crafting Table sur chaque île. Vaincre 5 End Cities et collecter 10 Elytras.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Élytras enchantées x10"
+                    },
+                    {
+                        title: "Jardin d'End Stone Purifié",
+                        description: "Dans l'End, purifier une zone de 50x50 End Stone, la transformer en Grass blocks avec Silk Touch, faire pousser des arbres Overworld, créer un lac d'eau, et construire une serre paradisiaque avec 20 types de plantes.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Oasis dimensionnel"
+                    }
+                ]
+            },
+            {
+                category: "🔧 Automation & Logistics",
+                icon: "🔧",
+                objectives: [
+                    {
+                        title: "Central Logistique Omnium",
+                        description: "Construire un hub central connectant tous vos systèmes via: AE2 Quantum Network, Mekanism Logistical Transporters, Thermal Dynamics Itemducts, EnderIO Conduits, Create Mechanical Belts. 100+ connexions différentes.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Contrôle total automatisé"
+                    },
+                    {
+                        title: "Système de Smelting 10x",
+                        description: "Créer 10 lignes parallèles de smelting utilisant différentes méthodes: Electric Furnaces (IE), Induction Smelters (TE), Energized Smelters (Mek), Alloy Furnaces. Traiter simultanément 10 types de minerais différents.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Fonderie industrielle"
+                    },
+                    {
+                        title: "Mob Farm Multi-Dimensions",
+                        description: "Construire des mob farms dans 5 dimensions différentes: Overworld (hostile), Nether (zombie pigmen), End (endermen), Precasia (AoA3 mobs), Deeplands. Chacune produisant 1000 drops/heure minimum.",
+                        difficulty: "difficile",
+                        rewards: "🎁 Loot infini toutes dimensions"
+                    },
+                    {
+                        title: "Système d'Autocrafting Ultime",
+                        description: "Programmer via AE2 + OpenComputers des autocrafts pour 100 items différents: machines, tools, weapons, potions, food. Le système doit détecter automatiquement les ressources manquantes et les produire.",
+                        difficulty: "extreme",
+                        rewards: "🎁 Crafting pensant"
+                    },
+                    {
+                        title: "Recyclage Total des Déchets",
+                        description: "Créer un système qui recycle TOUS les items indésirables: cobblestone → lava (Crucibles), dirt → clay (Botania), gravel → flint → tools → recyclage. Aucun déchet jeté, tout réutilisé.",
+                        difficulty: "moyen",
+                        rewards: "🎁 Économie circulaire parfaite"
+                    }
+                ]
+            }
+        ];
+
+        // État de l'application
+        let completedObjectives = JSON.parse(localStorage.getItem('completedObjectives')) || {};
+        let collapsedCategories = JSON.parse(localStorage.getItem('collapsedCategories')) || {};
+        let customCategories = JSON.parse(localStorage.getItem('customCategories')) || [];
+        let modifiedObjectives = JSON.parse(localStorage.getItem('modifiedObjectives')) || {};
+        let deletedCategories = JSON.parse(localStorage.getItem('deletedCategories')) || [];
+        let selectedCategories = [];
+        let currentFilter = 'all';
+
+        // Initialisation
+        function init() {
+            loadCustomCategories();
+            renderCategories();
+            updateStats();
+            setupEventListeners();
+            populateCategoryDropdown();
+        }
+
+        // Charger les catégories personnalisées
+        function loadCustomCategories() {
+            // Filtrer les catégories supprimées
+            objectives = objectives.filter(cat => !deletedCategories.includes(cat.category));
+            
+            // Ajouter les catégories personnalisées au début
+            customCategories.forEach(cat => {
+                const existingIndex = objectives.findIndex(o => o.category === cat.category);
+                if (existingIndex === -1 && !deletedCategories.includes(cat.category)) {
+                    objectives.unshift(cat);
+                } else if (existingIndex !== -1) {
+                    // Mettre à jour la catégorie existante
+                    objectives[existingIndex] = cat;
+                }
+            });
+            
+            // Appliquer les modifications sauvegardées aux objectifs de toutes les catégories
+            Object.keys(modifiedObjectives).forEach(categoryName => {
+                const catIndex = objectives.findIndex(o => o.category === categoryName);
+                if (catIndex !== -1) {
+                    objectives[catIndex].objectives = modifiedObjectives[categoryName];
+                }
+            });
+        }
+
+        // Rendu des catégories
+        function renderCategories() {
+            const container = document.getElementById('categoriesContainer');
+            container.innerHTML = '';
+
+            objectives.forEach((category, catIndex) => {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'category';
+                categoryDiv.dataset.category = catIndex;
+
+                const completed = category.objectives.filter(obj => 
+                    completedObjectives[`${catIndex}-${category.objectives.indexOf(obj)}`]
+                ).length;
+                const total = category.objectives.length;
+                const progress = `${completed}/${total}`;
+
+                const isCollapsed = collapsedCategories[catIndex] || false;
+
+                categoryDiv.innerHTML = `
+                    <div class="category-header" onclick="toggleCategory(${catIndex})">
+                        <span class="category-icon">${category.icon}</span>
+                        <span class="category-title">${category.category}</span>
+                        <span class="category-progress">${progress}</span>
+                        <span class="toggle-icon ${isCollapsed ? 'collapsed' : ''}">▼</span>
+                    </div>
+                    <div class="objectives ${isCollapsed ? 'collapsed' : ''}" id="objectives-${catIndex}">
+                        ${category.objectives.map((obj, objIndex) => renderObjective(obj, catIndex, objIndex)).join('')}
+                    </div>
+                `;
+
+                container.appendChild(categoryDiv);
+            });
+
+            applyFilter();
+        }
+
+        // Rendu d'un objectif
+        function renderObjective(objective, catIndex, objIndex) {
+            const key = `${catIndex}-${objIndex}`;
+            const isCompleted = completedObjectives[key] || false;
+
+            return `
+                <div class="objective ${isCompleted ? 'completed' : ''}" data-difficulty="${objective.difficulty}" data-completed="${isCompleted}">
+                    <input type="checkbox" class="checkbox" ${isCompleted ? 'checked' : ''} 
+                           onchange="toggleObjective('${key}')" />
+                    <div class="objective-content">
+                        <div class="objective-title">
+                            ${objective.title}
+                            <span class="difficulty ${objective.difficulty}">${
+                                objective.difficulty === 'facile' ? '⭐ Facile' :
+                                objective.difficulty === 'moyen' ? '⭐⭐ Moyen' :
+                                objective.difficulty === 'difficile' ? '⭐⭐⭐ Difficile' :
+                                '⭐⭐⭐⭐ Extrême'
+                            }</span>
+                            <button class="delete-btn" onclick="deleteObjective(${catIndex}, ${objIndex}); event.stopPropagation();">🗑️ Supprimer</button>
+                        </div>
+                        <div class="objective-description">${objective.description}</div>
+                        ${objective.rewards ? `<div class="objective-rewards">${objective.rewards}</div>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Toggle objectif
+        function toggleObjective(key) {
+            completedObjectives[key] = !completedObjectives[key];
+            localStorage.setItem('completedObjectives', JSON.stringify(completedObjectives));
+            renderCategories();
+            updateStats();
+        }
+
+        // Toggle catégorie
+        function toggleCategory(catIndex) {
+            collapsedCategories[catIndex] = !collapsedCategories[catIndex];
+            localStorage.setItem('collapsedCategories', JSON.stringify(collapsedCategories));
+            renderCategories();
+        }
+
+        // Mise à jour des statistiques
+        function updateStats() {
+            let totalObjectivesCount = 0;
+            let completedCount = 0;
+
+            objectives.forEach((category, catIndex) => {
+                category.objectives.forEach((obj, objIndex) => {
+                    totalObjectivesCount++;
+                    if (completedObjectives[`${catIndex}-${objIndex}`]) {
+                        completedCount++;
+                    }
+                });
+            });
+
+            document.getElementById('totalCompleted').textContent = completedCount;
+            document.getElementById('totalObjectives').textContent = totalObjectivesCount;
+            document.getElementById('totalRemaining').textContent = totalObjectivesCount - completedCount;
+
+            const percentage = totalObjectivesCount > 0 ? Math.round((completedCount / totalObjectivesCount) * 100) : 0;
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = percentage + '%';
+            progressBar.textContent = percentage + '%';
+        }
+
+        // Application des filtres
+        function applyFilter() {
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+            
+            document.querySelectorAll('.category').forEach(cat => {
+                const catIndex = parseInt(cat.dataset.category);
+                const category = objectives[catIndex];
+                
+                // Vérifier si la catégorie est sélectionnée
+                const categoryMatch = selectedCategories.length === 0 || 
+                                     selectedCategories.includes(category.category);
+                
+                if (!categoryMatch) {
+                    cat.style.display = 'none';
+                    return;
+                }
+                
+                let visibleCount = 0;
+                cat.querySelectorAll('.objective').forEach(obj => {
+                    const matchesFilter = 
+                        currentFilter === 'all' ||
+                        (currentFilter === 'completed' && obj.dataset.completed === 'true') ||
+                        (currentFilter === 'pending' && obj.dataset.completed === 'false') ||
+                        obj.dataset.difficulty === currentFilter;
+
+                    const matchesSearch = 
+                        obj.textContent.toLowerCase().includes(searchTerm);
+
+                    if (matchesFilter && matchesSearch) {
+                        obj.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        obj.style.display = 'none';
+                    }
+                });
+                
+                cat.style.display = visibleCount > 0 ? 'block' : 'none';
+            });
+        }
+
+        // Configuration des event listeners
+        function setupEventListeners() {
+            // Filtres
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.dataset.filter;
+                    applyFilter();
+                });
+            });
+
+            // Recherche
+            document.getElementById('searchBox').addEventListener('input', applyFilter);
+            
+            // Fermer le dropdown si on clique en dehors
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('.dropdown-btn') && !event.target.closest('.dropdown-filter')) {
+                    const dropdown = document.getElementById('categoryDropdown');
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                }
+            });
+        }
+
+        // Peupler le dropdown de catégories
+        function populateCategoryDropdown() {
+            const container = document.getElementById('categoryCheckboxes');
+            container.innerHTML = '';
+            
+            objectives.forEach((cat, index) => {
+                const div = document.createElement('div');
+                div.className = 'dropdown-item';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `cat-${index}`;
+                checkbox.checked = selectedCategories.length === 0 || selectedCategories.includes(cat.category);
+                checkbox.addEventListener('change', function() {
+                    toggleCategoryFilter(cat.category);
+                });
+                
+                const label = document.createElement('label');
+                label.htmlFor = `cat-${index}`;
+                label.textContent = `${cat.icon} ${cat.category}`;
+                label.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    checkbox.checked = !checkbox.checked;
+                    toggleCategoryFilter(cat.category);
+                });
+                
+                div.appendChild(checkbox);
+                div.appendChild(label);
+                container.appendChild(div);
+            });
+        }
+
+        // Toggle dropdown
+        function toggleDropdown() {
+            const dropdown = document.getElementById('categoryDropdown');
+            dropdown.classList.toggle('show');
+        }
+
+        // Toggle filtre de catégorie
+        function toggleCategoryFilter(categoryName) {
+            const index = selectedCategories.indexOf(categoryName);
+            
+            if (index > -1) {
+                selectedCategories.splice(index, 1);
+            } else {
+                selectedCategories.push(categoryName);
+            }
+            
+            updateCategoryBadge();
+            applyFilter();
+        }
+
+        // Sélectionner toutes les catégories
+        function selectAllCategories() {
+            selectedCategories = [];
+            document.querySelectorAll('#categoryCheckboxes input[type="checkbox"]').forEach(cb => {
+                cb.checked = true;
+            });
+            updateCategoryBadge();
+            applyFilter();
+        }
+
+        // Désélectionner toutes les catégories
+        function clearAllCategories() {
+            selectedCategories = [];
+            document.querySelectorAll('#categoryCheckboxes input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            updateCategoryBadge();
+            applyFilter();
+        }
+
+        // Mettre à jour le badge de compteur
+        function updateCategoryBadge() {
+            const badge = document.getElementById('categoryCount');
+            const btn = document.querySelector('.dropdown-btn');
+            const count = selectedCategories.length;
+            
+            if (count > 0 && count < objectives.length) {
+                badge.textContent = count;
+                badge.style.display = 'inline-block';
+                btn.classList.add('active');
+            } else {
+                badge.style.display = 'none';
+                btn.classList.remove('active');
+            }
+        }
+
+        // Réinitialisation
+        function resetProgress() {
+            if (confirm('⚠️ Êtes-vous sûr de vouloir réinitialiser TOUTE votre progression ? Cette action est irréversible !')) {
+                localStorage.removeItem('completedObjectives');
+                localStorage.removeItem('collapsedCategories');
+                completedObjectives = {};
+                collapsedCategories = {};
+                renderCategories();
+                updateStats();
+                alert('✅ Progression réinitialisée avec succès !');
+            }
+        }
+
+        // Ouvrir le modal
+        function openModal() {
+            document.getElementById('objectiveModal').classList.add('active');
+            document.getElementById('objectiveForm').reset();
+            populateCategorySelect();
+        }
+
+        // Peupler le sélecteur de catégories
+        function populateCategorySelect() {
+            const select = document.getElementById('objCategory');
+            select.innerHTML = '';
+            objectives.forEach((cat, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                option.textContent = `${cat.icon} ${cat.category}`;
+                select.appendChild(option);
+            });
+        }
+
+        // Ouvrir le modal de gestion des catégories
+        function openCategoryModal() {
+            document.getElementById('categoryModal').classList.add('active');
+            renderCategoryList();
+        }
+
+        // Fermer le modal de catégories
+        function closeCategoryModal() {
+            document.getElementById('categoryModal').classList.remove('active');
+        }
+
+        // Rendre la liste des catégories
+        function renderCategoryList() {
+            const list = document.getElementById('categoryList');
+            list.innerHTML = '<h3 style="margin-bottom: 15px; color: #2d3748;">Catégories existantes</h3>';
+            
+            objectives.forEach((cat, index) => {
+                const isCustom = customCategories.some(c => c.category === cat.category);
+                const itemCount = cat.objectives ? cat.objectives.length : 0;
+                
+                const div = document.createElement('div');
+                div.className = 'category-item';
+                div.innerHTML = `
+                    <div class="category-item-info">
+                        <span style="font-size: 1.5em;">${cat.icon}</span>
+                        <span style="font-weight: 600;">${cat.category}</span>
+                        <span style="color: #718096; font-size: 0.9em;">(${itemCount} objectifs)</span>
+                        ${!isCustom ? '<span style="color: #667eea; font-size: 0.75em; margin-left: 8px; background: #edf2f7; padding: 2px 8px; border-radius: 10px;">Prédéfinie</span>' : ''}
+                    </div>
+                    <button class="category-delete-btn" onclick="deleteCategory(${index}, ${isCustom})">🗑️ Supprimer</button>
+                `;
+                list.appendChild(div);
+            });
+        }
+
+        // Ajouter une nouvelle catégorie
+        function addNewCategory() {
+            const name = document.getElementById('newCategoryName').value.trim();
+            const icon = document.getElementById('newCategoryIcon').value.trim() || '📌';
+            
+            if (!name) {
+                alert('⚠️ Veuillez entrer un nom de catégorie');
+                return;
+            }
+
+            // Vérifier si la catégorie existe déjà
+            if (objectives.some(cat => cat.category === name)) {
+                alert('⚠️ Une catégorie avec ce nom existe déjà');
+                return;
+            }
+
+            const newCategory = {
+                category: name,
+                icon: icon,
+                objectives: []
+            };
+
+            customCategories.push(newCategory);
+            objectives.unshift(newCategory);
+            localStorage.setItem('customCategories', JSON.stringify(customCategories));
+
+            document.getElementById('newCategoryName').value = '';
+            document.getElementById('newCategoryIcon').value = '';
+            
+            renderCategoryList();
+            renderCategories();
+            populateCategoryDropdown();
+            
+            alert('✅ Catégorie créée avec succès !');
+        }
+
+        // Supprimer une catégorie
+        function deleteCategory(catIndex, isCustom) {
+            const category = objectives[catIndex];
+            const itemCount = category.objectives ? category.objectives.length : 0;
+            
+            // Message de confirmation différent pour les catégories prédéfinies
+            let confirmMessage = '';
+            if (!isCustom) {
+                if (itemCount > 0) {
+                    confirmMessage = `⚠️ ATTENTION: Vous êtes sur le point de supprimer une catégorie PRÉDÉFINIE "${category.category}" contenant ${itemCount} objectif(s).\n\n⚠️ Cette action supprimera définitivement tous ces objectifs et ne pourra pas être annulée!\n\nÊtes-vous absolument certain de vouloir continuer ?`;
+                } else {
+                    confirmMessage = `⚠️ ATTENTION: Vous êtes sur le point de supprimer une catégorie PRÉDÉFINIE "${category.category}".\n\n⚠️ Cette action ne pourra pas être annulée!\n\nÊtes-vous absolument certain de vouloir continuer ?`;
+                }
+            } else {
+                if (itemCount > 0) {
+                    confirmMessage = `⚠️ Cette catégorie contient ${itemCount} objectif(s). Êtes-vous sûr de vouloir la supprimer avec tous ses objectifs ?`;
+                } else {
+                    confirmMessage = `❌ Êtes-vous sûr de vouloir supprimer la catégorie "${category.category}" ?`;
+                }
+            }
+            
+            if (!confirm(confirmMessage)) {
+                return;
+            }
+
+            // Supprimer les complétions associées
+            Object.keys(completedObjectives).forEach(key => {
+                const [cIdx] = key.split('-').map(Number);
+                if (cIdx === catIndex) {
+                    delete completedObjectives[key];
+                }
+            });
+
+            // Réorganiser les clés de complétion
+            const updatedCompletions = {};
+            Object.keys(completedObjectives).forEach(k => {
+                const [cIdx, oIdx] = k.split('-').map(Number);
+                if (cIdx > catIndex) {
+                    updatedCompletions[`${cIdx - 1}-${oIdx}`] = completedObjectives[k];
+                } else {
+                    updatedCompletions[k] = completedObjectives[k];
+                }
+            });
+            completedObjectives = updatedCompletions;
+
+            // Supprimer la catégorie
+            if (isCustom) {
+                customCategories = customCategories.filter(c => c.category !== category.category);
+                localStorage.setItem('customCategories', JSON.stringify(customCategories));
+            }
+            
+            // Ajouter la catégorie à la liste des catégories supprimées
+            if (!deletedCategories.includes(category.category)) {
+                deletedCategories.push(category.category);
+                localStorage.setItem('deletedCategories', JSON.stringify(deletedCategories));
+            }
+            
+            // Supprimer des objectifs modifiés si présent
+            if (modifiedObjectives[category.category]) {
+                delete modifiedObjectives[category.category];
+                localStorage.setItem('modifiedObjectives', JSON.stringify(modifiedObjectives));
+            }
+            
+            objectives.splice(catIndex, 1);
+
+            // Sauvegarder
+            localStorage.setItem('completedObjectives', JSON.stringify(completedObjectives));
+
+            renderCategoryList();
+            renderCategories();
+            updateStats();
+            populateCategoryDropdown();
+            
+            alert('✅ Catégorie supprimée avec succès !');
+        }
+
+        // Fermer le modal
+        function closeModal() {
+            document.getElementById('objectiveModal').classList.remove('active');
+        }
+
+        // Fermer le modal en cliquant en dehors
+        window.onclick = function(event) {
+            const modal = document.getElementById('objectiveModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Sauvegarder un objectif personnalisé
+        function saveCustomObjective(event) {
+            event.preventDefault();
+
+            const categoryIndex = parseInt(document.getElementById('objCategory').value);
+            const newObjective = {
+                title: document.getElementById('objTitle').value,
+                description: document.getElementById('objDescription').value,
+                rewards: document.getElementById('objRewards').value || '',
+                difficulty: document.getElementById('objDifficulty').value
+            };
+
+            objectives[categoryIndex].objectives.push(newObjective);
+            
+            // Sauvegarder les modifications
+            const categoryName = objectives[categoryIndex].category;
+            const isCustomCategory = customCategories.some(c => c.category === categoryName);
+            
+            if (isCustomCategory) {
+                const customCat = customCategories.find(c => c.category === categoryName);
+                customCat.objectives = objectives[categoryIndex].objectives;
+                localStorage.setItem('customCategories', JSON.stringify(customCategories));
+            } else {
+                // Pour les catégories prédéfinies, sauvegarder dans modifiedObjectives
+                modifiedObjectives[categoryName] = objectives[categoryIndex].objectives;
+                localStorage.setItem('modifiedObjectives', JSON.stringify(modifiedObjectives));
+            }
+
+            renderCategories();
+            updateStats();
+            closeModal();
+
+            // Animation de confirmation
+            const btn = document.querySelector('.add-objective-btn');
+            const originalText = btn.textContent;
+            btn.textContent = '✅ Objectif créé !';
+            btn.style.background = 'linear-gradient(135deg, #48bb78 0%, #38a169 100%)';
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+            }, 2000);
+        }
+
+        // Supprimer un objectif
+        function deleteObjective(catIndex, objIndex) {
+            if (confirm('❌ Êtes-vous sûr de vouloir supprimer cet objectif ?')) {
+                // Supprimer la complétion associée
+                const key = `${catIndex}-${objIndex}`;
+                delete completedObjectives[key];
+
+                // Réorganiser les clés de complétion pour les objectifs suivants dans la même catégorie
+                const updatedCompletions = {};
+                Object.keys(completedObjectives).forEach(k => {
+                    const [cIdx, oIdx] = k.split('-').map(Number);
+                    if (cIdx === catIndex && oIdx > objIndex) {
+                        updatedCompletions[`${catIndex}-${oIdx - 1}`] = completedObjectives[k];
+                    } else {
+                        updatedCompletions[k] = completedObjectives[k];
+                    }
+                });
+                completedObjectives = updatedCompletions;
+
+                // Supprimer l'objectif
+                objectives[catIndex].objectives.splice(objIndex, 1);
+                
+                // Sauvegarder les modifications pour toutes les catégories
+                const categoryName = objectives[catIndex].category;
+                const isCustomCategory = customCategories.some(c => c.category === categoryName);
+                
+                if (isCustomCategory) {
+                    const customCat = customCategories.find(c => c.category === categoryName);
+                    customCat.objectives = objectives[catIndex].objectives;
+                    localStorage.setItem('customCategories', JSON.stringify(customCategories));
+                } else {
+                    // Pour les catégories prédéfinies, sauvegarder dans modifiedObjectives
+                    modifiedObjectives[categoryName] = objectives[catIndex].objectives;
+                    localStorage.setItem('modifiedObjectives', JSON.stringify(modifiedObjectives));
+                }
+                
+                // Sauvegarder les complétions
+                localStorage.setItem('completedObjectives', JSON.stringify(completedObjectives));
+
+                // Rafraîchir l'affichage
+                renderCategories();
+                updateStats();
+            }
+        }
+
+        // Lancement de l'application
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "id": "ici_1141,71,1293",
+  "name": "ici",
+  "icon": "waypoint-normal.png",
+  "x": 1141,
+  "y": 71,
+  "z": 1293,
+  "r": 129,
+  "g": 111,
+  "b": 159,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

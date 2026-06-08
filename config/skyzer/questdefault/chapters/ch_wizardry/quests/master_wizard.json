@@ -1,0 +1,56 @@
+{
+  "id": "master_wizard",
+  "title": "Master Wizard",
+  "description": "Achieve mastery of the arcane arts with a master wand and grand crystals.",
+  "icon": {
+    "item": "ebwizardry:master_wand"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#D500F9"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_wizardry",
+  "dependencies": [
+    "apprentice_upgrade"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "ebwizardry:master_wand",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Master Wand"
+    },
+    {
+      "type": "collect",
+      "item": "ebwizardry:grand_crystal",
+      "amount": 4,
+      "consume": true,
+      "localized_name": "Grand Magic Crystal"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 3000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 30
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

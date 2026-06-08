@@ -1,0 +1,51 @@
+{
+  "id": "tertium_essence",
+  "title": "Tertium Power",
+  "description": "Reach the Tertium tier! Your farms are becoming incredibly productive. High-tier crops await!",
+  "icon": {
+    "item": "mysticalagriculture:crafting",
+    "meta": 2
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#E65100",
+    "border": "#FF9800"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_mystical_ag",
+  "dependencies": [
+    "prudentium_essence"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:crafting",
+      "amount": 64,
+      "consume": false,
+      "meta": 2,
+      "localized_name": "§6Intermedium Essence"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

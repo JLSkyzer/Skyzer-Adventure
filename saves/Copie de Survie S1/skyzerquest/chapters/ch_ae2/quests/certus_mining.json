@@ -1,0 +1,49 @@
+{
+  "id": "certus_mining",
+  "title": "Certus Mining",
+  "description": "Begin your AE2 journey by mining Certus Quartz. Don\u0027t forget to charge some of it!",
+  "icon": {
+    "item": "appliedenergistics2:material"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#00695C",
+    "border": "#26A69A"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_ae2",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:material",
+      "amount": 32,
+      "consume": false,
+      "localized_name": "Certus Quartz Crystal"
+    },
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:material",
+      "amount": 8,
+      "consume": false,
+      "meta": 1,
+      "localized_name": "Charged Certus Quartz Crystal"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

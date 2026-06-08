@@ -1,0 +1,49 @@
+{
+  "id": "nasa_workbench",
+  "title": "NASA Workbench",
+  "description": "Craft the NASA Workbench, your gateway to building rockets and advanced space equipment.",
+  "icon": {
+    "item": "minecraft:air"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#1565C0",
+    "border": "#64B5F6"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_space",
+  "dependencies": [
+    "space_prep"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "galacticraftcore:nasa_workbench",
+      "amount": 1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "galacticraftcore:basic_item",
+      "amount": 16,
+      "meta": 7,
+      "localized_name": "Compressed Tin"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

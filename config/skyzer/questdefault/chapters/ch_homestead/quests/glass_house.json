@@ -1,0 +1,52 @@
+{
+  "id": "glass_house",
+  "title": "Glass House",
+  "description": "Let there be light! Smelt sand into glass and craft elegant glass panes for your windows. A well-lit home with a view makes all the difference between a cave and a castle.",
+  "icon": {
+    "item": "minecraft:glass"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#0277BD",
+    "border": "#4FC3F7"
+  },
+  "position": {
+    "x": 0,
+    "y": 100
+  },
+  "chapter_id": "ch_homestead",
+  "dependencies": [
+    "humble_shelter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:glass",
+      "amount": 64,
+      "consume": false,
+      "localized_name": "Glass"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:glass_pane",
+      "amount": 32,
+      "localized_name": "Glass Pane"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 250.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:sea_lantern",
+      "amount": 16,
+      "localized_name": "Sea Lantern"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

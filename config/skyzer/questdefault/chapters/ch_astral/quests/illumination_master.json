@@ -1,0 +1,62 @@
+{
+  "id": "illumination_master",
+  "title": "Illumination Master",
+  "description": "Master the art of bringing light to dark places with starlight magic.",
+  "icon": {
+    "item": "astralsorcery:itemilluminationwand"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#F57F17",
+    "border": "#FFCA28"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_astral",
+  "dependencies": [
+    "resonating_wand"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemilluminationwand",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Illumination Wand"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:torch",
+      "amount": 50,
+      "localized_name": "Torch"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 350.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:glowstone",
+      "amount": 32,
+      "localized_name": "Glowstone"
+    },
+    {
+      "type": "item",
+      "item": "astralsorcery:blockworldilluminator",
+      "amount": 1,
+      "localized_name": "Cave Illuminator"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

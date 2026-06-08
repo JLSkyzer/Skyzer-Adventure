@@ -1,0 +1,55 @@
+{
+  "id": "stone_age",
+  "title": "Stone Age",
+  "description": "Progress to stronger tools by mining stone. Craft a stone pickaxe and gather plenty of stone blocks. You\u0027re leaving the wooden age behind and entering a new era of capability.",
+  "icon": {
+    "item": "minecraft:stone_pickaxe"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#37474F",
+    "border": "#78909C"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_first_steps",
+  "dependencies": [
+    "tool_time"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "minecraft:stone_pickaxe",
+      "amount": 1,
+      "localized_name": "Stone Pickaxe"
+    },
+    {
+      "type": "break",
+      "block": "minecraft:stone",
+      "amount": 32,
+      "localized_name": "Stone"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 150.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:iron_pickaxe",
+      "amount": 1,
+      "localized_name": "Iron Pickaxe"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

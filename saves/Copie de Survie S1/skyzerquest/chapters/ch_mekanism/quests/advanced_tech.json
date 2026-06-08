@@ -1,0 +1,65 @@
+{
+  "id": "advanced_tech",
+  "title": "Advanced Technology",
+  "description": "Advance your technology with advanced control circuits and reinforced alloy.",
+  "icon": {
+    "item": "mekanism:controlcircuit",
+    "meta": 1
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#1565C0",
+    "border": "#42A5F5"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_mekanism",
+  "dependencies": [
+    "enrichment_chamber"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mekanism:controlcircuit",
+      "amount": 8,
+      "consume": true,
+      "meta": 1,
+      "localized_name": "§4Advanced Control Circuit"
+    },
+    {
+      "type": "collect",
+      "item": "mekanism:reinforcedalloy",
+      "amount": 8,
+      "consume": true,
+      "localized_name": "§bReinforced Alloy"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "mekanism:speedupgrade",
+      "amount": 4,
+      "localized_name": "§eSpeed Upgrade"
+    },
+    {
+      "type": "item",
+      "item": "mekanism:energyupgrade",
+      "amount": 4,
+      "localized_name": "§eEnergy Upgrade"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

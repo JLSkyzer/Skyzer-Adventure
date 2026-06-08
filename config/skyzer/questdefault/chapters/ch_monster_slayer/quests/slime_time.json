@@ -1,0 +1,62 @@
+{
+  "id": "slime_time",
+  "title": "Slime Time",
+  "description": "Bouncy, gelatinous menaces that split when struck. Hunt 30 slimes and harvest 32 slimeballs for their sticky properties.",
+  "icon": {
+    "item": "minecraft:slime_ball"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#33691E",
+    "border": "#AED581"
+  },
+  "position": {
+    "x": -100,
+    "y": 100
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [
+    "night_watch"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialslime",
+      "amount": 30,
+      "localized_name": "specialmobs:specialslime"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:slime_ball",
+      "amount": 32,
+      "consume": false,
+      "localized_name": "Slimeball"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 250.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:lead",
+      "amount": 8,
+      "localized_name": "Lead"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:sticky_piston",
+      "amount": 16,
+      "localized_name": "Sticky Piston"
+    },
+    {
+      "type": "xp_level",
+      "amount": 5
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

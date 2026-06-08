@@ -1,0 +1,51 @@
+{
+  "id": "obsidian_breaker",
+  "title": "Obsidian Breaker",
+  "description": "Obsidian is the hardest material to mine. Break 32 obsidian blocks to prove your mining prowess.",
+  "icon": {
+    "item": "minecraft:obsidian"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#311B92",
+    "border": "#7C4DFF"
+  },
+  "position": {
+    "x": 400,
+    "y": 100
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [
+    "diamond_hunter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:obsidian",
+      "amount": 32,
+      "localized_name": "Obsidian"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:ender_chest",
+      "amount": 4,
+      "localized_name": "Ender Chest"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:enchanting_table",
+      "amount": 1,
+      "localized_name": "Enchantment Table"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

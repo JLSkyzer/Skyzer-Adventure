@@ -1,0 +1,59 @@
+{
+  "id": "elytra_flight",
+  "title": "Wings of Freedom",
+  "description": "Obtain the legendary elytra from End ships and master the art of flight.",
+  "icon": {
+    "item": "minecraft:elytra"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#01579B",
+    "border": "#039BE5"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_end",
+  "dependencies": [
+    "end_arrival"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:elytra",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Elytra"
+    },
+    {
+      "type": "walking",
+      "distance": 5000
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 3000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:fireworks",
+      "amount": 64,
+      "localized_name": "Firework Rocket"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

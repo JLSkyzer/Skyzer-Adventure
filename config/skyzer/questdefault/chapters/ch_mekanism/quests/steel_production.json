@@ -1,0 +1,65 @@
+{
+  "id": "steel_production",
+  "title": "Steel Production",
+  "description": "Produce steel ingots and compressed carbon, essential for advanced Mekanism machines.",
+  "icon": {
+    "item": "mekanism:ingot",
+    "meta": 4
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#455A64",
+    "border": "#90A4AE"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_mekanism",
+  "dependencies": [
+    "enrichment_chamber"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mekanism:ingot",
+      "amount": 32,
+      "consume": true,
+      "meta": 4,
+      "localized_name": "Steel Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "mekanism:compressedcarbon",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Compressed Carbon"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "mekanismtools:steelhelmet",
+      "amount": 1,
+      "localized_name": "Steel Helmet"
+    },
+    {
+      "type": "item",
+      "item": "mekanismtools:steelchestplate",
+      "amount": 1,
+      "localized_name": "Steel Chestplate"
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

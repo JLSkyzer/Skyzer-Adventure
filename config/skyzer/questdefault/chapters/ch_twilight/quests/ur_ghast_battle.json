@@ -1,0 +1,53 @@
+{
+  "id": "ur_ghast_battle",
+  "title": "Ur-Ghast Battle",
+  "description": "Conquer the dark tower and defeat the massive Ur-Ghast boss.",
+  "icon": {
+    "item": "minecraft:air"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFAB40"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [
+    "hydra_vanquisher"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "twilightforest:ur_ghast",
+      "amount": 1,
+      "localized_name": "twilightforest:ur_ghast"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 5000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 30
+    },
+    {
+      "type": "money",
+      "min": 2000.0,
+      "max": 5000.0
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

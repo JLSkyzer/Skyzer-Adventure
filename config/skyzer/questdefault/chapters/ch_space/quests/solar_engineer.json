@@ -1,0 +1,63 @@
+{
+  "id": "solar_engineer",
+  "title": "Solar Engineer",
+  "description": "Harness the power of the sun! Build basic and advanced solar panels to power your space installations.",
+  "icon": {
+    "item": "galacticraftcore:solar"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#F57F17",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 300,
+    "y": 100
+  },
+  "chapter_id": "ch_space",
+  "dependencies": [
+    "oxygen_system"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "galacticraftcore:solar",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Basic Solar Panel"
+    },
+    {
+      "type": "collect",
+      "item": "galacticraftcore:solar",
+      "amount": 1,
+      "consume": false,
+      "meta": 4,
+      "localized_name": "Advanced Solar Panel"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:redstone",
+      "amount": 16,
+      "localized_name": "Redstone"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

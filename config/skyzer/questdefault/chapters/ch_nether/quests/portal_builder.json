@@ -1,0 +1,53 @@
+{
+  "id": "portal_builder",
+  "title": "Portal Builder",
+  "description": "Gather obsidian and craft flint and steel to build your gateway to the Nether.",
+  "icon": {
+    "item": "minecraft:obsidian"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#7C4DFF"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_nether",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:obsidian",
+      "amount": 10,
+      "consume": false,
+      "localized_name": "Obsidian"
+    },
+    {
+      "type": "craft",
+      "item": "minecraft:flint_and_steel",
+      "amount": 1,
+      "localized_name": "Flint and Steel"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:torch",
+      "amount": 16,
+      "localized_name": "Torch"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

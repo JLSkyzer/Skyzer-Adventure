@@ -1,0 +1,59 @@
+{
+  "id": "precasia_expedition",
+  "title": "Precasian Expedition",
+  "description": "Explore the prehistoric world of Precasia and hunt its ancient beasts.",
+  "icon": {
+    "item": "aoa3:precasia_realmstone"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#33691E",
+    "border": "#AED581"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [
+    "abyss_dive"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "aoa3:precasia_realmstone",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Precasia Realmstone"
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 818
+    },
+    {
+      "type": "kill",
+      "entity": "aoa3:deinotherium",
+      "amount": 20,
+      "localized_name": "aoa3:deinotherium"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1200.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

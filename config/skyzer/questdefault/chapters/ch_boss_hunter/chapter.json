@@ -1,0 +1,11 @@
+{
+  "id": "ch_boss_hunter",
+  "name": "Boss Hunter",
+  "description": "Only the bravest dare challenge the titans that guard the world\u0027s greatest treasures.",
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "order": 2,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

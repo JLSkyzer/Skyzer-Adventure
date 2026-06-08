@@ -1,0 +1,54 @@
+{
+  "id": "twilight_explorer",
+  "title": "Twilight Explorer",
+  "description": "Explore the diverse biomes of the Twilight Forest and travel great distances.",
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#006064",
+    "border": "#4DB6AC"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [
+    "twilight_portal"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "explore_biome",
+      "biome": "twilightforest:enchanted_forest"
+    },
+    {
+      "type": "explore_biome",
+      "biome": "twilightforest:dark_forest"
+    },
+    {
+      "type": "walking",
+      "distance": 3000
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

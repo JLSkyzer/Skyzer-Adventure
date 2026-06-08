@@ -1,0 +1,10 @@
+{
+  "id": "survival",
+  "name": "Survival Basics",
+  "description": "Learn the fundamentals of survival, build your first home, and master basic crafting.",
+  "icon": {
+    "item": "minecraft:crafting_table"
+  },
+  "display_order": 1,
+  "chapters": ["ch_first_steps", "ch_homestead", "ch_farming"]
+}

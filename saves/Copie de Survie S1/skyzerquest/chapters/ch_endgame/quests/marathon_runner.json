@@ -1,0 +1,55 @@
+{
+  "id": "marathon_runner",
+  "title": "Marathon Runner",
+  "description": "Walk an incredible 50,000 blocks! Those who endure the longest journeys receive the greatest rewards.",
+  "icon": {
+    "item": "minecraft:leather_boots"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#01579B",
+    "border": "#039BE5"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "walking",
+      "distance": 50000
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 8000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:elytra",
+      "amount": 1,
+      "localized_name": "Elytra"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:fireworks",
+      "amount": 64,
+      "localized_name": "Firework Rocket"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 40
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

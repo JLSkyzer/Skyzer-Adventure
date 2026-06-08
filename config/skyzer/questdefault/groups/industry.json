@@ -1,0 +1,10 @@
+{
+  "id": "industry",
+  "name": "Mining & Industry",
+  "description": "Dig deeper, smelt better, and build the machines that will power your empire.",
+  "icon": {
+    "item": "thermalexpansion:machine:1"
+  },
+  "display_order": 3,
+  "chapters": ["ch_deep_miner", "ch_thermal", "ch_mekanism"]
+}

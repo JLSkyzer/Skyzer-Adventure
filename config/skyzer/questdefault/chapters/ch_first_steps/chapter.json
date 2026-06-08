@@ -1,0 +1,11 @@
+{
+  "id": "ch_first_steps",
+  "name": "First Steps",
+  "description": "Every great adventure begins with a single block. Punch your first tree and start your journey.",
+  "icon": {
+    "item": "minecraft:log"
+  },
+  "order": 1,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

@@ -1,0 +1,61 @@
+{
+  "id": "diamond_hunter",
+  "title": "Diamond Hunter",
+  "description": "Diamonds are a miner\u0027s best friend. Break 16 diamond ore and collect 16 diamonds.",
+  "icon": {
+    "item": "minecraft:diamond_ore"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#0D47A1",
+    "border": "#42A5F5"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [
+    "gold_fever"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:diamond_ore",
+      "amount": 16,
+      "localized_name": "Diamond Ore"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:diamond",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Diamond"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:diamond_pickaxe",
+      "amount": 1,
+      "localized_name": "Diamond Pickaxe"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

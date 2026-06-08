@@ -1,0 +1,57 @@
+{
+  "id": "apprentice_upgrade",
+  "title": "Apprentice Wizard",
+  "description": "Upgrade to an apprentice wand and unlock more powerful spells.",
+  "icon": {
+    "item": "ebwizardry:apprentice_wand"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#7B1FA2",
+    "border": "#E040FB"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_wizardry",
+  "dependencies": [
+    "spell_scholar"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "ebwizardry:apprentice_wand",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Apprentice Wand"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "ebwizardry:arcane_tome",
+      "amount": 1,
+      "meta": 1,
+      "localized_name": "Tome of Arcana"
+    },
+    {
+      "type": "item",
+      "item": "ebwizardry:magic_crystal",
+      "amount": 16,
+      "localized_name": "Magic Crystal"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

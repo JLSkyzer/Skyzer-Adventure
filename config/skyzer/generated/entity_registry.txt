@@ -1,0 +1,2583 @@
+# Entity Registry
+
+**Generated:** Fri Feb 20 17:20:52 CET 2026
+
+Complete list of all registered entities in the game.
+
+---
+
+**Total Entities:** 2321
+
+## aoa3 (731 entities)
+
+- `aoa3:abyssal_lottoman`
+- `aoa3:agility_tablet`
+- `aoa3:airhead`
+- `aoa3:alarmo`
+- `aoa3:alluricorn`
+- `aoa3:ambient_pixon`
+- `aoa3:amphibior`
+- `aoa3:amphibiyte`
+- `aoa3:ancient_golem`
+- `aoa3:anemia`
+- `aoa3:anemia_bomb`
+- `aoa3:angelica`
+- `aoa3:angler`
+- `aoa3:anima_master`
+- `aoa3:anima_stone`
+- `aoa3:apparition`
+- `aoa3:aquaball`
+- `aoa3:aquatic_shot`
+- `aoa3:arc_flower`
+- `aoa3:arc_wizard`
+- `aoa3:arcbeast`
+- `aoa3:archvine`
+- `aoa3:arcworm`
+- `aoa3:arcworm_shot`
+- `aoa3:ariel`
+- `aoa3:arkback`
+- `aoa3:arkzyne`
+- `aoa3:arocknid`
+- `aoa3:assassin`
+- `aoa3:atomizer_bounce`
+- `aoa3:atomizer_shot`
+- `aoa3:augury_master`
+- `aoa3:automaton`
+- `aoa3:awareness_tablet`
+- `aoa3:axiolight`
+- `aoa3:bane`
+- `aoa3:bane_big`
+- `aoa3:bane_clone`
+- `aoa3:banshee`
+- `aoa3:baron_bomb`
+- `aoa3:baron_lottoman`
+- `aoa3:baron_shot`
+- `aoa3:baroness`
+- `aoa3:baroness_shot`
+- `aoa3:basilisk`
+- `aoa3:baumba`
+- `aoa3:beamer_shot`
+- `aoa3:black_ursa`
+- `aoa3:blissard`
+- `aoa3:blood_drainer`
+- `aoa3:bloodball`
+- `aoa3:bloodlust`
+- `aoa3:bloodmist`
+- `aoa3:bloodsucker`
+- `aoa3:blooming_pixon`
+- `aoa3:blue_flower`
+- `aoa3:blue_guardian`
+- `aoa3:blue_guardian_shot`
+- `aoa3:blue_rune_templar`
+- `aoa3:blue_runic_lifeform`
+- `aoa3:bobo`
+- `aoa3:bomb_carrier`
+- `aoa3:bone_creature`
+- `aoa3:bone_creeper`
+- `aoa3:bone_pellet`
+- `aoa3:boneback`
+- `aoa3:boreic_lottoman`
+- `aoa3:boss_item`
+- `aoa3:bouncer`
+- `aoa3:bozo_ball`
+- `aoa3:breeding_tablet`
+- `aoa3:broccohead`
+- `aoa3:brute`
+- `aoa3:bubble_shot`
+- `aoa3:bugeye`
+- `aoa3:bullet_bone`
+- `aoa3:bullet_shot`
+- `aoa3:bush_baby`
+- `aoa3:butchery_master`
+- `aoa3:candied_lottoman`
+- `aoa3:candy_corny`
+- `aoa3:cane_bug`
+- `aoa3:cannonball`
+- `aoa3:cannonball_balloon_bomb`
+- `aoa3:cannonball_blue_heavy`
+- `aoa3:cannonball_carrot`
+- `aoa3:cannonball_clown_ball`
+- `aoa3:cannonball_energy_shot`
+- `aoa3:cannonball_erebon_stickler`
+- `aoa3:cannonball_erebon_stickler_stuck`
+- `aoa3:cannonball_flower_ball`
+- `aoa3:cannonball_fungal_ball`
+- `aoa3:cannonball_ghoul_ball`
+- `aoa3:cannonball_golden`
+- `aoa3:cannonball_green_ball_giga`
+- `aoa3:cannonball_green_ball_mini`
+- `aoa3:cannonball_green_ball_super`
+- `aoa3:cannonball_green_ball_ultra`
+- `aoa3:cannonball_heavy`
+- `aoa3:cannonball_heavy_bone`
+- `aoa3:cannonball_heavy_red`
+- `aoa3:cannonball_heavy_shadowball`
+- `aoa3:cannonball_heavy_wither`
+- `aoa3:cannonball_hive_ball`
+- `aoa3:cannonball_luxon_stickler`
+- `aoa3:cannonball_luxon_stickler_stuck`
+- `aoa3:cannonball_moon_shot`
+- `aoa3:cannonball_orange`
+- `aoa3:cannonball_pluton_stickler`
+- `aoa3:cannonball_pluton_stickler_stuck`
+- `aoa3:cannonball_selyan_stickler`
+- `aoa3:cannonball_selyan_stickler_stuck`
+- `aoa3:cannonball_smile_blaster`
+- `aoa3:cannonball_smiley`
+- `aoa3:cannonball_sticky_bomb_cool`
+- `aoa3:cannonball_sticky_bomb_red`
+- `aoa3:cannonball_vox_cannon`
+- `aoa3:cannonball_water_balloon_bomb`
+- `aoa3:carrotop`
+- `aoa3:case_construct`
+- `aoa3:cave_creep`
+- `aoa3:cave_creepoid`
+- `aoa3:celestial_fall`
+- `aoa3:celevian_lottoman`
+- `aoa3:centinel`
+- `aoa3:chakram`
+- `aoa3:charger`
+- `aoa3:cherry_barrager`
+- `aoa3:cherry_blaster`
+- `aoa3:cherry_shot`
+- `aoa3:chilli_shot`
+- `aoa3:chimera`
+- `aoa3:chocko`
+- `aoa3:chomper`
+- `aoa3:cleansing_tablet`
+- `aoa3:clown`
+- `aoa3:clown_shot`
+- `aoa3:clunkhead`
+- `aoa3:compeer`
+- `aoa3:confetti_cluster`
+- `aoa3:confetti_shot`
+- `aoa3:coniferon`
+- `aoa3:construct_flight`
+- `aoa3:construct_mind`
+- `aoa3:construct_of_servility`
+- `aoa3:construct_range`
+- `aoa3:construct_resistance`
+- `aoa3:construct_shot`
+- `aoa3:construct_speed`
+- `aoa3:construct_strength`
+- `aoa3:construct_terror`
+- `aoa3:corallus`
+- `aoa3:corallus_shot`
+- `aoa3:coralon`
+- `aoa3:coratee`
+- `aoa3:corby`
+- `aoa3:corny`
+- `aoa3:corrupted_traveller`
+- `aoa3:cotton_candor`
+- `aoa3:cotton_candor_shot`
+- `aoa3:craexxeus`
+- `aoa3:craexxeus_nuke`
+- `aoa3:craexxeus_shot`
+- `aoa3:craggy`
+- `aoa3:creation_master`
+- `aoa3:creep`
+- `aoa3:creep_banker`
+- `aoa3:creep_bomb`
+- `aoa3:creep_cow`
+- `aoa3:creep_tube`
+- `aoa3:creeper_shot`
+- `aoa3:creeperlock`
+- `aoa3:creepird`
+- `aoa3:creeponia_lottoman`
+- `aoa3:creepuple`
+- `aoa3:crusilisk`
+- `aoa3:cryptid`
+- `aoa3:crystal_lottoman`
+- `aoa3:crystal_trader`
+- `aoa3:crystocore`
+- `aoa3:cyan_shot`
+- `aoa3:cyclops`
+- `aoa3:dark_beast`
+- `aoa3:dawnlight`
+- `aoa3:daysee`
+- `aoa3:dead_tree`
+- `aoa3:death_hunter`
+- `aoa3:death_ray`
+- `aoa3:deinotherium`
+- `aoa3:demon_reaper`
+- `aoa3:desert_charger`
+- `aoa3:destroyer_shot`
+- `aoa3:destruction_shot`
+- `aoa3:destructor`
+- `aoa3:devourer`
+- `aoa3:dicer`
+- `aoa3:diocus`
+- `aoa3:discharge_shot`
+- `aoa3:discharge_slug`
+- `aoa3:distorter`
+- `aoa3:distortion_tablet`
+- `aoa3:doom_shot`
+- `aoa3:doubler`
+- `aoa3:dracyon`
+- `aoa3:draggy`
+- `aoa3:dungeon_keeper`
+- `aoa3:dust_strider`
+- `aoa3:dusteiva`
+- `aoa3:duston`
+- `aoa3:dustopian_lottoman`
+- `aoa3:dweller`
+- `aoa3:dyrehorn`
+- `aoa3:echodar`
+- `aoa3:eeo`
+- `aoa3:eilosapien`
+- `aoa3:elite_skele_hopper`
+- `aoa3:elite_skele_pig`
+- `aoa3:elite_skeleman`
+- `aoa3:elkanyne`
+- `aoa3:elusive`
+- `aoa3:elusive_clone`
+- `aoa3:embrake`
+- `aoa3:emperor_beast`
+- `aoa3:ender_carrier`
+- `aoa3:energy_tablet`
+- `aoa3:enforcer`
+- `aoa3:eradicator_shot`
+- `aoa3:everbeast`
+- `aoa3:exohead`
+- `aoa3:exoid`
+- `aoa3:expedition_master`
+- `aoa3:explodot`
+- `aoa3:explosives_expert`
+- `aoa3:extraction_master`
+- `aoa3:eye_creature`
+- `aoa3:faceless_floater`
+- `aoa3:faceless_runner`
+- `aoa3:fake_pigman`
+- `aoa3:fake_tnt`
+- `aoa3:fake_zorp`
+- `aoa3:fenix`
+- `aoa3:fiend`
+- `aoa3:firefly_shot`
+- `aoa3:firestorm_fall`
+- `aoa3:fischer`
+- `aoa3:fishix`
+- `aoa3:flamewalker`
+- `aoa3:flash`
+- `aoa3:flesh_eater`
+- `aoa3:floro_lottoman`
+- `aoa3:flower_shot`
+- `aoa3:flowerface`
+- `aoa3:flye`
+- `aoa3:foraging_master`
+- `aoa3:fragment_shot`
+- `aoa3:friendly_creeper`
+- `aoa3:fungat`
+- `aoa3:fungback`
+- `aoa3:fungik`
+- `aoa3:fungock`
+- `aoa3:fungung`
+- `aoa3:furlion`
+- `aoa3:gadgetoid`
+- `aoa3:ghastus`
+- `aoa3:ghost`
+- `aoa3:ghostine_ancient`
+- `aoa3:ghostly_bugeye`
+- `aoa3:ghostly_charger`
+- `aoa3:ghostly_cyclops`
+- `aoa3:ghostly_goblin`
+- `aoa3:ghostly_night_reaper`
+- `aoa3:ghostly_sasquatch`
+- `aoa3:ghoul_shot`
+- `aoa3:giant_snail`
+- `aoa3:gingerbird`
+- `aoa3:gingerbread_man`
+- `aoa3:glaring_pixon`
+- `aoa3:gleaming_pixon`
+- `aoa3:glistening_pixon`
+- `aoa3:glowing_pixon`
+- `aoa3:gnawer`
+- `aoa3:goalby`
+- `aoa3:goblin`
+- `aoa3:gold_shot`
+- `aoa3:golden_lottoman`
+- `aoa3:goldorth`
+- `aoa3:goldum`
+- `aoa3:goldus`
+- `aoa3:goo_ball`
+- `aoa3:goofer`
+- `aoa3:gorb_arms_dealer`
+- `aoa3:gorb_citizen`
+- `aoa3:gorb_engineer`
+- `aoa3:gravity_tablet`
+- `aoa3:graw`
+- `aoa3:graw_shot`
+- `aoa3:green_flower`
+- `aoa3:green_guardian`
+- `aoa3:green_guardian_shot`
+- `aoa3:green_rune_templar`
+- `aoa3:green_runic_lifeform`
+- `aoa3:grenade`
+- `aoa3:grenade_floro_rpg`
+- `aoa3:grenade_multiplying`
+- `aoa3:grenade_rpg`
+- `aoa3:grillface`
+- `aoa3:grobbler`
+- `aoa3:grocculate`
+- `aoa3:grunt`
+- `aoa3:gyro`
+- `aoa3:gyrocopter`
+- `aoa3:hag`
+- `aoa3:hag_shot`
+- `aoa3:halycon`
+- `aoa3:harkos`
+- `aoa3:hauling_master`
+- `aoa3:haunted_lottoman`
+- `aoa3:haunter_shot`
+- `aoa3:headless_destroyer`
+- `aoa3:headless_hunter`
+- `aoa3:healing_golem`
+- `aoa3:heart_stone`
+- `aoa3:heavy_grenade`
+- `aoa3:heavy_runic_guardian_shot`
+- `aoa3:heavy_shower_shot`
+- `aoa3:heavy_tri_discharge_shot`
+- `aoa3:hell_bubble`
+- `aoa3:hellcat`
+- `aoa3:hellfire`
+- `aoa3:hellfire_tail`
+- `aoa3:hellquin`
+- `aoa3:hellspot`
+- `aoa3:hiding_fungi`
+- `aoa3:hill_charger`
+- `aoa3:hive_king`
+- `aoa3:hive_soldier`
+- `aoa3:hive_worker`
+- `aoa3:holly_arrow`
+- `aoa3:holly_arrow_shot`
+- `aoa3:horndron`
+- `aoa3:horntail`
+- `aoa3:horon`
+- `aoa3:host`
+- `aoa3:hot_shot`
+- `aoa3:hunch`
+- `aoa3:hunter`
+- `aoa3:hunter_master`
+- `aoa3:hydrolisk`
+- `aoa3:hydrolon`
+- `aoa3:ice_giant`
+- `aoa3:ice_shot`
+- `aoa3:illusion_shot`
+- `aoa3:infernal`
+- `aoa3:infusion_master`
+- `aoa3:inmate_x`
+- `aoa3:inmate_y`
+- `aoa3:innervation_master`
+- `aoa3:ion_shot`
+- `aoa3:iosaur`
+- `aoa3:irkling`
+- `aoa3:iro_miner_shot`
+- `aoa3:jawe`
+- `aoa3:jumbo`
+- `aoa3:kaiyu`
+- `aoa3:kajaros`
+- `aoa3:keeler`
+- `aoa3:king_bambambam`
+- `aoa3:king_charger`
+- `aoa3:king_creeper`
+- `aoa3:king_shroomus`
+- `aoa3:klobber`
+- `aoa3:koko`
+- `aoa3:kranky`
+- `aoa3:kror`
+- `aoa3:laser_shot`
+- `aoa3:leafy_giant`
+- `aoa3:lelyetian_banker`
+- `aoa3:lelyetian_caster`
+- `aoa3:lelyetian_lottoman`
+- `aoa3:lelyetian_shot`
+- `aoa3:lelyetian_trader`
+- `aoa3:lelyetian_warrior`
+- `aoa3:light_blaster_shot`
+- `aoa3:light_iron_shot`
+- `aoa3:light_runic_guardian_shot`
+- `aoa3:light_spark`
+- `aoa3:lightwalker`
+- `aoa3:limonite_bullet`
+- `aoa3:limonite_bullet_blue`
+- `aoa3:limonite_bullet_fire`
+- `aoa3:limonite_bullet_green`
+- `aoa3:limonite_bullet_red`
+- `aoa3:limonite_bullet_red_heavy`
+- `aoa3:limonite_bullet_shroom`
+- `aoa3:limonite_bullet_sunset`
+- `aoa3:limonite_bullet_toxic`
+- `aoa3:limonite_bullet_yellow`
+- `aoa3:linger`
+- `aoa3:little_bam`
+- `aoa3:living_fungi`
+- `aoa3:logging_master`
+- `aoa3:lollypopper`
+- `aoa3:lost_soul`
+- `aoa3:lotto_totem`
+- `aoa3:lottoman`
+- `aoa3:luna_shot`
+- `aoa3:lunar_fall`
+- `aoa3:lunar_holly_arrow_shot`
+- `aoa3:lunar_lottoman`
+- `aoa3:lunarcher`
+- `aoa3:lurker`
+- `aoa3:luxocron`
+- `aoa3:lyonic_shot`
+- `aoa3:magic_ball`
+- `aoa3:magical_creeper`
+- `aoa3:magicke`
+- `aoa3:magicke_shot`
+- `aoa3:mech_fall`
+- `aoa3:mech_shot`
+- `aoa3:mecha_cyclops`
+- `aoa3:mecha_skellox`
+- `aoa3:mechachron`
+- `aoa3:mechamaton`
+- `aoa3:mechbot`
+- `aoa3:mechyon`
+- `aoa3:meganeuropsis`
+- `aoa3:merkyre`
+- `aoa3:mermage`
+- `aoa3:metal_slug`
+- `aoa3:metalloid`
+- `aoa3:meteor_fall`
+- `aoa3:mind_blaster_shot`
+- `aoa3:mirage`
+- `aoa3:miskel`
+- `aoa3:modulo`
+- `aoa3:modulo_shot`
+- `aoa3:moon_destroyer_shot`
+- `aoa3:moon_maker`
+- `aoa3:moon_shiner_shot`
+- `aoa3:moonlight_fall`
+- `aoa3:mother_void_walker`
+- `aoa3:muckopede`
+- `aoa3:muncher`
+- `aoa3:mushroom_spider`
+- `aoa3:mystic_lottoman`
+- `aoa3:natura`
+- `aoa3:naturalist`
+- `aoa3:neptuno`
+- `aoa3:nethengeic_beast`
+- `aoa3:nethengeic_wither`
+- `aoa3:nethengeic_wither_shot`
+- `aoa3:night_reaper`
+- `aoa3:night_watcher`
+- `aoa3:nightfly`
+- `aoa3:nightmare_fall`
+- `aoa3:nightmare_spider`
+- `aoa3:nightwing`
+- `aoa3:nipper`
+- `aoa3:nospike`
+- `aoa3:noxious_shot`
+- `aoa3:occulent`
+- `aoa3:occult_block`
+- `aoa3:odious_shot`
+- `aoa3:okazor`
+- `aoa3:omnilight`
+- `aoa3:omnilight_shot`
+- `aoa3:opteryx`
+- `aoa3:orange_flower`
+- `aoa3:orbiter`
+- `aoa3:orbling`
+- `aoa3:orbocron_shot`
+- `aoa3:oxygen_tablet`
+- `aoa3:paladin`
+- `aoa3:paralyzer_shot`
+- `aoa3:parasect`
+- `aoa3:paravite`
+- `aoa3:party_popper_shot`
+- `aoa3:penguin`
+- `aoa3:penumbra`
+- `aoa3:penumbra_shot`
+- `aoa3:peppermint_snail`
+- `aoa3:phantom`
+- `aoa3:phantom_shot`
+- `aoa3:pigotron`
+- `aoa3:pincher`
+- `aoa3:plateosaur`
+- `aoa3:pod_plant`
+- `aoa3:poison_plunger_shot`
+- `aoa3:poison_shot`
+- `aoa3:polar_ursa`
+- `aoa3:polymorph_shot`
+- `aoa3:polytom`
+- `aoa3:polytom_shot`
+- `aoa3:pop_shot`
+- `aoa3:portal_master`
+- `aoa3:power_ray`
+- `aoa3:power_shot`
+- `aoa3:precasian_lottoman`
+- `aoa3:pressure_tablet`
+- `aoa3:primitive_carrotop`
+- `aoa3:primordial_banker`
+- `aoa3:primordial_guide`
+- `aoa3:primordial_merchant`
+- `aoa3:primordial_shot`
+- `aoa3:primordial_spellbinder`
+- `aoa3:primordial_wizard`
+- `aoa3:professor`
+- `aoa3:proficiency_tablet`
+- `aoa3:proshield`
+- `aoa3:proton_shot`
+- `aoa3:purple_flower`
+- `aoa3:quickpocket`
+- `aoa3:radiant_pixon`
+- `aoa3:rainbow_shot`
+- `aoa3:rainicorn`
+- `aoa3:rammerhead`
+- `aoa3:rammerhorn`
+- `aoa3:ramradon`
+- `aoa3:rawbone`
+- `aoa3:raxxan`
+- `aoa3:realmshifter`
+- `aoa3:reaper_twins`
+- `aoa3:reaver`
+- `aoa3:red_guardian`
+- `aoa3:red_guardian_shot`
+- `aoa3:red_rune_templar`
+- `aoa3:red_runic_lifeform`
+- `aoa3:reefer_shot`
+- `aoa3:refluct`
+- `aoa3:resistance_tablet`
+- `aoa3:revolution_shot`
+- `aoa3:rock_crawler`
+- `aoa3:rock_critter`
+- `aoa3:rock_fragment`
+- `aoa3:rock_fragment_fungal`
+- `aoa3:rock_rider`
+- `aoa3:rockbiter`
+- `aoa3:rocky_lottoman`
+- `aoa3:roloscope`
+- `aoa3:rosid`
+- `aoa3:rosidian_shot`
+- `aoa3:runation_master`
+- `aoa3:runic_bomb`
+- `aoa3:runic_golem`
+- `aoa3:runic_guardian`
+- `aoa3:runic_guardian_shot`
+- `aoa3:runic_lottoman`
+- `aoa3:runicorn`
+- `aoa3:runicorn_rider`
+- `aoa3:sabretooth`
+- `aoa3:sanctity_tablet`
+- `aoa3:sand_giant`
+- `aoa3:sand_golem`
+- `aoa3:sasquatch`
+- `aoa3:satiation_tablet`
+- `aoa3:scrubby`
+- `aoa3:sea_charger`
+- `aoa3:sea_skeleton`
+- `aoa3:sea_spider`
+- `aoa3:sea_troll`
+- `aoa3:sea_viper`
+- `aoa3:seaocron_shot`
+- `aoa3:seed_dart`
+- `aoa3:seeker`
+- `aoa3:shaddy`
+- `aoa3:shade`
+- `aoa3:shadow`
+- `aoa3:shadow_stalker`
+- `aoa3:shadowlord`
+- `aoa3:shadowlord_shot`
+- `aoa3:shavo`
+- `aoa3:shifter`
+- `aoa3:shik`
+- `aoa3:shining_pixon`
+- `aoa3:shoe_shot`
+- `aoa3:shower_shot`
+- `aoa3:shyre_archer`
+- `aoa3:shyre_banker`
+- `aoa3:shyre_beam`
+- `aoa3:shyre_knight`
+- `aoa3:shyre_shot`
+- `aoa3:shyre_troll`
+- `aoa3:shyrelands_lottoman`
+- `aoa3:sight_tablet`
+- `aoa3:silencer`
+- `aoa3:silverfoot`
+- `aoa3:skele_elder`
+- `aoa3:skele_hopper`
+- `aoa3:skele_pig`
+- `aoa3:skeledon`
+- `aoa3:skelekyte`
+- `aoa3:skeleman`
+- `aoa3:skeletal_cowman`
+- `aoa3:skeletron`
+- `aoa3:skellox`
+- `aoa3:skipper`
+- `aoa3:skolle`
+- `aoa3:skull_creature`
+- `aoa3:skullo_shot`
+- `aoa3:sky_shot`
+- `aoa3:slice_star`
+- `aoa3:slimer`
+- `aoa3:smash`
+- `aoa3:snappy`
+- `aoa3:sniper_slug`
+- `aoa3:snow_charger`
+- `aoa3:soul_drainer_shot`
+- `aoa3:soul_spark`
+- `aoa3:soul_storm_shot`
+- `aoa3:soulscorne`
+- `aoa3:soulvyre`
+- `aoa3:spearmint_snail`
+- `aoa3:spectral_holly_arrow`
+- `aoa3:spectral_shot`
+- `aoa3:spectral_wizard`
+- `aoa3:sphinx`
+- `aoa3:spikeback`
+- `aoa3:spinoledon`
+- `aoa3:spinux`
+- `aoa3:spirit_guardian`
+- `aoa3:spirit_protector`
+- `aoa3:spiritual_shot`
+- `aoa3:spraggy`
+- `aoa3:squasher`
+- `aoa3:squiggler`
+- `aoa3:stalker`
+- `aoa3:stalker_prime`
+- `aoa3:sticky`
+- `aoa3:stimulo`
+- `aoa3:stimulosus`
+- `aoa3:stinger`
+- `aoa3:stitches`
+- `aoa3:stone_giant`
+- `aoa3:store_keeper`
+- `aoa3:strength_tablet`
+- `aoa3:strong_skele_hopper`
+- `aoa3:strong_skele_pig`
+- `aoa3:strong_skeleman`
+- `aoa3:sugarface`
+- `aoa3:sun_shot`
+- `aoa3:sunny`
+- `aoa3:surveyor`
+- `aoa3:swamp_charger`
+- `aoa3:swarm_shot`
+- `aoa3:sysker`
+- `aoa3:tangle_fall`
+- `aoa3:terradon`
+- `aoa3:terrestrial`
+- `aoa3:terror_construct_shot`
+- `aoa3:tharafly`
+- `aoa3:tidal_wave`
+- `aoa3:tipped_holly_arrow`
+- `aoa3:tipsy`
+- `aoa3:token_collector`
+- `aoa3:tortione`
+- `aoa3:toxic_lottoman`
+- `aoa3:toxic_shot`
+- `aoa3:toxxulous`
+- `aoa3:toy_merchant`
+- `aoa3:tracker`
+- `aoa3:tree_spirit`
+- `aoa3:tri_discharge_shot`
+- `aoa3:trickster`
+- `aoa3:trickster_clone`
+- `aoa3:triclops`
+- `aoa3:troll_trader`
+- `aoa3:trotter`
+- `aoa3:twinkling_lottoman`
+- `aoa3:tyrosaur`
+- `aoa3:ultimatum_shot`
+- `aoa3:undead_herald`
+- `aoa3:undead_troll`
+- `aoa3:untiring_tablet`
+- `aoa3:urioh`
+- `aoa3:urka`
+- `aoa3:urv`
+- `aoa3:valkyrie`
+- `aoa3:valkyrie_shot`
+- `aoa3:vertebron`
+- `aoa3:vine_wizard`
+- `aoa3:vine_wizard_shot`
+- `aoa3:vinocorne`
+- `aoa3:visage`
+- `aoa3:visualent`
+- `aoa3:visular`
+- `aoa3:visulon`
+- `aoa3:vitality_tablet`
+- `aoa3:void_charger`
+- `aoa3:void_walker`
+- `aoa3:volar`
+- `aoa3:volar_shot`
+- `aoa3:voliant`
+- `aoa3:voltron`
+- `aoa3:vortex_blast`
+- `aoa3:voxxulon`
+- `aoa3:voxxulon_meteor`
+- `aoa3:vulkram`
+- `aoa3:waggy`
+- `aoa3:walker`
+- `aoa3:warclops`
+- `aoa3:wart_dart`
+- `aoa3:water_shot`
+- `aoa3:web_reaper`
+- `aoa3:weighted_shower_shot`
+- `aoa3:white_ball`
+- `aoa3:wickett`
+- `aoa3:winder_shot`
+- `aoa3:winged_creeper`
+- `aoa3:wither_ball`
+- `aoa3:wither_shot`
+- `aoa3:wither_wizard`
+- `aoa3:withering_lottoman`
+- `aoa3:wood_giant`
+- `aoa3:wrath_shot`
+- `aoa3:xxeus`
+- `aoa3:yellow_flower`
+- `aoa3:yellow_guardian`
+- `aoa3:yellow_guardian_shot`
+- `aoa3:yellow_rune_templar`
+- `aoa3:yellow_runic_lifeform`
+- `aoa3:yeti`
+- `aoa3:zal_banker`
+- `aoa3:zal_child`
+- `aoa3:zal_citizen`
+- `aoa3:zal_grocer`
+- `aoa3:zal_herbalist`
+- `aoa3:zal_spellbinder`
+- `aoa3:zal_vendor`
+- `aoa3:zarg`
+- `aoa3:zhinx`
+- `aoa3:zorp`
+
+## appliedenergistics2 (4 entities)
+
+- `appliedenergistics2:appeng.entity.entitychargedquartz`
+- `appliedenergistics2:appeng.entity.entitygrowingcrystal`
+- `appliedenergistics2:appeng.entity.entitysingularity`
+- `appliedenergistics2:appeng.entity.entitytinytntprimed`
+
+## aquaculture (1 entities)
+
+- `aquaculture:custom_fish_hook`
+
+## armorplus (17 entities)
+
+- `armorplus:coal_arrow`
+- `armorplus:demonic_dragon`
+- `armorplus:emerald_arrow`
+- `armorplus:ender_dragon_arrow`
+- `armorplus:ender_dragon_zombie`
+- `armorplus:freeze_bomb`
+- `armorplus:guardian_arrow`
+- `armorplus:ice_golem`
+- `armorplus:lapis_arrow`
+- `armorplus:lava_arrow`
+- `armorplus:obsidian_arrow`
+- `armorplus:overlord_of_the_guardians`
+- `armorplus:redstone_arrow`
+- `armorplus:skeletal_king`
+- `armorplus:super_star_arrow`
+- `armorplus:wither_minion`
+- `armorplus:witherling`
+
+## artifacts (2 entities)
+
+- `artifacts:hallow_star`
+- `artifacts:mimic`
+
+## astralsorcery (14 entities)
+
+- `astralsorcery:entitycrystal`
+- `astralsorcery:entitycrystaltool`
+- `astralsorcery:entityflare`
+- `astralsorcery:entitygrapplinghook`
+- `astralsorcery:entityhighlighted`
+- `astralsorcery:entityilluminationspark`
+- `astralsorcery:entityitemdamageresistant`
+- `astralsorcery:entityliquidspark`
+- `astralsorcery:entitynocturnalspark`
+- `astralsorcery:entityobservatoryhelper`
+- `astralsorcery:entityshootingstar`
+- `astralsorcery:entityspectraltool`
+- `astralsorcery:entitystarburst`
+- `astralsorcery:entitystardust`
+
+## atum (31 entities)
+
+- `atum:arrow_double_shot_black`
+- `atum:arrow_double_shot_white`
+- `atum:arrow_explosive`
+- `atum:arrow_fire`
+- `atum:arrow_poison`
+- `atum:arrow_quickdraw`
+- `atum:arrow_rain`
+- `atum:arrow_slowness`
+- `atum:arrow_straight`
+- `atum:assassin`
+- `atum:barbarian`
+- `atum:bonestorm`
+- `atum:brigand`
+- `atum:camel`
+- `atum:camel_spit`
+- `atum:desert_rabbit`
+- `atum:desert_wolf`
+- `atum:forsaken`
+- `atum:heart_of_ra`
+- `atum:mummy`
+- `atum:nomad`
+- `atum:pharaoh`
+- `atum:scarab`
+- `atum:small_bone`
+- `atum:stoneguard`
+- `atum:stonewarden`
+- `atum:sunspeaker`
+- `atum:tarantula`
+- `atum:tefnuts_call`
+- `atum:warlord`
+- `atum:wraith`
+
+## betteranimalsplus (38 entities)
+
+- `betteranimalsplus:badger`
+- `betteranimalsplus:badgerdirt`
+- `betteranimalsplus:blackbear`
+- `betteranimalsplus:boar`
+- `betteranimalsplus:bobbit_worm`
+- `betteranimalsplus:brownbear`
+- `betteranimalsplus:coyote`
+- `betteranimalsplus:crab`
+- `betteranimalsplus:deer`
+- `betteranimalsplus:eel_freshwater`
+- `betteranimalsplus:eel_saltwater`
+- `betteranimalsplus:feralwolf`
+- `betteranimalsplus:fox`
+- `betteranimalsplus:goat`
+- `betteranimalsplus:golden_goose_egg`
+- `betteranimalsplus:goose`
+- `betteranimalsplus:goose_egg`
+- `betteranimalsplus:hirschgeist`
+- `betteranimalsplus:horseshoecrab`
+- `betteranimalsplus:jellyfish`
+- `betteranimalsplus:kermodebear`
+- `betteranimalsplus:lammergeier`
+- `betteranimalsplus:lamprey`
+- `betteranimalsplus:moose`
+- `betteranimalsplus:nautilus`
+- `betteranimalsplus:pheasant`
+- `betteranimalsplus:pheasantegg`
+- `betteranimalsplus:reindeer`
+- `betteranimalsplus:shark`
+- `betteranimalsplus:songbird`
+- `betteranimalsplus:squirrel`
+- `betteranimalsplus:tarantula`
+- `betteranimalsplus:tarantulahair`
+- `betteranimalsplus:turkey`
+- `betteranimalsplus:turkeyegg`
+- `betteranimalsplus:walrus`
+- `betteranimalsplus:whale`
+- `betteranimalsplus:zotzpyre`
+
+## betternether (1 entities)
+
+- `betternether:firefly`
+
+## bibliocraft (1 entities)
+
+- `bibliocraft:biblioseat`
+
+## biomesoplenty (3 entities)
+
+- `biomesoplenty:bop_boat`
+- `biomesoplenty:mudball`
+- `biomesoplenty:wasp`
+
+## botania (19 entities)
+
+- `botania:babylon_weapon`
+- `botania:corporea_spark`
+- `botania:doppleganger`
+- `botania:ender_air_bottle`
+- `botania:falling_star`
+- `botania:flame_ring`
+- `botania:magic_landmine`
+- `botania:magic_missile`
+- `botania:mana_burst`
+- `botania:mana_storm`
+- `botania:pink_wither`
+- `botania:pixie`
+- `botania:player_mover`
+- `botania:pool_minecart`
+- `botania:signal_flare`
+- `botania:spark`
+- `botania:thorn_chakram`
+- `botania:thrown_item`
+- `botania:vine_ball`
+
+## butterflies (1 entities)
+
+- `butterflies:butterfly`
+
+## camera (1 entities)
+
+- `camera:image_frame`
+
+## cfm (2 entities)
+
+- `cfm:mirror`
+- `cfm:mountable_block`
+
+## cgm (5 entities)
+
+- `cgm:grenade`
+- `cgm:grenade_stun`
+- `cgm:missile`
+- `cgm:projectile`
+- `cgm:throwable_grenade`
+
+## cqrepoured (68 entities)
+
+- `cqrepoured:boar_mage`
+- `cqrepoured:boarman`
+- `cqrepoured:bubble_entity`
+- `cqrepoured:calamity_crystal`
+- `cqrepoured:calamity_spawner`
+- `cqrepoured:colored_lightning_bolt`
+- `cqrepoured:dummy`
+- `cqrepoured:dwarf`
+- `cqrepoured:electric_field_entity`
+- `cqrepoured:end_laser`
+- `cqrepoured:end_targeting_laser`
+- `cqrepoured:ender_calamity`
+- `cqrepoured:ender_king`
+- `cqrepoured:enderman`
+- `cqrepoured:exterminator`
+- `cqrepoured:exterminator_laser`
+- `cqrepoured:flying_skull`
+- `cqrepoured:giant_endermite`
+- `cqrepoured:giant_silverfish`
+- `cqrepoured:giant_silverfish1`
+- `cqrepoured:giant_silverfish2`
+- `cqrepoured:giant_spider`
+- `cqrepoured:giant_tortoise`
+- `cqrepoured:goblin`
+- `cqrepoured:golem`
+- `cqrepoured:gremlin`
+- `cqrepoured:human`
+- `cqrepoured:ice_spike`
+- `cqrepoured:illager`
+- `cqrepoured:illusion_walker_king`
+- `cqrepoured:lich`
+- `cqrepoured:mandril`
+- `cqrepoured:minotaur`
+- `cqrepoured:mummy`
+- `cqrepoured:necromancer`
+- `cqrepoured:nether_dragon`
+- `cqrepoured:npc`
+- `cqrepoured:ogre`
+- `cqrepoured:orc`
+- `cqrepoured:pirate`
+- `cqrepoured:pirate_captain`
+- `cqrepoured:pirate_parrot`
+- `cqrepoured:primedtnt`
+- `cqrepoured:projectile_bubble`
+- `cqrepoured:projectile_bullet`
+- `cqrepoured:projectile_cannon_ball`
+- `cqrepoured:projectile_earth_quake`
+- `cqrepoured:projectile_energy_orb`
+- `cqrepoured:projectile_firewall_part`
+- `cqrepoured:projectile_homing_ender_eye`
+- `cqrepoured:projectile_hookshot_hook`
+- `cqrepoured:projectile_hot_fireball`
+- `cqrepoured:projectile_poison_spell`
+- `cqrepoured:projectile_spider_ball`
+- `cqrepoured:projectile_spider_hook`
+- `cqrepoured:projectile_thrown_block`
+- `cqrepoured:projectile_vampiric_spell`
+- `cqrepoured:projectile_web`
+- `cqrepoured:skeleton`
+- `cqrepoured:slime_part`
+- `cqrepoured:spectre`
+- `cqrepoured:spider_egg`
+- `cqrepoured:summoning_circle`
+- `cqrepoured:triton`
+- `cqrepoured:walker`
+- `cqrepoured:walker_king`
+- `cqrepoured:walker_tornado`
+- `cqrepoured:zombie`
+
+## craftsylvania (40 entities)
+
+- `craftsylvania:cvectoplasm_2`
+- `craftsylvania:cvfireman`
+- `craftsylvania:cvfrankenstein`
+- `craftsylvania:cvghoul`
+- `craftsylvania:cvgoldmedusa`
+- `craftsylvania:cvknight`
+- `craftsylvania:cvlesserdemon`
+- `craftsylvania:cvmedusehead`
+- `craftsylvania:cvmummy`
+- `craftsylvania:cvnemesis`
+- `craftsylvania:cvwerewolf`
+- `craftsylvania:entitybulletagunea`
+- `craftsylvania:entitybulletalucardsword`
+- `craftsylvania:entitybulletalucardswordmodern`
+- `craftsylvania:entitybulletaxe`
+- `craftsylvania:entitybulletaxeretro`
+- `craftsylvania:entitybulletcross`
+- `craftsylvania:entitybulletdaggerretro`
+- `craftsylvania:entitybulletdaybreak`
+- `craftsylvania:entitybulletfirebomb`
+- `craftsylvania:entitybulletfleamansummon`
+- `craftsylvania:entitybulletghoulsummon`
+- `craftsylvania:entitybulletholyflame`
+- `craftsylvania:entitybulletholywater`
+- `craftsylvania:entitybulletknightsummon`
+- `craftsylvania:entitybulletmedusasummon`
+- `craftsylvania:entitybulletmummysummon`
+- `craftsylvania:entitybulletretrocross`
+- `craftsylvania:entitybulletretroholywater`
+- `craftsylvania:entitybulletthrowingknife`
+- `craftsylvania:entitybulletvibhuti`
+- `craftsylvania:entitybulletwhipskeletonsummon`
+- `craftsylvania:fleaman`
+- `craftsylvania:friendlyfleaman`
+- `craftsylvania:friendlyghoul`
+- `craftsylvania:friendlyknight`
+- `craftsylvania:friendlymedusahead`
+- `craftsylvania:friendlymummy`
+- `craftsylvania:friendlywhipskeleton`
+- `craftsylvania:whipskeleton`
+
+## cyclicmagic (18 entities)
+
+- `cyclicmagic:blazebolt`
+- `cyclicmagic:boomerang`
+- `cyclicmagic:dungeonbolt`
+- `cyclicmagic:ender_eye_orb`
+- `cyclicmagic:firecannon`
+- `cyclicmagic:fishingbolt`
+- `cyclicmagic:frostbolt`
+- `cyclicmagic:lightningbolt`
+- `cyclicmagic:magic_missile`
+- `cyclicmagic:magicnetempty`
+- `cyclicmagic:magicnetfull`
+- `cyclicmagic:robot`
+- `cyclicmagic:slingshot_bullet`
+- `cyclicmagic:tntblocksafebolt`
+- `cyclicmagic:tntbolt`
+- `cyclicmagic:tntminingbolt`
+- `cyclicmagic:torchbolt`
+- `cyclicmagic:woolbolt`
+
+## darkutils (1 entities)
+
+- `darkutils:fake_tnt`
+
+## doggytalents (2 entities)
+
+- `doggytalents:attackbeam`
+- `doggytalents:dog`
+
+## dungeonmobs (30 entities)
+
+- `dungeonmobs:dmbeholder`
+- `dungeonmobs:dmbladetrap`
+- `dungeonmobs:dmcavefisher`
+- `dungeonmobs:dmcockatrice`
+- `dungeonmobs:dmdarkball`
+- `dungeonmobs:dmdestrachan`
+- `dungeonmobs:dmeldermob`
+- `dungeonmobs:dmeyeray`
+- `dungeonmobs:dmfallenangel`
+- `dungeonmobs:dmghost`
+- `dungeonmobs:dmghoul`
+- `dungeonmobs:dmhookhorror`
+- `dungeonmobs:dmillithid`
+- `dungeonmobs:dmlightball`
+- `dungeonmobs:dmlizalfos`
+- `dungeonmobs:dmmagicmissile`
+- `dungeonmobs:dmmanticore`
+- `dungeonmobs:dmnetherhound`
+- `dungeonmobs:dmpetrified`
+- `dungeonmobs:dmrakshasa`
+- `dungeonmobs:dmrakshasaimage`
+- `dungeonmobs:dmrevenant`
+- `dungeonmobs:dmrustmonster`
+- `dungeonmobs:dmshrieker`
+- `dungeonmobs:dmsonicboom`
+- `dungeonmobs:dmthoqqua`
+- `dungeonmobs:dmtroll`
+- `dungeonmobs:dmumberhulk`
+- `dungeonmobs:dmvampire`
+- `dungeonmobs:dmvescavor`
+
+## ebwizardry (72 entities)
+
+- `ebwizardry:arrow_rain`
+- `ebwizardry:black_hole`
+- `ebwizardry:blaze_minion`
+- `ebwizardry:blizzard`
+- `ebwizardry:boulder`
+- `ebwizardry:bubble`
+- `ebwizardry:combustion_rune`
+- `ebwizardry:conjured_arrow`
+- `ebwizardry:darkness_orb`
+- `ebwizardry:dart`
+- `ebwizardry:decay`
+- `ebwizardry:decoy`
+- `ebwizardry:earthquake`
+- `ebwizardry:ember`
+- `ebwizardry:evil_wizard`
+- `ebwizardry:fire_sigil`
+- `ebwizardry:firebolt`
+- `ebwizardry:firebomb`
+- `ebwizardry:flamecatcher_arrow`
+- `ebwizardry:force_arrow`
+- `ebwizardry:force_orb`
+- `ebwizardry:forcefield`
+- `ebwizardry:frost_sigil`
+- `ebwizardry:hailstorm`
+- `ebwizardry:healing_aura`
+- `ebwizardry:husk_minion`
+- `ebwizardry:ice_barrier`
+- `ebwizardry:ice_charge`
+- `ebwizardry:ice_giant`
+- `ebwizardry:ice_lance`
+- `ebwizardry:ice_shard`
+- `ebwizardry:ice_spike`
+- `ebwizardry:ice_wraith`
+- `ebwizardry:iceball`
+- `ebwizardry:large_magic_fireball`
+- `ebwizardry:levitating_block`
+- `ebwizardry:lightning_arrow`
+- `ebwizardry:lightning_disc`
+- `ebwizardry:lightning_hammer`
+- `ebwizardry:lightning_sigil`
+- `ebwizardry:lightning_wraith`
+- `ebwizardry:magic_fireball`
+- `ebwizardry:magic_missile`
+- `ebwizardry:magic_slime`
+- `ebwizardry:meteor`
+- `ebwizardry:phoenix`
+- `ebwizardry:poison_bomb`
+- `ebwizardry:radiant_totem`
+- `ebwizardry:remnant`
+- `ebwizardry:ring_of_fire`
+- `ebwizardry:shadow_wraith`
+- `ebwizardry:shield`
+- `ebwizardry:silverfish_minion`
+- `ebwizardry:skeleton_minion`
+- `ebwizardry:smoke_bomb`
+- `ebwizardry:spark`
+- `ebwizardry:spark_bomb`
+- `ebwizardry:spectral_golem`
+- `ebwizardry:spider_minion`
+- `ebwizardry:spirit_horse`
+- `ebwizardry:spirit_wolf`
+- `ebwizardry:storm_elemental`
+- `ebwizardry:stormcloud`
+- `ebwizardry:stray_minion`
+- `ebwizardry:thunderbolt`
+- `ebwizardry:tornado`
+- `ebwizardry:vex_minion`
+- `ebwizardry:wither_skeleton_minion`
+- `ebwizardry:withering_totem`
+- `ebwizardry:wizard`
+- `ebwizardry:zombie_minion`
+- `ebwizardry:zombie_spawner`
+
+## ee (52 entities)
+
+- `ee:acid_proj`
+- `ee:aoe_avalon`
+- `ee:avalon`
+- `ee:barrend_parasite`
+- `ee:blood_slash`
+- `ee:bomb_proj`
+- `ee:buffker`
+- `ee:chomper_arrow`
+- `ee:controller`
+- `ee:controller_lift`
+- `ee:crystal_ball`
+- `ee:crystal_boss`
+- `ee:crytsal_ground`
+- `ee:depths_chomper`
+- `ee:end_bug`
+- `ee:end_eye`
+- `ee:end_king`
+- `ee:end_knight`
+- `ee:end_lord`
+- `ee:end_mage`
+- `ee:end_seeker`
+- `ee:end_seeker_prime`
+- `ee:end_shield`
+- `ee:entity_idle`
+- `ee:fire_ball_red`
+- `ee:friend_king`
+- `ee:ghost_arm`
+- `ee:ghost_king_phase`
+- `ee:golem_b`
+- `ee:green_arrow`
+- `ee:heal_aura`
+- `ee:lame_eye`
+- `ee:lamented_islands_painting`
+- `ee:lamentor_wave`
+- `ee:large_aoe`
+- `ee:lidoped`
+- `ee:mad_spirit`
+- `ee:mini_avalon`
+- `ee:mini_nuke`
+- `ee:move_tile_aoe`
+- `ee:nuke`
+- `ee:pghost_king`
+- `ee:projectile_quake`
+- `ee:purple_ball`
+- `ee:red_crystal`
+- `ee:red_sword`
+- `ee:ring_eye`
+- `ee:snatcher`
+- `ee:sword_attack`
+- `ee:sword_spike`
+- `ee:unholy_arrow`
+- `ee:wall`
+
+## erebus (70 entities)
+
+- `erebus:erebus.animated_bamboo_crate`
+- `erebus:erebus.animated_block`
+- `erebus:erebus.animated_chest`
+- `erebus:erebus.antlion`
+- `erebus:erebus.antlion_boss`
+- `erebus:erebus.antlion_mini_boss`
+- `erebus:erebus.bed_bug`
+- `erebus:erebus.beetle`
+- `erebus:erebus.beetle_larva`
+- `erebus:erebus.black_ant`
+- `erebus:erebus.black_widow`
+- `erebus:erebus.bog_maw`
+- `erebus:erebus.bombardier_beetle`
+- `erebus:erebus.bombardier_beetle_larva`
+- `erebus:erebus.bot_fly`
+- `erebus:erebus.bot_fly_larva`
+- `erebus:erebus.centipede`
+- `erebus:erebus.chameleon_tick`
+- `erebus:erebus.cicada`
+- `erebus:erebus.crop_weevil`
+- `erebus:erebus.crushroom`
+- `erebus:erebus.dragon_fly`
+- `erebus:erebus.fire_ant`
+- `erebus:erebus.fire_ant_soldier`
+- `erebus:erebus.fire_resistent_item`
+- `erebus:erebus.fly`
+- `erebus:erebus.fungal_weevil`
+- `erebus:erebus.gas_vent`
+- `erebus:erebus.glow_worm`
+- `erebus:erebus.goo_ball`
+- `erebus:erebus.grasshopper`
+- `erebus:erebus.honey_pot_ant`
+- `erebus:erebus.jumping_spider`
+- `erebus:erebus.lava_web_spider`
+- `erebus:erebus.locust`
+- `erebus:erebus.magma_crawler`
+- `erebus:erebus.midge_swarm`
+- `erebus:erebus.money_spider`
+- `erebus:erebus.mosquito`
+- `erebus:erebus.moth`
+- `erebus:erebus.mucus_bomb_primed`
+- `erebus:erebus.poison_jet`
+- `erebus:erebus.pond_skater`
+- `erebus:erebus.praying_mantis`
+- `erebus:erebus.preserved_block`
+- `erebus:erebus.punchroom`
+- `erebus:erebus.rhino_beetle`
+- `erebus:erebus.scorpion`
+- `erebus:erebus.scytodes`
+- `erebus:erebus.solifuge`
+- `erebus:erebus.solifuge_small`
+- `erebus:erebus.spore_ball`
+- `erebus:erebus.stag_beetle`
+- `erebus:erebus.tarantula`
+- `erebus:erebus.tarantula_baby`
+- `erebus:erebus.tarantula_egg`
+- `erebus:erebus.tarantula_mini_boss`
+- `erebus:erebus.thrown_sand`
+- `erebus:erebus.titan_beetle`
+- `erebus:erebus.umber_golem`
+- `erebus:erebus.umber_golem_idol`
+- `erebus:erebus.velvet_worm`
+- `erebus:erebus.wasp`
+- `erebus:erebus.wasp_dagger`
+- `erebus:erebus.web_sling`
+- `erebus:erebus.woodlouse`
+- `erebus:erebus.woodlouse_ball`
+- `erebus:erebus.worker_bee`
+- `erebus:erebus.zombie_ant`
+- `erebus:erebus.zombie_ant_soldier`
+
+## exoticbirds (39 entities)
+
+- `exoticbirds:bird_egg`
+- `exoticbirds:bluejay`
+- `exoticbirds:booby`
+- `exoticbirds:budgerigar`
+- `exoticbirds:cardinal`
+- `exoticbirds:cassowary`
+- `exoticbirds:cloud_phoenix`
+- `exoticbirds:crane`
+- `exoticbirds:desert_phoenix`
+- `exoticbirds:duck`
+- `exoticbirds:emperorpenguin`
+- `exoticbirds:ender_phoenix`
+- `exoticbirds:flamingo`
+- `exoticbirds:gouldianfinch`
+- `exoticbirds:heron`
+- `exoticbirds:hummingbird`
+- `exoticbirds:kingfisher`
+- `exoticbirds:kiwi`
+- `exoticbirds:kookaburra`
+- `exoticbirds:lyrebird`
+- `exoticbirds:magpie`
+- `exoticbirds:nether_phoenix`
+- `exoticbirds:ostrich`
+- `exoticbirds:owl`
+- `exoticbirds:parrot`
+- `exoticbirds:peafowl`
+- `exoticbirds:pelican`
+- `exoticbirds:phoenix`
+- `exoticbirds:pigeon`
+- `exoticbirds:roadrunner`
+- `exoticbirds:robin`
+- `exoticbirds:seagull`
+- `exoticbirds:snow_phoenix`
+- `exoticbirds:swan`
+- `exoticbirds:toucan`
+- `exoticbirds:twilight_phoenix`
+- `exoticbirds:vulture`
+- `exoticbirds:water_phoenix`
+- `exoticbirds:woodpecker`
+
+## extraplanets (27 entities)
+
+- `extraplanets:entitygenerallander`
+- `extraplanets:extraplanets.entitsaturnlander`
+- `extraplanets:extraplanets.entityjupiterlander`
+- `extraplanets:extraplanets.entitymarsrover`
+- `extraplanets:extraplanets.entitymercurylander`
+- `extraplanets:extraplanets.entityneptunelander`
+- `extraplanets:extraplanets.entitytier10electricrocket`
+- `extraplanets:extraplanets.entitytier10rocket`
+- `extraplanets:extraplanets.entitytier4rocket`
+- `extraplanets:extraplanets.entitytier5rocket`
+- `extraplanets:extraplanets.entitytier6rocket`
+- `extraplanets:extraplanets.entitytier7rocket`
+- `extraplanets:extraplanets.entitytier8rocket`
+- `extraplanets:extraplanets.entitytier9rocket`
+- `extraplanets:extraplanets.entityuranuslander`
+- `extraplanets:extraplanets.entityvenusrover`
+- `extraplanets:extraplanets.evolvedancientmagmacube`
+- `extraplanets:extraplanets.evolvedfirebatboss`
+- `extraplanets:extraplanets.evolvedghastboss`
+- `extraplanets:extraplanets.evolvedgiantzombieboss`
+- `extraplanets:extraplanets.evolvediceslimeboss`
+- `extraplanets:extraplanets.evolvedmagmacube`
+- `extraplanets:extraplanets.evolvedmagmacubeboss`
+- `extraplanets:extraplanets.evolvedsnowmanboss`
+- `extraplanets:extraplanets.evolvedspacemanboss`
+- `extraplanets:extraplanets.firebombprimed`
+- `extraplanets:extraplanets.nuclearbombprimed`
+
+## extrautils2 (2 entities)
+
+- `extrautils2:boomerang`
+- `extrautils2:chunkdata`
+
+## fairylights (2 entities)
+
+- `fairylights:fastener`
+- `fairylights:ladder`
+
+## flammpfeil.slashblade (31 entities)
+
+- `flammpfeil.slashblade:bladestand`
+- `flammpfeil.slashblade:blisteringswords`
+- `flammpfeil.slashblade:caliburmanager`
+- `flammpfeil.slashblade:drive`
+- `flammpfeil.slashblade:entityaquaedge`
+- `flammpfeil.slashblade:entitydriveex`
+- `flammpfeil.slashblade:entityflareedge`
+- `flammpfeil.slashblade:grimgrip`
+- `flammpfeil.slashblade:grimgripkey`
+- `flammpfeil.slashblade:heavyrainswords`
+- `flammpfeil.slashblade:helmbrakermanager`
+- `flammpfeil.slashblade:judgmentcutmanager`
+- `flammpfeil.slashblade:justguardmanager`
+- `flammpfeil.slashblade:lightningsword`
+- `flammpfeil.slashblade:lumbermanager`
+- `flammpfeil.slashblade:maximumbetmanager`
+- `flammpfeil.slashblade:nofireligntningbolt`
+- `flammpfeil.slashblade:phantomswordex`
+- `flammpfeil.slashblade:rapidslashmanager`
+- `flammpfeil.slashblade:sakuraendmanager`
+- `flammpfeil.slashblade:slashdimension`
+- `flammpfeil.slashblade:spearmanager`
+- `flammpfeil.slashblade:spinningsword`
+- `flammpfeil.slashblade:spiralswords`
+- `flammpfeil.slashblade:stingermanager`
+- `flammpfeil.slashblade:stormswords`
+- `flammpfeil.slashblade:summonedblade`
+- `flammpfeil.slashblade:summonedsword`
+- `flammpfeil.slashblade:summonedswordairtrickmarker`
+- `flammpfeil.slashblade:summonedswordbase`
+- `flammpfeil.slashblade:withersword`
+
+## fluxnetworks (1 entities)
+
+- `fluxnetworks:flux`
+
+## fossil (70 entities)
+
+- `fossil:fossil.alligator_gar`
+- `fossil:fossil.allosaurus`
+- `fossil:fossil.ancient_javelin`
+- `fossil:fossil.ankylosaurus`
+- `fossil:fossil.anu`
+- `fossil:fossil.anubite`
+- `fossil:fossil.anudead`
+- `fossil:fossil.anueffect`
+- `fossil:fossil.arthropleura`
+- `fossil:fossil.birdegg`
+- `fossil:fossil.brachiosaurus`
+- `fossil:fossil.ceratosaurus`
+- `fossil:fossil.citipati`
+- `fossil:fossil.coelacanth`
+- `fossil:fossil.compsognathus`
+- `fossil:fossil.confuciusornis`
+- `fossil:fossil.crassigyrinus`
+- `fossil:fossil.debugtest`
+- `fossil:fossil.debugtest_2`
+- `fossil:fossil.deinonychus`
+- `fossil:fossil.dilophosaurus`
+- `fossil:fossil.dinoegg`
+- `fossil:fossil.diplocaulus`
+- `fossil:fossil.diplodocus`
+- `fossil:fossil.dodo`
+- `fossil:fossil.dryosaurus`
+- `fossil:fossil.edaphosaurus`
+- `fossil:fossil.elasmotherium`
+- `fossil:fossil.failuresaurus`
+- `fossil:fossil.friendlypigzombie`
+- `fossil:fossil.gallimimus`
+- `fossil:fossil.gastornis`
+- `fossil:fossil.henodus`
+- `fossil:fossil.icthyosaurus`
+- `fossil:fossil.javelin`
+- `fossil:fossil.kelenken`
+- `fossil:fossil.liopleurodon`
+- `fossil:fossil.mammoth`
+- `fossil:fossil.megalania`
+- `fossil:fossil.megaloceros`
+- `fossil:fossil.megalodon`
+- `fossil:fossil.megalograptus`
+- `fossil:fossil.meganeura`
+- `fossil:fossil.mosasaurus`
+- `fossil:fossil.nautilus`
+- `fossil:fossil.ornitholestes`
+- `fossil:fossil.pachycephalosaurus`
+- `fossil:fossil.parasaurolophus`
+- `fossil:fossil.phorusrhacos`
+- `fossil:fossil.platybelodon`
+- `fossil:fossil.plesiosaur`
+- `fossil:fossil.pterosaur`
+- `fossil:fossil.quagga`
+- `fossil:fossil.sarcosuchus`
+- `fossil:fossil.sentrypigman`
+- `fossil:fossil.smilodon`
+- `fossil:fossil.spinosaurus`
+- `fossil:fossil.stegosaurus`
+- `fossil:fossil.stone_tablet`
+- `fossil:fossil.sturgeon`
+- `fossil:fossil.tarslime`
+- `fossil:fossil.therizinosaurus`
+- `fossil:fossil.tiktaalik`
+- `fossil:fossil.titanis`
+- `fossil:fossil.toyball`
+- `fossil:fossil.toyscratchingpost`
+- `fossil:fossil.toytetheredlog`
+- `fossil:fossil.triceratops`
+- `fossil:fossil.tyrannosaurus`
+- `fossil:fossil.velociraptor`
+
+## fossils_and_archeology_addon (4 entities)
+
+- `fossils_and_archeology_addon:cow_rex`
+- `fossils_and_archeology_addon:entitybulletrusticbow`
+- `fossils_and_archeology_addon:horusite_mob`
+- `fossils_and_archeology_addon:indominus_rex`
+
+## galacticraftcore (18 entities)
+
+- `galacticraftcore:adv_meteor`
+- `galacticraftcore:alien_villager`
+- `galacticraftcore:buggy`
+- `galacticraftcore:celestial_screen`
+- `galacticraftcore:evolved_creeper`
+- `galacticraftcore:evolved_enderman`
+- `galacticraftcore:evolved_skeleton`
+- `galacticraftcore:evolved_skeleton_boss`
+- `galacticraftcore:evolved_spider`
+- `galacticraftcore:evolved_witch`
+- `galacticraftcore:evolved_zombie`
+- `galacticraftcore:gcflag`
+- `galacticraftcore:hanging_schematic`
+- `galacticraftcore:lander`
+- `galacticraftcore:meteor`
+- `galacticraftcore:meteor_chunk`
+- `galacticraftcore:para_chest`
+- `galacticraftcore:rocket_t1`
+
+## galacticraftplanets (16 entities)
+
+- `galacticraftplanets:astro_miner`
+- `galacticraftplanets:creeper_boss`
+- `galacticraftplanets:entry_pod`
+- `galacticraftplanets:entry_pod_venus`
+- `galacticraftplanets:grapple_hook`
+- `galacticraftplanets:juicer`
+- `galacticraftplanets:landing_balloons`
+- `galacticraftplanets:projectile_tnt`
+- `galacticraftplanets:rocket_cargo`
+- `galacticraftplanets:rocket_t2`
+- `galacticraftplanets:rocket_t3`
+- `galacticraftplanets:slimeling`
+- `galacticraftplanets:sludgeling`
+- `galacticraftplanets:small_asteroid`
+- `galacticraftplanets:spider_queen`
+- `galacticraftplanets:web_shot`
+
+## galacticresearch (2 entities)
+
+- `galacticresearch:mining_rocket`
+- `galacticresearch:satellite_rocket`
+
+## golems (40 entities)
+
+- `golems:golem_bedrock`
+- `golems:golem_bone`
+- `golems:golem_bookshelf`
+- `golems:golem_clay`
+- `golems:golem_coal`
+- `golems:golem_concrete`
+- `golems:golem_crafting`
+- `golems:golem_diamond`
+- `golems:golem_dispenser`
+- `golems:golem_emerald`
+- `golems:golem_end_stone`
+- `golems:golem_furnace`
+- `golems:golem_glass`
+- `golems:golem_glowstone`
+- `golems:golem_gold`
+- `golems:golem_hardened_clay`
+- `golems:golem_ice`
+- `golems:golem_lapis`
+- `golems:golem_leaves`
+- `golems:golem_magma`
+- `golems:golem_melon`
+- `golems:golem_nether_brick`
+- `golems:golem_nether_wart`
+- `golems:golem_obsidian`
+- `golems:golem_prismarine`
+- `golems:golem_quartz`
+- `golems:golem_red_sandstone`
+- `golems:golem_redstone`
+- `golems:golem_redstone_lamp`
+- `golems:golem_sandstone`
+- `golems:golem_sea_lantern`
+- `golems:golem_shroom`
+- `golems:golem_slime`
+- `golems:golem_sponge`
+- `golems:golem_stained_clay`
+- `golems:golem_stained_glass`
+- `golems:golem_straw`
+- `golems:golem_tnt`
+- `golems:golem_wooden`
+- `golems:golem_wool`
+
+## hole_filler_mod (7 entities)
+
+- `hole_filler_mod:entity_throwable_hole_filler`
+- `hole_filler_mod:entity_throwable_hole_filler_balanced`
+- `hole_filler_mod:entity_throwable_hole_filler_dark`
+- `hole_filler_mod:entity_throwable_hole_filler_lava`
+- `hole_filler_mod:entity_throwable_hole_filler_light`
+- `hole_filler_mod:entity_throwable_hole_filler_smart`
+- `hole_filler_mod:entity_throwable_hole_filler_water`
+
+## ichunutil (1 entities)
+
+- `ichunutil:entity_block`
+
+## inventorypets (10 entities)
+
+- `inventorypets:entityapple`
+- `inventorypets:entitybanana`
+- `inventorypets:entitybillgates`
+- `inventorypets:entitygoldenapple`
+- `inventorypets:entitylivinganvil`
+- `inventorypets:entitylivingbed`
+- `inventorypets:entityminiquantumblaze`
+- `inventorypets:entityminiquantumenderman`
+- `inventorypets:entitysatyanadella`
+- `inventorypets:entitysteveballmer`
+
+## lootr (1 entities)
+
+- `lootr:lootr_minecart`
+
+## lucky (2 entities)
+
+- `lucky:luckypotion`
+- `lucky:luckyprojectile`
+
+## mekanism (9 entities)
+
+- `mekanism:babycreeper`
+- `mekanism:babyenderman`
+- `mekanism:babyskeleton`
+- `mekanism:babystray`
+- `mekanism:babywitherskeleton`
+- `mekanism:balloon`
+- `mekanism:flame`
+- `mekanism:obsidiantnt`
+- `mekanism:robit`
+
+## minecraft (84 entities)
+
+- `minecraft:area_effect_cloud`
+- `minecraft:armor_stand`
+- `minecraft:arrow`
+- `minecraft:bat`
+- `minecraft:blaze`
+- `minecraft:boat`
+- `minecraft:cave_spider`
+- `minecraft:chest_minecart`
+- `minecraft:chicken`
+- `minecraft:commandblock_minecart`
+- `minecraft:cow`
+- `minecraft:creeper`
+- `minecraft:donkey`
+- `minecraft:dragon_fireball`
+- `minecraft:egg`
+- `minecraft:elder_guardian`
+- `minecraft:ender_crystal`
+- `minecraft:ender_dragon`
+- `minecraft:ender_pearl`
+- `minecraft:enderman`
+- `minecraft:endermite`
+- `minecraft:evocation_fangs`
+- `minecraft:evocation_illager`
+- `minecraft:eye_of_ender_signal`
+- `minecraft:falling_block`
+- `minecraft:fireball`
+- `minecraft:fireworks_rocket`
+- `minecraft:furnace_minecart`
+- `minecraft:ghast`
+- `minecraft:giant`
+- `minecraft:guardian`
+- `minecraft:hopper_minecart`
+- `minecraft:horse`
+- `minecraft:husk`
+- `minecraft:illusion_illager`
+- `minecraft:item`
+- `minecraft:item_frame`
+- `minecraft:leash_knot`
+- `minecraft:lightning_bolt`
+- `minecraft:llama`
+- `minecraft:llama_spit`
+- `minecraft:magma_cube`
+- `minecraft:minecart`
+- `minecraft:mooshroom`
+- `minecraft:mule`
+- `minecraft:ocelot`
+- `minecraft:painting`
+- `minecraft:parrot`
+- `minecraft:pig`
+- `minecraft:polar_bear`
+- `minecraft:potion`
+- `minecraft:rabbit`
+- `minecraft:sheep`
+- `minecraft:shulker`
+- `minecraft:shulker_bullet`
+- `minecraft:silverfish`
+- `minecraft:skeleton`
+- `minecraft:skeleton_horse`
+- `minecraft:slime`
+- `minecraft:small_fireball`
+- `minecraft:snowball`
+- `minecraft:snowman`
+- `minecraft:spawner_minecart`
+- `minecraft:spectral_arrow`
+- `minecraft:spider`
+- `minecraft:squid`
+- `minecraft:stray`
+- `minecraft:tnt`
+- `minecraft:tnt_minecart`
+- `minecraft:vex`
+- `minecraft:villager`
+- `minecraft:villager_golem`
+- `minecraft:vindication_illager`
+- `minecraft:witch`
+- `minecraft:wither`
+- `minecraft:wither_skeleton`
+- `minecraft:wither_skull`
+- `minecraft:wolf`
+- `minecraft:xp_bottle`
+- `minecraft:xp_orb`
+- `minecraft:zombie`
+- `minecraft:zombie_horse`
+- `minecraft:zombie_pigman`
+- `minecraft:zombie_villager`
+
+## mmadd (26 entities)
+
+- `mmadd:aquarachnid`
+- `mmadd:beetle`
+- `mmadd:blackknight`
+- `mmadd:bograchnid`
+- `mmadd:cursedironarmor`
+- `mmadd:deepzombie`
+- `mmadd:draugr`
+- `mmadd:dweller`
+- `mmadd:enderling`
+- `mmadd:entitybulletspiderstaff`
+- `mmadd:geode`
+- `mmadd:glowboar`
+- `mmadd:iceman`
+- `mmadd:knight`
+- `mmadd:mawrachnid`
+- `mmadd:motherspiderboss`
+- `mmadd:mummy`
+- `mmadd:pharoahboss`
+- `mmadd:robot`
+- `mmadd:scorpion`
+- `mmadd:skycow`
+- `mmadd:whiteknight`
+- `mmadd:wight`
+- `mmadd:woodrachnid`
+- `mmadd:yeti`
+- `mmadd:zombieboarman`
+
+## mmlib (1 entities)
+
+- `mmlib:seat_block`
+
+## mocreatures (94 entities)
+
+- `mocreatures:anchovy`
+- `mocreatures:angelfish`
+- `mocreatures:angler`
+- `mocreatures:ant`
+- `mocreatures:bass`
+- `mocreatures:bee`
+- `mocreatures:biggolem`
+- `mocreatures:bird`
+- `mocreatures:blackbear`
+- `mocreatures:boar`
+- `mocreatures:bunny`
+- `mocreatures:butterfly`
+- `mocreatures:caveogre`
+- `mocreatures:cavescorpion`
+- `mocreatures:clownfish`
+- `mocreatures:cod`
+- `mocreatures:crab`
+- `mocreatures:cricket`
+- `mocreatures:crocodile`
+- `mocreatures:darkmanticore`
+- `mocreatures:deer`
+- `mocreatures:dirtscorpion`
+- `mocreatures:dolphin`
+- `mocreatures:dragonfly`
+- `mocreatures:duck`
+- `mocreatures:egg`
+- `mocreatures:elephant`
+- `mocreatures:ent`
+- `mocreatures:filchlizard`
+- `mocreatures:firefly`
+- `mocreatures:firemanticore`
+- `mocreatures:fireogre`
+- `mocreatures:firescorpion`
+- `mocreatures:fishy`
+- `mocreatures:flamewraith`
+- `mocreatures:fly`
+- `mocreatures:fox`
+- `mocreatures:frostmanticore`
+- `mocreatures:frostscorpion`
+- `mocreatures:goat`
+- `mocreatures:goldfish`
+- `mocreatures:grasshopper`
+- `mocreatures:greenogre`
+- `mocreatures:grizzlybear`
+- `mocreatures:hellrat`
+- `mocreatures:hippotang`
+- `mocreatures:horsemob`
+- `mocreatures:jellyfish`
+- `mocreatures:kitty`
+- `mocreatures:kittybed`
+- `mocreatures:komododragon`
+- `mocreatures:leoger`
+- `mocreatures:leopard`
+- `mocreatures:liard`
+- `mocreatures:liger`
+- `mocreatures:lion`
+- `mocreatures:lither`
+- `mocreatures:litterbox`
+- `mocreatures:maggot`
+- `mocreatures:manderin`
+- `mocreatures:mantaray`
+- `mocreatures:manticorepet`
+- `mocreatures:minigolem`
+- `mocreatures:mole`
+- `mocreatures:mouse`
+- `mocreatures:ostrich`
+- `mocreatures:pandabear`
+- `mocreatures:panthard`
+- `mocreatures:panther`
+- `mocreatures:panthger`
+- `mocreatures:petscorpion`
+- `mocreatures:piranha`
+- `mocreatures:plainmanticore`
+- `mocreatures:raccoon`
+- `mocreatures:rat`
+- `mocreatures:roach`
+- `mocreatures:salmon`
+- `mocreatures:shark`
+- `mocreatures:silverskeleton`
+- `mocreatures:snail`
+- `mocreatures:snake`
+- `mocreatures:stingray`
+- `mocreatures:tiger`
+- `mocreatures:toxicmanticore`
+- `mocreatures:trock`
+- `mocreatures:turkey`
+- `mocreatures:turtle`
+- `mocreatures:undeadscorpion`
+- `mocreatures:werewolf`
+- `mocreatures:wildhorse`
+- `mocreatures:wildpolarbear`
+- `mocreatures:wraith`
+- `mocreatures:wwolf`
+- `mocreatures:wyvern`
+
+## morebows (2 entities)
+
+- `morebows:arrow_spawner`
+- `morebows:custom_arrow`
+
+## morecreeps (65 entities)
+
+- `morecreeps:babymummy`
+- `morecreeps:bigbaby`
+- `morecreeps:blacksoul`
+- `morecreeps:blorp`
+- `morecreeps:bubblescum`
+- `morecreeps:bullet`
+- `morecreeps:bum`
+- `morecreeps:camel`
+- `morecreeps:cameljockey`
+- `morecreeps:castlecritter`
+- `morecreeps:castleguard`
+- `morecreeps:castleking`
+- `morecreeps:caveman`
+- `morecreeps:desert_lizard`
+- `morecreeps:digbug`
+- `morecreeps:doghouse`
+- `morecreeps:evil_light`
+- `morecreeps:evilchicken`
+- `morecreeps:evilcreature`
+- `morecreeps:evilegg`
+- `morecreeps:evilpig`
+- `morecreeps:evilscientist`
+- `morecreeps:evilsnowman`
+- `morecreeps:floob`
+- `morecreeps:floobship`
+- `morecreeps:frisbee`
+- `morecreeps:g`
+- `morecreeps:goodonut`
+- `morecreeps:googoat`
+- `morecreeps:grow`
+- `morecreeps:growbot_gregg`
+- `morecreeps:guineapig`
+- `morecreeps:hippo`
+- `morecreeps:horsehead`
+- `morecreeps:hotdog`
+- `morecreeps:hunchback`
+- `morecreeps:hunchbackskeleton`
+- `morecreeps:invisible_man`
+- `morecreeps:kid`
+- `morecreeps:lawyer_from_hell`
+- `morecreeps:lolliman`
+- `morecreeps:mandog`
+- `morecreeps:money`
+- `morecreeps:mummy`
+- `morecreeps:pony`
+- `morecreeps:ponycloud`
+- `morecreeps:ponygirl`
+- `morecreeps:preacher`
+- `morecreeps:prisoner`
+- `morecreeps:pyramid_guardian`
+- `morecreeps:ratman`
+- `morecreeps:ray`
+- `morecreeps:robot_ted`
+- `morecreeps:robot_todd`
+- `morecreeps:rock_monster`
+- `morecreeps:rocket`
+- `morecreeps:rocketgiraffe`
+- `morecreeps:schlump`
+- `morecreeps:shrink`
+- `morecreeps:sneakysal`
+- `morecreeps:snowdevil`
+- `morecreeps:thief`
+- `morecreeps:tombstone`
+- `morecreeps:trophy`
+- `morecreeps:zebra`
+
+## moreplanets (60 entities)
+
+- `moreplanets:albetius_worm`
+- `moreplanets:alien_beam`
+- `moreplanets:alien_miner`
+- `moreplanets:anti_gravity_arrow`
+- `moreplanets:anti_gravity_falling_block`
+- `moreplanets:bearry`
+- `moreplanets:black_hole`
+- `moreplanets:black_hole_storage`
+- `moreplanets:cheese_cow`
+- `moreplanets:cheese_cube_eye_boss`
+- `moreplanets:cheese_floater`
+- `moreplanets:cheese_slime`
+- `moreplanets:cheese_spore`
+- `moreplanets:dark_lightning_bolt`
+- `moreplanets:falling_koentus_meteor`
+- `moreplanets:giant_blueberry`
+- `moreplanets:giant_worm`
+- `moreplanets:infected_arrow`
+- `moreplanets:infected_cave_spider`
+- `moreplanets:infected_chicken`
+- `moreplanets:infected_cow`
+- `moreplanets:infected_creeper`
+- `moreplanets:infected_egg`
+- `moreplanets:infected_elder_guardian`
+- `moreplanets:infected_guardian`
+- `moreplanets:infected_purlonite_arrow`
+- `moreplanets:infected_purlonite_bomb`
+- `moreplanets:infected_purlonite_slime_boss`
+- `moreplanets:infected_purlonite_slime_minion`
+- `moreplanets:infected_purlonite_spider`
+- `moreplanets:infected_purlonite_tentacle`
+- `moreplanets:infected_purlonite_worm`
+- `moreplanets:infected_skeleton`
+- `moreplanets:infected_snowball`
+- `moreplanets:infected_snowman`
+- `moreplanets:infected_squid`
+- `moreplanets:infected_worm`
+- `moreplanets:infected_zombie`
+- `moreplanets:jelly_slime`
+- `moreplanets:koentus_meteor`
+- `moreplanets:laser_bullet`
+- `moreplanets:marshmallow`
+- `moreplanets:mini_vein_floater`
+- `moreplanets:nibiru_lightning_bolt`
+- `moreplanets:nibiru_villager`
+- `moreplanets:purified_snowball`
+- `moreplanets:shlime`
+- `moreplanets:small_cheese_spore`
+- `moreplanets:space_fish_hook`
+- `moreplanets:space_minecart_chest`
+- `moreplanets:terrasquid`
+- `moreplanets:terrastone_golem`
+- `moreplanets:vein_ball`
+- `moreplanets:vein_eye`
+- `moreplanets:vein_floater`
+- `moreplanets:vein_floater_minion`
+- `moreplanets:zelius_creeper`
+- `moreplanets:zelius_skeleton`
+- `moreplanets:zelius_zombie`
+- `moreplanets:zergius`
+
+## mospells (7 entities)
+
+- `mospells:barakoa_spirit_minion`
+- `mospells:frostmaw_minion`
+- `mospells:magic_ice_ball`
+- `mospells:magic_ice_breath`
+- `mospells:magic_supernova`
+- `mospells:naga_minion`
+- `mospells:rupture`
+
+## mowziesmobs (24 entities)
+
+- `mowziesmobs:axe_attack`
+- `mowziesmobs:baby_foliaath`
+- `mowziesmobs:barako`
+- `mowziesmobs:barakoan_barakoana`
+- `mowziesmobs:barakoan_player`
+- `mowziesmobs:barakoana`
+- `mowziesmobs:barakoaya`
+- `mowziesmobs:block_swapper`
+- `mowziesmobs:boulder`
+- `mowziesmobs:dart`
+- `mowziesmobs:ferrous_wroughtnaut`
+- `mowziesmobs:foliaath`
+- `mowziesmobs:frostmaw`
+- `mowziesmobs:frozen_controller`
+- `mowziesmobs:grottol`
+- `mowziesmobs:ice_ball`
+- `mowziesmobs:icebreath`
+- `mowziesmobs:lantern`
+- `mowziesmobs:naga`
+- `mowziesmobs:poison_ball`
+- `mowziesmobs:ring`
+- `mowziesmobs:solar_beam`
+- `mowziesmobs:sunstrike`
+- `mowziesmobs:super_nova`
+
+## mysticalagriculture (5 entities)
+
+- `mysticalagriculture:inferium_arrow`
+- `mysticalagriculture:intermedium_arrow`
+- `mysticalagriculture:prudentium_arrow`
+- `mysticalagriculture:superium_arrow`
+- `mysticalagriculture:supremium_arrow`
+
+## nuclearcraft (1 entities)
+
+- `nuclearcraft:feral_ghoul`
+
+## opencomputers (1 entities)
+
+- `opencomputers:drone`
+
+## openmodularturrets (4 entities)
+
+- `openmodularturrets:blazingclayprojectile`
+- `openmodularturrets:bulletprojectile`
+- `openmodularturrets:grenadeprojectile`
+- `openmodularturrets:rocketprojectile`
+
+## opensecurity (2 entities)
+
+- `opensecurity:opensecurity.energybolt`
+- `opensecurity:opensecurity.nanofogswarm`
+
+## p455w0rdslib (1 entities)
+
+- `p455w0rdslib:sitting_entity`
+
+## planetprogression (1 entities)
+
+- `planetprogression:entitysatelliterocket`
+
+## pneumaticcraft (8 entities)
+
+- `pneumaticcraft:drone`
+- `pneumaticcraft:harvesting_drone`
+- `pneumaticcraft:logistic_drone`
+- `pneumaticcraft:micromissile`
+- `pneumaticcraft:programmable_controller`
+- `pneumaticcraft:ring`
+- `pneumaticcraft:tumbling_block`
+- `pneumaticcraft:vortex`
+
+## portalgun (1 entities)
+
+- `portalgun:entity_portal`
+
+## props (1 entities)
+
+- `props:chair`
+
+## quark (23 entities)
+
+- `quark:archaeologist`
+- `quark:arrow_ender`
+- `quark:arrow_explosive`
+- `quark:arrow_torch`
+- `quark:ashen`
+- `quark:chest_passenger`
+- `quark:colored_item_frame`
+- `quark:crab`
+- `quark:dragon_breath_bottle`
+- `quark:dweller`
+- `quark:flat_item_frame`
+- `quark:foxhound`
+- `quark:frog`
+- `quark:glass_item_frame`
+- `quark:gravisand`
+- `quark:leash_knot`
+- `quark:parrot_egg`
+- `quark:pickarang`
+- `quark:pirate`
+- `quark:seat`
+- `quark:soul_powder`
+- `quark:stoneling`
+- `quark:wraith`
+
+## railcraft (32 entities)
+
+- `railcraft:bore`
+- `railcraft:cart_basic`
+- `railcraft:cart_bed`
+- `railcraft:cart_cargo`
+- `railcraft:cart_chest`
+- `railcraft:cart_chest_metals`
+- `railcraft:cart_chest_void`
+- `railcraft:cart_command_block`
+- `railcraft:cart_furnace`
+- `railcraft:cart_gift`
+- `railcraft:cart_hopper`
+- `railcraft:cart_jukebox`
+- `railcraft:cart_pumpkin`
+- `railcraft:cart_redstone_flux`
+- `railcraft:cart_spawner`
+- `railcraft:cart_tank`
+- `railcraft:cart_tnt`
+- `railcraft:cart_tnt_wood`
+- `railcraft:cart_trade_station`
+- `railcraft:cart_work`
+- `railcraft:cart_worldspike_admin`
+- `railcraft:cart_worldspike_personal`
+- `railcraft:cart_worldspike_standard`
+- `railcraft:fireproof_item`
+- `railcraft:firestone`
+- `railcraft:locomotive_creative`
+- `railcraft:locomotive_electric`
+- `railcraft:locomotive_steam_solid`
+- `railcraft:mow_track_layer`
+- `railcraft:mow_track_relayer`
+- `railcraft:mow_track_remover`
+- `railcraft:mow_undercutter`
+
+## randomenchantments (1 entities)
+
+- `randomenchantments:piercing_arrow`
+
+## randomloot (1 entities)
+
+- `randomloot:throwing`
+
+## scalinghealth (1 entities)
+
+- `scalinghealth:blightfire`
+
+## securitycraft (5 entities)
+
+- `securitycraft:bouncingbetty`
+- `securitycraft:bullet`
+- `securitycraft:imsbomb`
+- `securitycraft:securitycamera`
+- `securitycraft:sentry`
+
+## skyzerfusioncore (2 entities)
+
+- `skyzerfusioncore:guard`
+- `skyzerfusioncore:guard_arrow`
+
+## spacex (4 entities)
+
+- `spacex:dragoncraft trunk`
+- `spacex:dragoncraft v2`
+- `spacex:falconcraft 9`
+- `spacex:fc9 secondstage`
+
+## specialmobs (112 entities)
+
+- `specialmobs:babycavespider`
+- `specialmobs:babyghast`
+- `specialmobs:babyspider`
+- `specialmobs:blackberryslime`
+- `specialmobs:blindingenderman`
+- `specialmobs:blindingsilverfish`
+- `specialmobs:blueberryslime`
+- `specialmobs:brutepigzombie`
+- `specialmobs:bruteskeleton`
+- `specialmobs:brutewitherskeleton`
+- `specialmobs:brutezombie`
+- `specialmobs:caramelslime`
+- `specialmobs:cinderblaze`
+- `specialmobs:conflagrationblaze`
+- `specialmobs:darkcreeper`
+- `specialmobs:deathcreeper`
+- `specialmobs:desertspider`
+- `specialmobs:dirtcreeper`
+- `specialmobs:dominationwitch`
+- `specialmobs:doomcreeper`
+- `specialmobs:drowningcreeper`
+- `specialmobs:emberblaze`
+- `specialmobs:endercreeper`
+- `specialmobs:fighterghast`
+- `specialmobs:firecreeper`
+- `specialmobs:fireskeleton`
+- `specialmobs:firezombie`
+- `specialmobs:fishingpigzombie`
+- `specialmobs:fishingsilverfish`
+- `specialmobs:fishingzombie`
+- `specialmobs:flyingcavespider`
+- `specialmobs:flyinglavaslime`
+- `specialmobs:flyingsilverfish`
+- `specialmobs:flyingspider`
+- `specialmobs:gatlingskeleton`
+- `specialmobs:gatlingwitherskeleton`
+- `specialmobs:giantpigzombie`
+- `specialmobs:giantskeleton`
+- `specialmobs:giantspider`
+- `specialmobs:giantwitherskeleton`
+- `specialmobs:giantzombie`
+- `specialmobs:grapeslime`
+- `specialmobs:gravelcreeper`
+- `specialmobs:hardenedlavaslime`
+- `specialmobs:hellfireblaze`
+- `specialmobs:hungrypigzombie`
+- `specialmobs:hungryspider`
+- `specialmobs:hungryzombie`
+- `specialmobs:huskzombie`
+- `specialmobs:icyenderman`
+- `specialmobs:infernoblaze`
+- `specialmobs:joltblaze`
+- `specialmobs:jumpingcreeper`
+- `specialmobs:kingghast`
+- `specialmobs:knightpigzombie`
+- `specialmobs:knightskeleton`
+- `specialmobs:knightwitherskeleton`
+- `specialmobs:lemonslime`
+- `specialmobs:lightningcreeper`
+- `specialmobs:lightningenderman`
+- `specialmobs:minicreeper`
+- `specialmobs:minienderman`
+- `specialmobs:mirageenderman`
+- `specialmobs:mothercavespider`
+- `specialmobs:motherspider`
+- `specialmobs:ninjaskeleton`
+- `specialmobs:ninjawitherskeleton`
+- `specialmobs:palespider`
+- `specialmobs:plaguepigzombie`
+- `specialmobs:plaguezombie`
+- `specialmobs:poisonsilverfish`
+- `specialmobs:poisonskeleton`
+- `specialmobs:poisonspider`
+- `specialmobs:queenghast`
+- `specialmobs:shadowswitch`
+- `specialmobs:smfishhook`
+- `specialmobs:sniperskeleton`
+- `specialmobs:sniperwitherskeleton`
+- `specialmobs:specialblaze`
+- `specialmobs:specialcavespider`
+- `specialmobs:specialcreeper`
+- `specialmobs:specialenderman`
+- `specialmobs:specialghast`
+- `specialmobs:speciallavaslime`
+- `specialmobs:specialpigzombie`
+- `specialmobs:specialsilverfish`
+- `specialmobs:specialskeleton`
+- `specialmobs:specialslime`
+- `specialmobs:specialspider`
+- `specialmobs:specialwitch`
+- `specialmobs:specialwitherskeleton`
+- `specialmobs:specialzombie`
+- `specialmobs:spitfireskeleton`
+- `specialmobs:spitfirewitherskeleton`
+- `specialmobs:splittingcreeper`
+- `specialmobs:stickylavaslime`
+- `specialmobs:strawberryslime`
+- `specialmobs:strayskeleton`
+- `specialmobs:thiefenderman`
+- `specialmobs:toughsilverfish`
+- `specialmobs:undeadwitch`
+- `specialmobs:unholyghast`
+- `specialmobs:vampirepigzombie`
+- `specialmobs:volatilelavaslime`
+- `specialmobs:watermelonslime`
+- `specialmobs:webcavespider`
+- `specialmobs:webspider`
+- `specialmobs:wildfireblaze`
+- `specialmobs:wildswitch`
+- `specialmobs:windwitch`
+- `specialmobs:witchcavespider`
+- `specialmobs:witchspider`
+
+## thermaldynamics (1 entities)
+
+- `thermaldynamics:transport`
+
+## thermalexpansion (2 entities)
+
+- `thermalexpansion:florb`
+- `thermalexpansion:morb`
+
+## thermalfoundation (6 entities)
+
+- `thermalfoundation:basalz`
+- `thermalfoundation:basalz_bolt`
+- `thermalfoundation:blitz`
+- `thermalfoundation:blitz_bolt`
+- `thermalfoundation:blizz`
+- `thermalfoundation:blizz_bolt`
+
+## tombstone (2 entities)
+
+- `tombstone:grave_guardian`
+- `tombstone:spectral_wolf`
+
+## twilightforest (80 entities)
+
+- `twilightforest:adherent`
+- `twilightforest:armored_giant`
+- `twilightforest:bighorn_sheep`
+- `twilightforest:blockchain_goblin`
+- `twilightforest:boggard`
+- `twilightforest:bunny`
+- `twilightforest:castle_guardian`
+- `twilightforest:chain_block`
+- `twilightforest:charm_effect`
+- `twilightforest:cube_of_annihilation`
+- `twilightforest:death_tome`
+- `twilightforest:deer`
+- `twilightforest:falling_ice`
+- `twilightforest:fire_beetle`
+- `twilightforest:firefly`
+- `twilightforest:giant_miner`
+- `twilightforest:goblin_knight_lower`
+- `twilightforest:goblin_knight_upper`
+- `twilightforest:harbinger_cube`
+- `twilightforest:hedge_spider`
+- `twilightforest:helmet_crab`
+- `twilightforest:hostile_wolf`
+- `twilightforest:hydra`
+- `twilightforest:hydra_head`
+- `twilightforest:hydra_mortar`
+- `twilightforest:ice_arrow`
+- `twilightforest:ice_crystal`
+- `twilightforest:ice_snowball`
+- `twilightforest:king_spider`
+- `twilightforest:knight_phantom`
+- `twilightforest:kobold`
+- `twilightforest:lich`
+- `twilightforest:lich_bolt`
+- `twilightforest:lich_bomb`
+- `twilightforest:lich_minion`
+- `twilightforest:loyal_zombie`
+- `twilightforest:maze_slime`
+- `twilightforest:mini_ghast`
+- `twilightforest:minoshroom`
+- `twilightforest:minotaur`
+- `twilightforest:mist_wolf`
+- `twilightforest:moonworm_shot`
+- `twilightforest:mosquito_swarm`
+- `twilightforest:naga`
+- `twilightforest:nature_bolt`
+- `twilightforest:penguin`
+- `twilightforest:pinch_beetle`
+- `twilightforest:quest_ram`
+- `twilightforest:raven`
+- `twilightforest:redcap`
+- `twilightforest:redcap_sapper`
+- `twilightforest:rising_zombie`
+- `twilightforest:roving_cube`
+- `twilightforest:seeker_arrow`
+- `twilightforest:skeleton_druid`
+- `twilightforest:slider`
+- `twilightforest:slime_beetle`
+- `twilightforest:slime_blob`
+- `twilightforest:snow_guardian`
+- `twilightforest:snow_queen`
+- `twilightforest:squirrel`
+- `twilightforest:stable_ice_core`
+- `twilightforest:swarm_spider`
+- `twilightforest:thrown_ice`
+- `twilightforest:thrown_wep`
+- `twilightforest:tiny_bird`
+- `twilightforest:tome_bolt`
+- `twilightforest:tower_broodling`
+- `twilightforest:tower_ghast`
+- `twilightforest:tower_golem`
+- `twilightforest:tower_termite`
+- `twilightforest:troll`
+- `twilightforest:unstable_ice_core`
+- `twilightforest:ur_ghast`
+- `twilightforest:wand_bolt`
+- `twilightforest:wild_boar`
+- `twilightforest:winter_wolf`
+- `twilightforest:wraith`
+- `twilightforest:yeti`
+- `twilightforest:yeti_alpha`
+
+## universalmodcore (16 entities)
+
+- `universalmodcore:light1`
+- `universalmodcore:light10`
+- `universalmodcore:light11`
+- `universalmodcore:light12`
+- `universalmodcore:light13`
+- `universalmodcore:light14`
+- `universalmodcore:light15`
+- `universalmodcore:light2`
+- `universalmodcore:light3`
+- `universalmodcore:light4`
+- `universalmodcore:light5`
+- `universalmodcore:light6`
+- `universalmodcore:light7`
+- `universalmodcore:light8`
+- `universalmodcore:light9`
+- `universalmodcore:seat`
+
+## valkyrienskies (2 entities)
+
+- `valkyrienskies:entity_mountable`
+- `valkyrienskies:entity_mountable_chair`
+
+## vehicle (23 entities)
+
+- `vehicle:aluminum_boat`
+- `vehicle:atv`
+- `vehicle:bicycle`
+- `vehicle:bumper_car`
+- `vehicle:dirt_bike`
+- `vehicle:fertilizer_trailer`
+- `vehicle:fluid_trailer`
+- `vehicle:go_kart`
+- `vehicle:golf_cart`
+- `vehicle:jack`
+- `vehicle:jet_ski`
+- `vehicle:lawn_mower`
+- `vehicle:mini_bike`
+- `vehicle:mini_bus`
+- `vehicle:moped`
+- `vehicle:off_roader`
+- `vehicle:seeder_trailer`
+- `vehicle:smart_car`
+- `vehicle:speed_boat`
+- `vehicle:sports_plane`
+- `vehicle:storage_trailer`
+- `vehicle:tractor`
+- `vehicle:trailer`
+
+## weaponmod (14 entities)
+
+- `weaponmod:bolt`
+- `weaponmod:boomerang`
+- `weaponmod:bullet`
+- `weaponmod:cannon`
+- `weaponmod:cannonball`
+- `weaponmod:dart`
+- `weaponmod:dummy`
+- `weaponmod:dynamite`
+- `weaponmod:flail`
+- `weaponmod:javelin`
+- `weaponmod:knife`
+- `weaponmod:shell`
+- `weaponmod:shot`
+- `weaponmod:spear`
+
+## wizardanimalsbeta10 (84 entities)
+
+- `wizardanimalsbeta10:beetlecerambideocelestial`
+- `wizardanimalsbeta10:beetledeadnettle`
+- `wizardanimalsbeta10:beetleladybug`
+- `wizardanimalsbeta10:beetlestagyellow`
+- `wizardanimalsbeta10:butterflybloodredglider`
+- `wizardanimalsbeta10:butterflygiantsaturn`
+- `wizardanimalsbeta10:butterflymexicshoe`
+- `wizardanimalsbeta10:butterflypinkglasswing`
+- `wizardanimalsbeta10:butterflyredclaudina`
+- `wizardanimalsbeta10:canguruantilopine`
+- `wizardanimalsbeta10:cangurugrey`
+- `wizardanimalsbeta10:cangurured`
+- `wizardanimalsbeta10:capuchinblond`
+- `wizardanimalsbeta10:capuchinbrown`
+- `wizardanimalsbeta10:capuchinwhiteheaded`
+- `wizardanimalsbeta10:capybara`
+- `wizardanimalsbeta10:cavalomarinhoamarelo`
+- `wizardanimalsbeta10:cavalomarinhovermelho`
+- `wizardanimalsbeta10:centipedegiantdesert`
+- `wizardanimalsbeta10:centipedeindiantiger`
+- `wizardanimalsbeta10:chimpanzecommon`
+- `wizardanimalsbeta10:crocodileblackcaiman`
+- `wizardanimalsbeta10:crocodilenile`
+- `wizardanimalsbeta10:dromedarius`
+- `wizardanimalsbeta10:froggreen`
+- `wizardanimalsbeta10:geckogiantday`
+- `wizardanimalsbeta10:geckotangerine`
+- `wizardanimalsbeta10:geckotokai`
+- `wizardanimalsbeta10:gorillawestern`
+- `wizardanimalsbeta10:hipopotamusnile`
+- `wizardanimalsbeta10:hipopotamuspigmeu`
+- `wizardanimalsbeta10:hyenaspotted`
+- `wizardanimalsbeta10:iguanablue`
+- `wizardanimalsbeta10:iguanagreen`
+- `wizardanimalsbeta10:koala`
+- `wizardanimalsbeta10:lemurringtailed`
+- `wizardanimalsbeta10:lizardeuropeangreen`
+- `wizardanimalsbeta10:lizardrockagama`
+- `wizardanimalsbeta10:lizardrockmonitor`
+- `wizardanimalsbeta10:lizardspiderman`
+- `wizardanimalsbeta10:lobsteramerican`
+- `wizardanimalsbeta10:lobstereuropean`
+- `wizardanimalsbeta10:marmosetblacktuffed`
+- `wizardanimalsbeta10:marmosetcommon`
+- `wizardanimalsbeta10:masaigiraffe`
+- `wizardanimalsbeta10:octopusblueringed`
+- `wizardanimalsbeta10:octopuspacificgiant`
+- `wizardanimalsbeta10:otterneotropical`
+- `wizardanimalsbeta10:redpanda`
+- `wizardanimalsbeta10:reticulatedgiraffe`
+- `wizardanimalsbeta10:rhinocerusblack`
+- `wizardanimalsbeta10:rhinoceruswhite`
+- `wizardanimalsbeta10:scorpionblackemperor`
+- `wizardanimalsbeta10:scorpionyellowfattail`
+- `wizardanimalsbeta10:sealcommon`
+- `wizardanimalsbeta10:seaturtlegreen`
+- `wizardanimalsbeta10:sharkwhite`
+- `wizardanimalsbeta10:spiderladybug`
+- `wizardanimalsbeta10:spiderorbbanana`
+- `wizardanimalsbeta10:spiderorbgiantwood`
+- `wizardanimalsbeta10:spiderwidownorth`
+- `wizardanimalsbeta10:spiderwidowredback`
+- `wizardanimalsbeta10:spiderwolfgarden`
+- `wizardanimalsbeta10:squirrelgrey`
+- `wizardanimalsbeta10:squirrelred`
+- `wizardanimalsbeta10:starfishcommon`
+- `wizardanimalsbeta10:starfishnecklace`
+- `wizardanimalsbeta10:starfishpink`
+- `wizardanimalsbeta10:starfishred`
+- `wizardanimalsbeta10:starfishroyal`
+- `wizardanimalsbeta10:tamarinblack`
+- `wizardanimalsbeta10:tamaringoldlion`
+- `wizardanimalsbeta10:tamarinmoustached`
+- `wizardanimalsbeta10:tarantulagoliathbirdeater`
+- `wizardanimalsbeta10:tarantulagootysapphire`
+- `wizardanimalsbeta10:tarantulaindiaornamental`
+- `wizardanimalsbeta10:tarantulamexicanredleg`
+- `wizardanimalsbeta10:tortoisedesert`
+- `wizardanimalsbeta10:turtlegalapagos`
+- `wizardanimalsbeta10:walrus`
+- `wizardanimalsbeta10:westafricangiraffe`
+- `wizardanimalsbeta10:whaleblue`
+- `wizardanimalsbeta10:whalehumpback`
+- `wizardanimalsbeta10:whaleorca`
+
+## wizardryutils (1 entities)
+
+- `wizardryutils:dynamic_construct`
+
+## wrcbe (1 entities)
+
+- `wrcbe:tracker`
+
+## zoocraftdiscoveries (14 entities)
+
+- `zoocraftdiscoveries:anteater`
+- `zoocraftdiscoveries:camel`
+- `zoocraftdiscoveries:capybara`
+- `zoocraftdiscoveries:chinchilla`
+- `zoocraftdiscoveries:dart`
+- `zoocraftdiscoveries:frog`
+- `zoocraftdiscoveries:gecko`
+- `zoocraftdiscoveries:gemsbok`
+- `zoocraftdiscoveries:giraffe`
+- `zoocraftdiscoveries:hedgehog`
+- `zoocraftdiscoveries:porcupine`
+- `zoocraftdiscoveries:rhino`
+- `zoocraftdiscoveries:spear`
+- `zoocraftdiscoveries:tapir`
+

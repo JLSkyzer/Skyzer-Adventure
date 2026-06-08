@@ -1,0 +1,65 @@
+{
+  "id": "oxygen_system",
+  "title": "Oxygen System",
+  "description": "Build a complete oxygen system to keep your base breathable. Collectors, compressors, and distributors work together to sustain life.",
+  "icon": {
+    "item": "galacticraftcore:machine"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#006064",
+    "border": "#26A69A"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_space",
+  "dependencies": [
+    "first_rocket"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "galacticraftcore:machine",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Coal Generator"
+    },
+    {
+      "type": "collect",
+      "item": "galacticraftcore:machine2",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Electric Compressor"
+    },
+    {
+      "type": "collect",
+      "item": "galacticraftcore:machine",
+      "amount": 1,
+      "consume": false,
+      "meta": 4,
+      "localized_name": "Coal Generator"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "galacticraftcore:oxygen_tank_light_full",
+      "amount": 8,
+      "localized_name": "Light Oxygen Tank"
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

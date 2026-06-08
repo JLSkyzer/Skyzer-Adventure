@@ -1,0 +1,66 @@
+{
+  "id": "runic_altar",
+  "title": "Runic Mastery",
+  "description": "Create powerful mana-infused materials through runic magic.",
+  "icon": {
+    "item": "botania:manaresource",
+    "meta": 2
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#004D40",
+    "border": "#80CBC4"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_botania",
+  "dependencies": [
+    "mana_spreader"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "botania:manaresource",
+      "amount": 8,
+      "consume": true,
+      "meta": 2,
+      "localized_name": "Mana Diamond"
+    },
+    {
+      "type": "collect",
+      "item": "botania:manaresource",
+      "amount": 8,
+      "consume": true,
+      "meta": 1,
+      "localized_name": "Mana Pearl"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "botania:manaresource",
+      "amount": 4,
+      "meta": 4,
+      "localized_name": "Terrasteel Ingot"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

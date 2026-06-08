@@ -1,0 +1,53 @@
+{
+  "id": "emerald_prospector",
+  "title": "Emerald Prospector",
+  "description": "Emeralds are rare treasures found in extreme hills. Collect 32 emeralds and explore the biome.",
+  "icon": {
+    "item": "minecraft:emerald"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#1B5E20",
+    "border": "#66BB6A"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [
+    "diamond_hunter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:emerald",
+      "amount": 32,
+      "consume": false,
+      "localized_name": "Emerald"
+    },
+    {
+      "type": "explore_biome",
+      "biome": "minecraft:extreme_hills"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

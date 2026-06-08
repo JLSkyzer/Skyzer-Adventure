@@ -1,0 +1,11 @@
+{
+  "id": "ch_monster_slayer",
+  "name": "Monster Slayer",
+  "description": "The night is dark and full of terrors. Take up arms and thin the horde.",
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "order": 1,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

@@ -1,0 +1,74 @@
+{
+  "id": "master_chef",
+  "title": "Master Chef",
+  "description": "Become a culinary master by preparing a variety of cooked meats and hearty stews. Your kitchen is now the envy of all adventurers. A well-fed warrior is an unstoppable force!",
+  "icon": {
+    "item": "minecraft:cooked_beef"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 200,
+    "y": 50
+  },
+  "chapter_id": "ch_farming",
+  "dependencies": [
+    "animal_husbandry",
+    "sweet_tooth"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:cooked_beef",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Steak"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:cooked_porkchop",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Cooked Porkchop"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:cooked_chicken",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Cooked Chicken"
+    },
+    {
+      "type": "craft",
+      "item": "minecraft:mushroom_stew",
+      "amount": 8,
+      "localized_name": "Mushroom Stew"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    },
+    {
+      "type": "command",
+      "command": "give {player} minecraft:golden_apple 1 1"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

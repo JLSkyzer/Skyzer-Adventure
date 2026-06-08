@@ -1,0 +1,10 @@
+{
+  "id": "magic",
+  "name": "Magic & Mysticism",
+  "description": "Harness the power of the stars, nurture magical flora, and study the arcane arts.",
+  "icon": {
+    "item": "astralsorcery:itemwand"
+  },
+  "display_order": 4,
+  "chapters": ["ch_astral", "ch_botania", "ch_wizardry"]
+}

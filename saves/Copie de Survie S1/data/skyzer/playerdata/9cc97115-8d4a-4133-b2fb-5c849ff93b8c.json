@@ -1,0 +1,794 @@
+{
+  "uuid": "9cc97115-8d4a-4133-b2fb-5c849ff93b8c",
+  "name": "JLSkyzer",
+  "playtime": 1129700,
+  "lastLogin": 1771604456845,
+  "firstJoin": 1770321224796,
+  "aether": 0,
+  "emeralds": 0,
+  "bpTokens": 0,
+  "cosmicCoins": 0,
+  "money": 0.0,
+  "skillPoints": 0,
+  "skills": {},
+  "maxHomes": 3,
+  "homes": {
+    "mine": {
+      "name": "mine",
+      "dimension": 0,
+      "x": -756.3364283746503,
+      "y": 14.0,
+      "z": 27.663524475347955,
+      "yaw": -81.73828,
+      "pitch": 14.0625,
+      "createdTime": 1771604456841
+    },
+    "bed": {
+      "name": "bed",
+      "dimension": 0,
+      "x": -759.3000000119209,
+      "y": 4.0,
+      "z": 40.42990799124247,
+      "yaw": -273.60352,
+      "pitch": 11.777344,
+      "createdTime": 1771604591790
+    },
+    "dv": {
+      "name": "dv",
+      "dimension": 0,
+      "x": -1681.7347425312328,
+      "y": 71.0,
+      "z": 66.42928791605283,
+      "yaw": -205.75195,
+      "pitch": 10.019531,
+      "createdTime": 1771604456841
+    },
+    "portail": {
+      "name": "portail",
+      "dimension": 0,
+      "x": -594.5250376487006,
+      "y": 12.0,
+      "z": -402.93944392068744,
+      "yaw": -115.48828,
+      "pitch": 4.5703125,
+      "createdTime": 1771604456841
+    },
+    "maison": {
+      "name": "maison",
+      "dimension": 0,
+      "x": -901.7712208772082,
+      "y": 68.0,
+      "z": -352.04320839010444,
+      "yaw": -77.08008,
+      "pitch": 19.335938,
+      "createdTime": 1771604456841
+    },
+    "ms": {
+      "name": "ms",
+      "dimension": 0,
+      "x": -1586.6045694097027,
+      "y": 30.0,
+      "z": -707.2206695700346,
+      "yaw": -177.97852,
+      "pitch": 22.939453,
+      "createdTime": 1771604456841
+    },
+    "f": {
+      "name": "f",
+      "dimension": -1,
+      "x": -77.84689077310924,
+      "y": 72.0,
+      "z": -313.67216524328757,
+      "yaw": -155.58276,
+      "pitch": 26.999926,
+      "createdTime": 1771604456841
+    },
+    "desert": {
+      "name": "desert",
+      "dimension": 0,
+      "x": -1412.1512619188204,
+      "y": 68.0,
+      "z": -366.80711481238825,
+      "yaw": -85.42969,
+      "pitch": 6.94336,
+      "createdTime": 1771604456841
+    },
+    "m": {
+      "name": "m",
+      "dimension": 0,
+      "x": -1362.1459016894726,
+      "y": 63.0,
+      "z": -159.76034078802522,
+      "yaw": -143.78906,
+      "pitch": 35.24414,
+      "createdTime": 1771604456841
+    },
+    "ici": {
+      "name": "ici",
+      "dimension": 0,
+      "x": -895.9247377892799,
+      "y": 30.0,
+      "z": -376.0141817068309,
+      "yaw": -137.54883,
+      "pitch": 14.238281,
+      "createdTime": 1771604456841
+    },
+    "d2": {
+      "name": "d2",
+      "dimension": 0,
+      "x": -390.17993658503184,
+      "y": 72.0,
+      "z": 335.60747644616896,
+      "yaw": -329.58984,
+      "pitch": 8.61328,
+      "createdTime": 1771604456841
+    }
+  },
+  "lastHomeUse": 1771605041689,
+  "lastSpawnUse": 1771259603444,
+  "lastRTPUse": 0,
+  "bpLevel": 0,
+  "bpXP": 0,
+  "currentSeason": "",
+  "seasonStartLevel": 0,
+  "seasonStartTime": 1770321224796,
+  "claimedBPRewards": [],
+  "activeDailyQuestsData": [],
+  "dailyQuestsGenerated": 0,
+  "weeklyQuestGenerated": 0,
+  "activeQuests": [],
+  "completedQuests": [],
+  "questsCompleted": 9,
+  "chaptersCompleted": 0,
+  "unlockedRecipes": {},
+  "unlockedItems": {},
+  "blocksMined": 0,
+  "mobsKilled": 0,
+  "deaths": 0,
+  "itemsCrafted": 0,
+  "distanceTraveled": 0.0,
+  "currentKillStreak": 42,
+  "bestKillStreak": 70,
+  "skyzerCompletedQuests": [
+    "coal_rush",
+    "portal_builder",
+    "punch_tree",
+    "certus_mining",
+    "millionaire",
+    "marathon_runner",
+    "nether_arrival",
+    "prosperity_shard",
+    "iron_vein"
+  ],
+  "skyzerClaimedRewards": [],
+  "skyzerUnlockedChapters": [],
+  "skyzerActiveQuests": {
+    "aoa_intro": {
+      "quest_id": "aoa_intro",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        }
+      ]
+    },
+    "block_breaker": {
+      "quest_id": "block_breaker",
+      "started_at": 1770731424151,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 1000,
+          "required": 1000,
+          "completed": true
+        },
+        {
+          "goal_index": 1,
+          "current": 283,
+          "required": 500,
+          "completed": false
+        },
+        {
+          "goal_index": 2,
+          "current": 122,
+          "required": 200,
+          "completed": false
+        }
+      ]
+    },
+    "crystal_mining": {
+      "quest_id": "crystal_mining",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 5,
+          "required": 32,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 32,
+          "required": 32,
+          "completed": true
+        }
+      ]
+    },
+    "nether_wart_farm": {
+      "quest_id": "nether_wart_farm",
+      "started_at": 1770911256689,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 32,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 16,
+          "required": 16,
+          "completed": true
+        }
+      ]
+    },
+    "blaze_hunter": {
+      "quest_id": "blaze_hunter",
+      "started_at": 1770911256689,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 15,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 16,
+          "completed": false
+        }
+      ]
+    },
+    "redstone_engineer": {
+      "quest_id": "redstone_engineer",
+      "started_at": 1771602936696,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 64,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 2,
+          "required": 128,
+          "completed": false
+        }
+      ]
+    },
+    "petal_gatherer": {
+      "quest_id": "petal_gatherer",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 16,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 16,
+          "completed": false
+        },
+        {
+          "goal_index": 2,
+          "current": 0,
+          "required": 16,
+          "completed": false
+        }
+      ]
+    },
+    "coal_rush": {
+      "quest_id": "coal_rush",
+      "started_at": 1770731424152,
+      "completed": true,
+      "completed_at": 1771117122624,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 64,
+          "required": 64,
+          "completed": true
+        }
+      ]
+    },
+    "portal_builder": {
+      "quest_id": "portal_builder",
+      "started_at": 1770731424152,
+      "completed": true,
+      "completed_at": 1770911149296,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 10,
+          "required": 10,
+          "completed": true
+        },
+        {
+          "goal_index": 1,
+          "current": 1,
+          "required": 1,
+          "completed": true
+        }
+      ]
+    },
+    "punch_tree": {
+      "quest_id": "punch_tree",
+      "started_at": 1770731424152,
+      "completed": true,
+      "completed_at": 1770912066670,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 5,
+          "required": 5,
+          "completed": true
+        }
+      ]
+    },
+    "certus_mining": {
+      "quest_id": "certus_mining",
+      "started_at": 1770731424152,
+      "completed": true,
+      "completed_at": 1771259306654,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 32,
+          "required": 32,
+          "completed": true
+        },
+        {
+          "goal_index": 1,
+          "current": 8,
+          "required": 8,
+          "completed": true
+        }
+      ]
+    },
+    "space_prep": {
+      "quest_id": "space_prep",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 32,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 32,
+          "completed": false
+        },
+        {
+          "goal_index": 2,
+          "current": 0,
+          "required": 16,
+          "completed": false
+        }
+      ]
+    },
+    "dimension_hopper": {
+      "quest_id": "dimension_hopper",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 1,
+          "required": 1,
+          "completed": true
+        },
+        {
+          "goal_index": 1,
+          "current": 1,
+          "required": 1,
+          "completed": true
+        },
+        {
+          "goal_index": 2,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        },
+        {
+          "goal_index": 3,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        }
+      ]
+    },
+    "stargazer": {
+      "quest_id": "stargazer",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 16,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 8,
+          "completed": false
+        }
+      ]
+    },
+    "master_builder_supreme": {
+      "quest_id": "master_builder_supreme",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 5,
+          "required": 1000,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 500,
+          "required": 500,
+          "completed": true
+        },
+        {
+          "goal_index": 2,
+          "current": 200,
+          "required": 200,
+          "completed": true
+        },
+        {
+          "goal_index": 3,
+          "current": 0,
+          "required": 100,
+          "completed": false
+        }
+      ]
+    },
+    "ultimate_collector": {
+      "quest_id": "ultimate_collector",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 64,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 64,
+          "completed": false
+        },
+        {
+          "goal_index": 2,
+          "current": 64,
+          "required": 64,
+          "completed": true
+        },
+        {
+          "goal_index": 3,
+          "current": 1,
+          "required": 1,
+          "completed": true
+        },
+        {
+          "goal_index": 4,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        }
+      ]
+    },
+    "tool_time": {
+      "quest_id": "tool_time",
+      "started_at": 1770912066670,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        }
+      ]
+    },
+    "marathon_runner": {
+      "quest_id": "marathon_runner",
+      "started_at": 1770731424152,
+      "completed": true,
+      "completed_at": 1771195102714,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 50000,
+          "required": 50000,
+          "completed": true
+        }
+      ]
+    },
+    "fluix_crystals": {
+      "quest_id": "fluix_crystals",
+      "started_at": 1771259306654,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 4,
+          "required": 16,
+          "completed": false
+        }
+      ]
+    },
+    "inferium_farming": {
+      "quest_id": "inferium_farming",
+      "started_at": 1771259758749,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 64,
+          "required": 64,
+          "completed": true
+        },
+        {
+          "goal_index": 1,
+          "current": 11,
+          "required": 32,
+          "completed": false
+        }
+      ]
+    },
+    "gold_fever": {
+      "quest_id": "gold_fever",
+      "started_at": 1771602936696,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 32,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 32,
+          "completed": false
+        }
+      ]
+    },
+    "millionaire": {
+      "quest_id": "millionaire",
+      "started_at": 1770731424152,
+      "completed": true,
+      "completed_at": 1771080857282,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 10000,
+          "required": 10000,
+          "completed": true
+        }
+      ]
+    },
+    "prosperity_shard": {
+      "quest_id": "prosperity_shard",
+      "started_at": 1770731424152,
+      "completed": true,
+      "completed_at": 1771259758749,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 32,
+          "required": 32,
+          "completed": true
+        }
+      ]
+    },
+    "nether_arrival": {
+      "quest_id": "nether_arrival",
+      "started_at": 1770911149296,
+      "completed": true,
+      "completed_at": 1770911256689,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 1,
+          "required": 1,
+          "completed": true
+        }
+      ]
+    },
+    "lapis_scholar": {
+      "quest_id": "lapis_scholar",
+      "started_at": 1771602936696,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 32,
+          "completed": false
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 64,
+          "completed": false
+        }
+      ]
+    },
+    "night_watch": {
+      "quest_id": "night_watch",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 25,
+          "completed": false
+        }
+      ]
+    },
+    "iron_vein": {
+      "quest_id": "iron_vein",
+      "started_at": 1771117122624,
+      "completed": true,
+      "completed_at": 1771602936696,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 48,
+          "required": 48,
+          "completed": true
+        },
+        {
+          "goal_index": 1,
+          "current": 48,
+          "required": 48,
+          "completed": true
+        }
+      ]
+    },
+    "biome_master": {
+      "quest_id": "biome_master",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 1,
+          "required": 1,
+          "completed": true
+        },
+        {
+          "goal_index": 1,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        },
+        {
+          "goal_index": 2,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        },
+        {
+          "goal_index": 3,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        },
+        {
+          "goal_index": 4,
+          "current": 1,
+          "required": 1,
+          "completed": true
+        }
+      ]
+    },
+    "twilight_portal": {
+      "quest_id": "twilight_portal",
+      "started_at": 1770731424152,
+      "completed": false,
+      "completed_at": 0,
+      "last_claimed_reward": 0,
+      "goals_progress": [
+        {
+          "goal_index": 0,
+          "current": 0,
+          "required": 1,
+          "completed": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "dragon_slayer",
+  "title": "Dragon Slayer",
+  "description": "Journey to The End and face the Ender Dragon. Only the mightiest warriors can claim victory against this ancient beast.",
+  "icon": {
+    "item": "minecraft:dragon_egg"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#E040FB"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_boss_hunter",
+  "dependencies": [
+    "ch_monster_slayer/enderman_encounter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "minecraft:ender_dragon",
+      "amount": 1,
+      "localized_name": "minecraft:ender_dragon"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 10000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:dragon_egg",
+      "amount": 1,
+      "localized_name": "Dragon Egg"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:elytra",
+      "amount": 1,
+      "localized_name": "Elytra"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 50
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

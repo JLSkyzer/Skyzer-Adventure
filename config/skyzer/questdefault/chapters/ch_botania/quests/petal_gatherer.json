@@ -1,0 +1,65 @@
+{
+  "id": "petal_gatherer",
+  "title": "Petal Gatherer",
+  "description": "Gather mystical flowers to begin your botanical journey.",
+  "icon": {
+    "item": "botania:flower",
+    "meta": 14
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#1B5E20",
+    "border": "#66BB6A"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_botania",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Mystical White Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 16,
+      "consume": true,
+      "meta": 14,
+      "localized_name": "Mystical Red Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 16,
+      "consume": true,
+      "meta": 11,
+      "localized_name": "Mystical Blue Flower"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 200.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:dye",
+      "amount": 8,
+      "meta": 15,
+      "localized_name": "Bone Meal"
+    },
+    {
+      "type": "xp_level",
+      "amount": 5
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

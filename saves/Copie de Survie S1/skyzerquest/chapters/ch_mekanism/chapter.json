@@ -1,0 +1,11 @@
+{
+  "id": "ch_mekanism",
+  "name": "Mekanism Engineering",
+  "description": "Engineer the future with advanced machines, alloys, and even nuclear power.",
+  "icon": {
+    "item": "mekanism:energytablet"
+  },
+  "order": 3,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

@@ -1,0 +1,64 @@
+{
+  "id": "atomic_power",
+  "title": "Atomic Power",
+  "description": "Harness atomic power by creating atomic alloy and elite control circuits.",
+  "icon": {
+    "item": "mekanism:atomicalloy"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#880E4F",
+    "border": "#F50057"
+  },
+  "position": {
+    "x": 400,
+    "y": 50
+  },
+  "chapter_id": "ch_mekanism",
+  "dependencies": [
+    "advanced_tech",
+    "steel_production"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mekanism:atomicalloy",
+      "amount": 4,
+      "consume": true,
+      "localized_name": "§dAtomic Alloy"
+    },
+    {
+      "type": "collect",
+      "item": "mekanism:controlcircuit",
+      "amount": 4,
+      "consume": true,
+      "meta": 2,
+      "localized_name": "§1Elite Control Circuit"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 2000.0
+    },
+    {
+      "type": "item",
+      "item": "mekanism:atomicdisassembler",
+      "amount": 1,
+      "localized_name": "§bAtomic Disassembler"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

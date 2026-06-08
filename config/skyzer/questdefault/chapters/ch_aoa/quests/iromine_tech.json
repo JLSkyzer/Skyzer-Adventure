@@ -1,0 +1,60 @@
+{
+  "id": "iromine_tech",
+  "title": "Iromine Technology",
+  "description": "Discover the technological world of Iromine and gather lyon ingots.",
+  "icon": {
+    "item": "aoa3:iromine_realmstone"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#F57F17",
+    "border": "#FFCA28"
+  },
+  "position": {
+    "x": 300,
+    "y": 50
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [
+    "precasia_expedition"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "aoa3:iromine_realmstone",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Iromine Realmstone"
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 813
+    },
+    {
+      "type": "collect",
+      "item": "aoa3:lyon_ingot",
+      "amount": 32,
+      "consume": true,
+      "localized_name": "Lyon Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

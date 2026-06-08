@@ -1,0 +1,52 @@
+{
+  "id": "induction_smelter",
+  "title": "Induction Smelter",
+  "description": "Craft an induction smelter to create advanced alloys through thermal processing.",
+  "icon": {
+    "item": "thermalexpansion:machine",
+    "meta": 3
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#E65100",
+    "border": "#FF9100"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_thermal",
+  "dependencies": [
+    "pulverizer_power"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "thermalexpansion:machine",
+      "amount": 1,
+      "meta": 3,
+      "localized_name": "Induction Smelter (Basic)"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 700.0
+    },
+    {
+      "type": "item",
+      "item": "thermalfoundation:material",
+      "amount": 16,
+      "meta": 160,
+      "localized_name": "Steel Ingot"
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

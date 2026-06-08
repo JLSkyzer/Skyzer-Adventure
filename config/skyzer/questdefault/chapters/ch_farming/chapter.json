@@ -1,0 +1,11 @@
+{
+  "id": "ch_farming",
+  "name": "Farming \u0026 Food",
+  "description": "A well-fed adventurer is a strong adventurer. Master agriculture and cooking.",
+  "icon": {
+    "item": "minecraft:wheat"
+  },
+  "order": 3,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

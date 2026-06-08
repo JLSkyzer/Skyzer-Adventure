@@ -1,0 +1,11 @@
+{
+  "id": "ch_thermal",
+  "name": "Thermal Workshop",
+  "description": "Harness thermal energy to process, smelt, and refine materials with industrial efficiency.",
+  "icon": {
+    "item": "thermalexpansion:machine"
+  },
+  "order": 2,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

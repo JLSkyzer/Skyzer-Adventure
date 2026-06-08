@@ -1,0 +1,56 @@
+{
+  "id": "living_materials",
+  "title": "Living Materials",
+  "description": "Transform ordinary wood and stone into living materials through mana infusion.",
+  "icon": {
+    "item": "botania:livingwood"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#33691E",
+    "border": "#8BC34A"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_botania",
+  "dependencies": [
+    "petal_gatherer"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "botania:livingwood",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Livingwood"
+    },
+    {
+      "type": "collect",
+      "item": "botania:livingrock",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Livingrock"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

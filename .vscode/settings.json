@@ -1,0 +1,6 @@
+{
+    "chat.agent.maxRequests": 100,
+    "chat.customAgentInSubagent.enabled": true,
+    "chat.editing.autoAcceptDelay": 1,
+    "chat.tools.terminal.blockDetectedFileWrites": "never"
+}

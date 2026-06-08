@@ -1,0 +1,11 @@
+{
+  "id": "ch_aoa",
+  "name": "Advent of Ascension",
+  "description": "Discover realmstones and breach the veil between dimensions. Countless alien worlds await the bold.",
+  "icon": {
+    "item": "aoa3:blank_realmstone"
+  },
+  "order": 4,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

@@ -1,0 +1,11 @@
+{
+  "id": "ch_space",
+  "name": "Space Pioneer",
+  "description": "Build rockets, suit up, and launch into the cosmos. The Moon, Mars, and beyond await.",
+  "icon": {
+    "item": "galacticraftcore:rocket_t1"
+  },
+  "order": 1,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

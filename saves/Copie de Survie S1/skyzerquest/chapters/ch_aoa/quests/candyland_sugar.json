@@ -1,0 +1,71 @@
+{
+  "id": "candyland_sugar",
+  "title": "Candyland Sugar Rush",
+  "description": "Enter the sweet world of Candyland and defeat the gingerbread menace.",
+  "icon": {
+    "item": "aoa3:candyland_realmstone"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#880E4F",
+    "border": "#FF80AB"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [
+    "mysterium_journey"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "aoa3:candyland_realmstone",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Candyland Realmstone"
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 803
+    },
+    {
+      "type": "kill",
+      "entity": "aoa3:gingerbread_man",
+      "amount": 15,
+      "localized_name": "aoa3:gingerbread_man"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:sugar",
+      "amount": 32,
+      "localized_name": "Sugar"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:cookie",
+      "amount": 16,
+      "localized_name": "Cookie"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

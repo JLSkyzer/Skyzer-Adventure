@@ -1,0 +1,50 @@
+{
+  "id": "eye_collector",
+  "title": "Eye of the End",
+  "description": "Craft eyes of ender to locate the stronghold that leads to The End.",
+  "icon": {
+    "item": "minecraft:ender_eye"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#1A237E",
+    "border": "#7C4DFF"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_end",
+  "dependencies": [
+    "ch_nether/blaze_hunter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:ender_eye",
+      "amount": 12,
+      "consume": true,
+      "localized_name": "Eye of Ender"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:ender_pearl",
+      "amount": 16,
+      "localized_name": "Ender Pearl"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

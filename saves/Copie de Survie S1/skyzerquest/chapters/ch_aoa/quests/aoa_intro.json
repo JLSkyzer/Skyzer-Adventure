@@ -1,0 +1,47 @@
+{
+  "id": "aoa_intro",
+  "title": "Realm Traveler",
+  "description": "Begin your journey through the countless dimensions by obtaining a blank realmstone.",
+  "icon": {
+    "item": "aoa3:blank_realmstone"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#E65100",
+    "border": "#FF9800"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "aoa3:blank_realmstone",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Blank Realmstone"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:torch",
+      "amount": 16,
+      "localized_name": "Torch"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

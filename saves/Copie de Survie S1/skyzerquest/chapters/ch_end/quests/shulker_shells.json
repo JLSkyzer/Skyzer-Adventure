@@ -1,0 +1,56 @@
+{
+  "id": "shulker_shells",
+  "title": "Shulker Shells",
+  "description": "Hunt shulkers in the End cities to obtain shells for crafting shulker boxes.",
+  "icon": {
+    "item": "minecraft:shulker_shell"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#CE93D8"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_end",
+  "dependencies": [
+    "end_arrival"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "minecraft:shulker",
+      "amount": 20,
+      "localized_name": "minecraft:shulker"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:shulker_shell",
+      "amount": 4,
+      "consume": true,
+      "localized_name": "Shulker Shell"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:white_shulker_box",
+      "amount": 2,
+      "localized_name": "White Shulker Box"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

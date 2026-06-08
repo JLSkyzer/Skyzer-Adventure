@@ -1,0 +1,56 @@
+{
+  "id": "iron_vein",
+  "title": "Iron Vein",
+  "description": "Iron is essential for advanced tools. Break 48 iron ore and collect 48 iron ingots.",
+  "icon": {
+    "item": "minecraft:iron_ore"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#455A64",
+    "border": "#B0BEC5"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [
+    "coal_rush"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:iron_ore",
+      "amount": 48,
+      "localized_name": "Iron Ore"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:iron_ingot",
+      "amount": 48,
+      "consume": false,
+      "localized_name": "Iron Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:iron_pickaxe",
+      "amount": 1,
+      "localized_name": "Iron Pickaxe"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

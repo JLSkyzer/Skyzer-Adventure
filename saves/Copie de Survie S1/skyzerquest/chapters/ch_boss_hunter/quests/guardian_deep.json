@@ -1,0 +1,72 @@
+{
+  "id": "guardian_deep",
+  "title": "Guardian of the Deep",
+  "description": "Ocean monuments hide ancient treasures guarded by powerful beings. Defeat 5 elder guardians and 30 guardians.",
+  "icon": {
+    "item": "minecraft:prismarine_shard"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#006064",
+    "border": "#4DD0E1"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_boss_hunter",
+  "dependencies": [
+    "ch_monster_slayer/undead_purge"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "minecraft:elder_guardian",
+      "amount": 5,
+      "localized_name": "minecraft:elder_guardian"
+    },
+    {
+      "type": "kill",
+      "entity": "minecraft:guardian",
+      "amount": 30,
+      "localized_name": "minecraft:guardian"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 3000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:prismarine_shard",
+      "amount": 16,
+      "localized_name": "Prismarine Shard"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:prismarine_crystals",
+      "amount": 8,
+      "localized_name": "Prismarine Crystals"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:sponge",
+      "amount": 1,
+      "localized_name": "Sponge"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

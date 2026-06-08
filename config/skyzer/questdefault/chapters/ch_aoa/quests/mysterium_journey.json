@@ -1,0 +1,59 @@
+{
+  "id": "mysterium_journey",
+  "title": "Mysterium Journey",
+  "description": "Travel to the mysterious purple realm of Mysterium.",
+  "icon": {
+    "item": "aoa3:mysterium_realmstone"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#9C27B0"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [
+    "aoa_intro"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "aoa3:mysterium_realmstone",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Mysterium Realmstone"
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 817
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "aoa3:mysterium_tokens",
+      "amount": 16,
+      "localized_name": "Mysterium Tokens"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

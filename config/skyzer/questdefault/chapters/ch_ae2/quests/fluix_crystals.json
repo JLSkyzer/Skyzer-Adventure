@@ -1,0 +1,53 @@
+{
+  "id": "fluix_crystals",
+  "title": "Fluix Crystals",
+  "description": "Create Fluix Crystals by combining Certus Quartz, Nether Quartz, and Redstone in water. These are essential for ME components.",
+  "icon": {
+    "item": "appliedenergistics2:material",
+    "meta": 7
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#CE93D8"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_ae2",
+  "dependencies": [
+    "certus_mining"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:material",
+      "amount": 16,
+      "consume": false,
+      "meta": 7,
+      "localized_name": "Fluix Crystal"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "item",
+      "item": "appliedenergistics2:material",
+      "amount": 8,
+      "meta": 8,
+      "localized_name": "Fluix Dust"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "phyto_grower",
+  "title": "Phyto Grower",
+  "description": "Craft a phytogenic insolator to automate crop growth with thermal energy and phyto-gro.",
+  "icon": {
+    "item": "thermalexpansion:machine",
+    "meta": 4
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#33691E",
+    "border": "#8BC34A"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_thermal",
+  "dependencies": [
+    "machine_frame"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "thermalexpansion:machine",
+      "amount": 1,
+      "meta": 4,
+      "localized_name": "Phytogenic Insolator (Basic)"
+    },
+    {
+      "type": "collect",
+      "item": "thermalfoundation:fertilizer",
+      "amount": 32,
+      "consume": true,
+      "localized_name": "Phyto-Gro"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "thermalfoundation:fertilizer",
+      "amount": 32,
+      "meta": 1,
+      "localized_name": "Rich Phyto-Gro"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

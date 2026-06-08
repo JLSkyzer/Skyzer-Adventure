@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "currency_symbol": "$",
+  "currency_name": "Dollars",
+  "enable_quest_notifications": true,
+  "enable_quest_sounds": true,
+  "enable_reward_claim_gui": true,
+  "quest_log_size": 100,
+  "shop_settings": {
+    "enable_shop": true,
+    "shop_transaction_fee": 0.0,
+    "allow_sell_without_buy_price": true,
+    "default_no_price_value": 0.0
+  },
+  "auto_sell_block_settings": {
+    "enable_offline_selling": true,
+    "max_items_per_tick": 1,
+    "enable_statistics": true
+  },
+  "ui_settings": {
+    "theme": "dark",
+    "accent_color": "#7dd3fc",
+    "default_quest_shape": "square",
+    "default_quest_bg_color": "#667eea",
+    "default_quest_border_color": "#7dd3fc",
+    "grid_snap": true,
+    "grid_size": 20
+  }
+}

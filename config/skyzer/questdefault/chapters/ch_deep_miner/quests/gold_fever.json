@@ -1,0 +1,57 @@
+{
+  "id": "gold_fever",
+  "title": "Gold Fever",
+  "description": "The allure of gold drives miners deeper. Break 32 gold ore and collect 32 gold ingots.",
+  "icon": {
+    "item": "minecraft:gold_ore"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#F57F17",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [
+    "iron_vein"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:gold_ore",
+      "amount": 32,
+      "localized_name": "Gold Ore"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:gold_ingot",
+      "amount": 32,
+      "consume": true,
+      "localized_name": "Gold Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:golden_apple",
+      "amount": 8,
+      "localized_name": "Golden Apple"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

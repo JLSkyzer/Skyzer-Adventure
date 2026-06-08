@@ -1,0 +1,51 @@
+{
+  "id": "jetpack_dreams",
+  "title": "Jetpack Dreams",
+  "description": "Achieve the dream of flight by obtaining a Mekanism jetpack.",
+  "icon": {
+    "item": "mekanism:jetpack"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#01579B",
+    "border": "#039BE5"
+  },
+  "position": {
+    "x": 400,
+    "y": -50
+  },
+  "chapter_id": "ch_mekanism",
+  "dependencies": [
+    "advanced_tech"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mekanism:jetpack",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Jetpack"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "item",
+      "item": "mekanism:armoredjetpack",
+      "amount": 1,
+      "localized_name": "Armored Jetpack"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

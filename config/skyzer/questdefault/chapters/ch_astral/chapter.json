@@ -1,0 +1,11 @@
+{
+  "id": "ch_astral",
+  "name": "Astral Sorcery",
+  "description": "Look to the stars and unlock cosmic power. The night sky holds secrets beyond imagination.",
+  "icon": {
+    "item": "astralsorcery:itemwand"
+  },
+  "order": 1,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

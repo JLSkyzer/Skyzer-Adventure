@@ -1,0 +1,59 @@
+{
+  "id": "space_prep",
+  "title": "Space Preparation",
+  "description": "Gather the essential materials needed for space exploration. Aluminum, compressed steel, and tin canisters are your foundation.",
+  "icon": {
+    "item": "galacticraftcore:basic_item",
+    "meta": 5
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#0D47A1",
+    "border": "#42A5F5"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_space",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "galacticraftcore:basic_item",
+      "amount": 32,
+      "consume": false,
+      "meta": 5,
+      "localized_name": "Aluminum Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "galacticraftcore:basic_item",
+      "amount": 32,
+      "consume": false,
+      "meta": 9,
+      "localized_name": "Compressed Steel"
+    },
+    {
+      "type": "collect",
+      "item": "galacticraftcore:basic_item",
+      "amount": 16,
+      "consume": false,
+      "meta": 15,
+      "localized_name": "Can of Food"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

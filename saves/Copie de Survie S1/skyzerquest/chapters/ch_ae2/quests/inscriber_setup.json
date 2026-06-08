@@ -1,0 +1,67 @@
+{
+  "id": "inscriber_setup",
+  "title": "Inscriber Setup",
+  "description": "Set up an Inscriber to create processors. Calculation and Logic processors are vital for advanced ME components.",
+  "icon": {
+    "item": "appliedenergistics2:inscriber"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#00695C",
+    "border": "#4DB6AC"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_ae2",
+  "dependencies": [
+    "fluix_crystals"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:inscriber",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Inscriber"
+    },
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:material",
+      "amount": 4,
+      "consume": false,
+      "meta": 23,
+      "localized_name": "Calculation Processor"
+    },
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:material",
+      "amount": 4,
+      "consume": false,
+      "meta": 22,
+      "localized_name": "Logic Processor"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "appliedenergistics2:material",
+      "amount": 4,
+      "meta": 24,
+      "localized_name": "Engineering Processor"
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

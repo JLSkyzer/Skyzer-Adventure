@@ -1,0 +1,56 @@
+{
+  "id": "enrichment_chamber",
+  "title": "Enrichment Process",
+  "description": "Create enriched materials to unlock more advanced Mekanism machinery.",
+  "icon": {
+    "item": "mekanism:enrichedalloy"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#1976D2",
+    "border": "#90CAF9"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_mekanism",
+  "dependencies": [
+    "basic_circuits"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mekanism:enrichedalloy",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "§eEnriched Alloy"
+    },
+    {
+      "type": "collect",
+      "item": "mekanism:enrichediron",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Enriched Iron"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

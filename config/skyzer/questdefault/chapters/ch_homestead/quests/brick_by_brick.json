@@ -1,0 +1,54 @@
+{
+  "id": "brick_by_brick",
+  "title": "Brick by Brick",
+  "description": "Upgrade your home with durable brick blocks. Gather clay, smelt it into bricks, and craft them into beautiful brick blocks. Your base is evolving from shelter to stronghold.",
+  "icon": {
+    "item": "minecraft:brick_block"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#E57373"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_homestead",
+  "dependencies": [
+    "interior_design"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "minecraft:brick_block",
+      "amount": 128,
+      "localized_name": "Bricks"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:brick_block",
+      "amount": 64,
+      "localized_name": "Bricks"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "common_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

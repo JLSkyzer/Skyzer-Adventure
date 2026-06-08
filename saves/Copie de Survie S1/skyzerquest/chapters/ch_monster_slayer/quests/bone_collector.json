@@ -1,0 +1,58 @@
+{
+  "id": "bone_collector",
+  "title": "Bone Collector",
+  "description": "Skeletons guard their bones jealously. Slay 25 of them and gather 32 bones for your collection.",
+  "icon": {
+    "item": "minecraft:bone"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#311B92",
+    "border": "#7C4DFF"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [
+    "night_watch"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialskeleton",
+      "amount": 25,
+      "localized_name": "specialmobs:specialskeleton"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:bone",
+      "amount": 32,
+      "consume": false,
+      "localized_name": "Bone"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 200.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:arrow",
+      "amount": 16,
+      "localized_name": "Arrow"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:bow",
+      "amount": 1,
+      "localized_name": "Bow"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

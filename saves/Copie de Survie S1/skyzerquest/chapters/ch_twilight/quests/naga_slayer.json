@@ -1,0 +1,54 @@
+{
+  "id": "naga_slayer",
+  "title": "Naga Slayer",
+  "description": "Defeat the giant serpent Naga and claim its scales.",
+  "icon": {
+    "item": "twilightforest:naga_scale"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#33691E",
+    "border": "#8BC34A"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [
+    "twilight_portal"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "twilightforest:naga",
+      "amount": 1,
+      "localized_name": "twilightforest:naga"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "twilightforest:naga_scale",
+      "amount": 8,
+      "localized_name": "Naga Scale"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

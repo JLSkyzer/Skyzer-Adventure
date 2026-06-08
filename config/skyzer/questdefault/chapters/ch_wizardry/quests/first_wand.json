@@ -1,0 +1,56 @@
+{
+  "id": "first_wand",
+  "title": "First Wand",
+  "description": "Craft your first magic wand and arcane workbench to begin spellcasting.",
+  "icon": {
+    "item": "ebwizardry:magic_wand"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#6A1B9A",
+    "border": "#CE93D8"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_wizardry",
+  "dependencies": [
+    "crystal_mining"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "ebwizardry:magic_wand",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Magic Wand"
+    },
+    {
+      "type": "craft",
+      "item": "ebwizardry:arcane_workbench",
+      "amount": 1,
+      "localized_name": "Arcane Workbench"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "ebwizardry:magic_crystal",
+      "amount": 16,
+      "localized_name": "Magic Crystal"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "prosperity_shard",
+  "title": "Prosperity Shards",
+  "description": "Gather Prosperity Shards, the foundation of Mystical Agriculture. These glowing shards hold great power.",
+  "icon": {
+    "item": "mysticalagriculture:crafting",
+    "meta": 5
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#827717",
+    "border": "#CDDC39"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_mystical_ag",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:crafting",
+      "amount": 32,
+      "consume": false,
+      "meta": 5,
+      "localized_name": "Prosperity Shard"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 200.0
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

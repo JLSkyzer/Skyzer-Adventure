@@ -1,0 +1,78 @@
+{
+  "id": "mob_slaughter",
+  "title": "Mass Extinction",
+  "description": "Eliminate hundreds of hostile mobs across all dimensions. Prove your combat prowess and repeat this challenge!",
+  "icon": {
+    "item": "minecraft:diamond_sword"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#FF1744"
+  },
+  "position": {
+    "x": 500,
+    "y": 100
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [
+    "dimension_hopper"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialzombie",
+      "amount": 500,
+      "localized_name": "specialmobs:specialzombie"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialskeleton",
+      "amount": 500,
+      "localized_name": "specialmobs:specialskeleton"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialcreeper",
+      "amount": 200,
+      "localized_name": "specialmobs:specialcreeper"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialenderman",
+      "amount": 100,
+      "localized_name": "specialmobs:specialenderman"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialblaze",
+      "amount": 50,
+      "localized_name": "specialmobs:specialblaze"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialwitch",
+      "amount": 50,
+      "localized_name": "specialmobs:specialwitch"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 15000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "legendary_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 40
+    }
+  ],
+  "repeatable": true,
+  "cooldown": 172800,
+  "hidden_until_unlocked": false
+}

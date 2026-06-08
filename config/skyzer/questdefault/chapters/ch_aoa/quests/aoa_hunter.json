@@ -1,0 +1,66 @@
+{
+  "id": "aoa_hunter",
+  "title": "Dimensional Hunter",
+  "description": "Hunt down various creatures from the Advent of Ascension dimensions.",
+  "icon": {
+    "item": "minecraft:diamond_sword"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#EF5350"
+  },
+  "position": {
+    "x": 0,
+    "y": 100
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [
+    "aoa_intro"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "aoa3:charger",
+      "amount": 30,
+      "localized_name": "aoa3:charger"
+    },
+    {
+      "type": "kill",
+      "entity": "aoa3:cyclops",
+      "amount": 20,
+      "localized_name": "aoa3:cyclops"
+    },
+    {
+      "type": "kill",
+      "entity": "aoa3:goblin",
+      "amount": 15,
+      "localized_name": "aoa3:goblin"
+    },
+    {
+      "type": "kill",
+      "entity": "aoa3:bush_baby",
+      "amount": 10,
+      "localized_name": "aoa3:bush_baby"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

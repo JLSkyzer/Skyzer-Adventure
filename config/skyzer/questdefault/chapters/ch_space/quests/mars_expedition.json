@@ -1,0 +1,52 @@
+{
+  "id": "mars_expedition",
+  "title": "Mars Expedition",
+  "description": "Journey to Mars! Explore the red planet and survive its hostile environment. Prove your worth as a space explorer.",
+  "icon": {
+    "item": "minecraft:redstone"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#BF360C",
+    "border": "#FF7043"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_space",
+  "dependencies": [
+    "moon_landing"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "walking",
+      "distance": 2000
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialzombie",
+      "amount": 10,
+      "localized_name": "specialmobs:specialzombie"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 3000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

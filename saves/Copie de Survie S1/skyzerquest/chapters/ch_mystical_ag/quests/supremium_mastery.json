@@ -1,0 +1,51 @@
+{
+  "id": "supremium_mastery",
+  "title": "Supremium Mastery",
+  "description": "Achieve the ultimate tier! Supremium Essence allows you to grow the rarest and most valuable resources.",
+  "icon": {
+    "item": "mysticalagriculture:crafting",
+    "meta": 4
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#880E4F",
+    "border": "#F50057"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_mystical_ag",
+  "dependencies": [
+    "tertium_essence"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:crafting",
+      "amount": 32,
+      "consume": false,
+      "meta": 4,
+      "localized_name": "§cSupremium Essence"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 3000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

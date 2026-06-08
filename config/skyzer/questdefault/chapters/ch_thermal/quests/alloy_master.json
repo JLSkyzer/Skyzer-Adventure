@@ -1,0 +1,77 @@
+{
+  "id": "alloy_master",
+  "title": "Alloy Master",
+  "description": "Master the art of alloy creation by producing electrum, invar, and bronze.",
+  "icon": {
+    "item": "thermalfoundation:material",
+    "meta": 161
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFAB40"
+  },
+  "position": {
+    "x": 400,
+    "y": 0
+  },
+  "chapter_id": "ch_thermal",
+  "dependencies": [
+    "induction_smelter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 16,
+      "consume": true,
+      "meta": 161,
+      "localized_name": "Electrum Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 16,
+      "consume": true,
+      "meta": 162,
+      "localized_name": "Invar Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 16,
+      "consume": true,
+      "meta": 163,
+      "localized_name": "Bronze Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "thermalfoundation:material",
+      "amount": 8,
+      "meta": 165,
+      "localized_name": "Signalum Ingot"
+    },
+    {
+      "type": "item",
+      "item": "thermalfoundation:material",
+      "amount": 8,
+      "meta": 166,
+      "localized_name": "Lumium Ingot"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

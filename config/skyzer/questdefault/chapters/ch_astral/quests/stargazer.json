@@ -1,0 +1,54 @@
+{
+  "id": "stargazer",
+  "title": "Stargazer",
+  "description": "Begin your journey into Astral Sorcery by collecting aquamarine and rock crystals.",
+  "icon": {
+    "item": "astralsorcery:itemcraftingcomponent"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#1A237E",
+    "border": "#7C4DFF"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_astral",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemcraftingcomponent",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Aquamarine"
+    },
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemrockcrystalsimple",
+      "amount": 8,
+      "consume": true,
+      "localized_name": "Rock Crystal"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "astralsorcery:itemjournal",
+      "amount": 1,
+      "localized_name": "Astral Tome"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

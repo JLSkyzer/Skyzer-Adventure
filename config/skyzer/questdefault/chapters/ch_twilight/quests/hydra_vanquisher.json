@@ -1,0 +1,54 @@
+{
+  "id": "hydra_vanquisher",
+  "title": "Hydra Vanquisher",
+  "description": "Defeat the fearsome multi-headed Hydra and claim the fiery sword.",
+  "icon": {
+    "item": "twilightforest:fiery_sword"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#FF5252"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [
+    "lich_tower"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "twilightforest:hydra",
+      "amount": 1,
+      "localized_name": "twilightforest:hydra"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 3000.0
+    },
+    {
+      "type": "item",
+      "item": "twilightforest:fiery_sword",
+      "amount": 1,
+      "localized_name": "Fiery Sword"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 25
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

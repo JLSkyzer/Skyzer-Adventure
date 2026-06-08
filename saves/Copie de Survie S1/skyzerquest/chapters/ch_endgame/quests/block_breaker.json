@@ -1,0 +1,58 @@
+{
+  "id": "block_breaker",
+  "title": "Block Breaker",
+  "description": "Mine thousands of blocks to prove your dedication. Every mountain starts with a single block broken!",
+  "icon": {
+    "item": "minecraft:diamond_pickaxe"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#37474F",
+    "border": "#78909C"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:stone",
+      "amount": 1000,
+      "localized_name": "Stone"
+    },
+    {
+      "type": "break",
+      "block": "minecraft:dirt",
+      "amount": 500,
+      "localized_name": "Dirt"
+    },
+    {
+      "type": "break",
+      "block": "minecraft:sand",
+      "amount": 200,
+      "localized_name": "Sand"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 2000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:diamond_pickaxe",
+      "amount": 1,
+      "localized_name": "Diamond Pickaxe"
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

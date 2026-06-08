@@ -1,0 +1,59 @@
+{
+  "id": "abyss_dive",
+  "title": "Abyssal Dive",
+  "description": "Venture into the dark Abyss dimension and survive its horrors.",
+  "icon": {
+    "item": "aoa3:abyss_realmstone"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#212121",
+    "border": "#616161"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_aoa",
+  "dependencies": [
+    "aoa_intro"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "aoa3:abyss_realmstone",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Abyss Realmstone"
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 800
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "aoa3:abyss_tokens",
+      "amount": 16,
+      "localized_name": "Abyss Tokens"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

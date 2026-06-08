@@ -1,0 +1,67 @@
+{
+  "id": "undead_purge",
+  "title": "Undead Purge",
+  "description": "The undead infestation must end. Launch a massive campaign: eliminate 50 zombies, 50 skeletons, and 10 zombie pigmen.",
+  "icon": {
+    "item": "minecraft:diamond_sword"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#880E4F",
+    "border": "#F06292"
+  },
+  "position": {
+    "x": 300,
+    "y": 100
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [
+    "witch_trial",
+    "enderman_encounter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialzombie",
+      "amount": 50,
+      "localized_name": "specialmobs:specialzombie"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialskeleton",
+      "amount": 50,
+      "localized_name": "specialmobs:specialskeleton"
+    },
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialpigzombie",
+      "amount": 10,
+      "localized_name": "specialmobs:specialpigzombie"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:diamond_sword",
+      "amount": 1,
+      "localized_name": "Diamond Sword"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

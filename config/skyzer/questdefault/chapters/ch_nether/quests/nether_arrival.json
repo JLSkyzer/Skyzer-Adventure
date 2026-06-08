@@ -1,0 +1,46 @@
+{
+  "id": "nether_arrival",
+  "title": "Into the Inferno",
+  "description": "Step through the portal and enter the hellish Nether dimension.",
+  "icon": {
+    "item": "minecraft:netherrack"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#F44336"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_nether",
+  "dependencies": [
+    "portal_builder"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "explore_dimension",
+      "dimension": -1
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

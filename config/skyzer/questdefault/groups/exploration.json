@@ -1,0 +1,10 @@
+{
+  "id": "exploration",
+  "name": "Dimensions & Exploration",
+  "description": "Venture beyond the Overworld into mysterious realms filled with danger and treasure.",
+  "icon": {
+    "item": "minecraft:ender_eye"
+  },
+  "display_order": 5,
+  "chapters": ["ch_nether", "ch_end", "ch_twilight", "ch_aoa"]
+}

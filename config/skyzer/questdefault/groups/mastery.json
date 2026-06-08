@@ -1,0 +1,10 @@
+{
+  "id": "mastery",
+  "name": "Technology & Mastery",
+  "description": "Master digital storage, grow any resource, and achieve ultimate power.",
+  "icon": {
+    "item": "appliedenergistics2:controller"
+  },
+  "display_order": 7,
+  "chapters": ["ch_ae2", "ch_mystical_ag", "ch_endgame"]
+}

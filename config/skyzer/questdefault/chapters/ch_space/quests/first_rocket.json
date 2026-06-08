@@ -1,0 +1,55 @@
+{
+  "id": "first_rocket",
+  "title": "First Rocket",
+  "description": "Build your first Tier 1 Rocket! This magnificent machine will carry you to the stars.",
+  "icon": {
+    "item": "galacticraftcore:rocket_t1"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#01579B",
+    "border": "#039BE5"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_space",
+  "dependencies": [
+    "nasa_workbench"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "galacticraftcore:rocket_t1",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "Tier 1 Rocket"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "item",
+      "item": "galacticraftcore:oxygen_tank_light_full",
+      "amount": 16,
+      "localized_name": "Light Oxygen Tank"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "rare_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

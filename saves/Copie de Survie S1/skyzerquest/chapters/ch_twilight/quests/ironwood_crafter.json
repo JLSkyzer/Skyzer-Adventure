@@ -1,0 +1,63 @@
+{
+  "id": "ironwood_crafter",
+  "title": "Ironwood Crafter",
+  "description": "Gather ironwood and steeleaf materials to craft powerful Twilight Forest equipment.",
+  "icon": {
+    "item": "twilightforest:ironwood_ingot"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#455A64",
+    "border": "#78909C"
+  },
+  "position": {
+    "x": 0,
+    "y": 100
+  },
+  "chapter_id": "ch_twilight",
+  "dependencies": [
+    "twilight_portal"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "twilightforest:ironwood_ingot",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Ironwood Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "twilightforest:steeleaf_ingot",
+      "amount": 16,
+      "consume": true,
+      "localized_name": "Steeleaf"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 600.0
+    },
+    {
+      "type": "item",
+      "item": "twilightforest:steeleaf_sword",
+      "amount": 1,
+      "localized_name": "Steeleaf Sword"
+    },
+    {
+      "type": "item",
+      "item": "twilightforest:steeleaf_pickaxe",
+      "amount": 1,
+      "localized_name": "Steeleaf Pick"
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

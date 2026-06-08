@@ -1,0 +1,63 @@
+{
+  "id": "sweet_tooth",
+  "title": "Sweet Tooth",
+  "description": "Satisfy your cravings by mastering the art of baking. Create delicious cakes, craft crunchy cookies, and refine sugar from sugar cane. Life is sweeter with desserts!",
+  "icon": {
+    "item": "minecraft:cake"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#880E4F",
+    "border": "#F48FB1"
+  },
+  "position": {
+    "x": 0,
+    "y": 100
+  },
+  "chapter_id": "ch_farming",
+  "dependencies": [
+    "first_harvest"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "minecraft:cake",
+      "amount": 8,
+      "localized_name": "Cake"
+    },
+    {
+      "type": "craft",
+      "item": "minecraft:cookie",
+      "amount": 16,
+      "localized_name": "Cookie"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:sugar",
+      "amount": 32,
+      "consume": false,
+      "localized_name": "Sugar"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 250.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:golden_apple",
+      "amount": 8,
+      "localized_name": "Golden Apple"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "common_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

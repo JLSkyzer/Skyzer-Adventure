@@ -1,0 +1,45 @@
+# Dimension Registry
+
+**Generated:** Fri Feb 20 17:20:52 CET 2026
+
+Complete list of all registered dimensions in the game.
+
+---
+
+**Total Dimensions:** 35
+
+- **ID -11325:** `Deep Dark`
+- **ID -9999:** `ExtraUtils2_Quarry_Dim`
+- **ID -24:** `Treasure Room`
+- **ID -23:** `Anu Lair`
+- **ID -17:** `Wyvern Skylands`
+- **ID -1:** `Nether`
+- **ID 0:** `overworld`
+- **ID 1:** `End`
+- **ID 2:** `Storage Cell`
+- **ID 7:** `twilight_forest`
+- **ID 17:** `atum`
+- **ID 66:** `EREBUS`
+- **ID 800:** `abyss`
+- **ID 801:** `ancient_cavern`
+- **ID 802:** `barathos`
+- **ID 803:** `candyland`
+- **ID 804:** `celeve`
+- **ID 805:** `creeponia`
+- **ID 806:** `crystevia`
+- **ID 807:** `deeplands`
+- **ID 808:** `dustopia`
+- **ID 809:** `gardencia`
+- **ID 810:** `greckon`
+- **ID 811:** `haven`
+- **ID 812:** `immortallis`
+- **ID 813:** `iromine`
+- **ID 814:** `lborean`
+- **ID 815:** `lelyetia`
+- **ID 816:** `lunalus`
+- **ID 817:** `mysterium`
+- **ID 818:** `precasia`
+- **ID 819:** `runandor`
+- **ID 820:** `shyrelands`
+- **ID 821:** `vox_ponds`
+- **ID 4598:** `nc_wasteland`

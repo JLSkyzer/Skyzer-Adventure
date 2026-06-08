@@ -1,0 +1,55 @@
+{
+  "id": "dimension_hopper",
+  "title": "Dimension Hopper",
+  "description": "Visit all major dimensions: Overworld, Nether, End, and Twilight Forest. True adventurers know no boundaries!",
+  "icon": {
+    "item": "minecraft:ender_eye"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#E040FB"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_endgame",
+  "dependencies": [],
+  "goals": [
+    {
+      "type": "explore_dimension",
+      "dimension": 0
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": -1
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 1
+    },
+    {
+      "type": "explore_dimension",
+      "dimension": 7
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 5000.0
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 30
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

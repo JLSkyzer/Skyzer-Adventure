@@ -1,0 +1,62 @@
+{
+  "id": "spell_scholar",
+  "title": "Spell Scholar",
+  "description": "Gather the materials needed to learn and inscribe powerful spells.",
+  "icon": {
+    "item": "ebwizardry:crystal_shard"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#9C27B0"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_wizardry",
+  "dependencies": [
+    "first_wand"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "ebwizardry:crystal_shard",
+      "amount": 8,
+      "consume": true,
+      "localized_name": "Magic Crystal Shard"
+    },
+    {
+      "type": "collect",
+      "item": "ebwizardry:blank_scroll",
+      "amount": 4,
+      "consume": true,
+      "localized_name": "Blank Scroll"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "item",
+      "item": "ebwizardry:ruined_spell_book",
+      "amount": 2,
+      "localized_name": "Ruined Spell Book"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 12
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

@@ -1,0 +1,57 @@
+{
+  "id": "enderman_encounter",
+  "title": "Enderman Encounter",
+  "description": "Tall, dark figures that teleport at will. Slay 15 endermen and claim 8 ender pearls without looking them in the eye.",
+  "icon": {
+    "item": "minecraft:ender_pearl"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#1A237E",
+    "border": "#7C4DFF"
+  },
+  "position": {
+    "x": 200,
+    "y": 150
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [
+    "creeper_hunter"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialenderman",
+      "amount": 15,
+      "localized_name": "specialmobs:specialenderman"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:ender_pearl",
+      "amount": 8,
+      "consume": false,
+      "localized_name": "Ender Pearl"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:ender_eye",
+      "amount": 4,
+      "localized_name": "Eye of Ender"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "uncommon_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

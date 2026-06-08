@@ -1,0 +1,11 @@
+{
+  "id": "ch_wizardry",
+  "name": "Wizardry Academy",
+  "description": "Study the arcane arts at the finest magical academy. Master wands, spells, and enchantments.",
+  "icon": {
+    "item": "ebwizardry:magic_wand"
+  },
+  "order": 3,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

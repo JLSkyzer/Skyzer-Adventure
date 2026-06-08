@@ -1,0 +1,63 @@
+{
+  "id": "wither_prep",
+  "title": "Wither Preparation",
+  "description": "Before summoning the ultimate undead horror, you must venture into the Nether. Gather 3 wither skeleton skulls and 4 soul sand.",
+  "icon": {
+    "item": "minecraft:skull"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#212121",
+    "border": "#616161"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_boss_hunter",
+  "dependencies": [
+    "ch_monster_slayer/undead_purge"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "minecraft:skull",
+      "amount": 3,
+      "consume": false,
+      "localized_name": "Skeleton Skull"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:soul_sand",
+      "amount": 4,
+      "consume": false,
+      "localized_name": "Soul Sand"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:enchanting_table",
+      "amount": 1,
+      "localized_name": "Enchantment Table"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:bookshelf",
+      "amount": 15,
+      "localized_name": "Oak Bookshelf"
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

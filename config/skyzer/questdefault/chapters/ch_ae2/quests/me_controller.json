@@ -1,0 +1,57 @@
+{
+  "id": "me_controller",
+  "title": "ME Controller",
+  "description": "Build the heart of your ME network! The Controller and Drive are the foundation of digital storage.",
+  "icon": {
+    "item": "appliedenergistics2:controller"
+  },
+  "shape": "diamond",
+  "colors": {
+    "background": "#00838F",
+    "border": "#4DD0E1"
+  },
+  "position": {
+    "x": 200,
+    "y": 0
+  },
+  "chapter_id": "ch_ae2",
+  "dependencies": [
+    "fluix_crystals"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:controller",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "ME Controller"
+    },
+    {
+      "type": "collect",
+      "item": "appliedenergistics2:drive",
+      "amount": 1,
+      "consume": false,
+      "localized_name": "ME Drive"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1000.0
+    },
+    {
+      "type": "item",
+      "item": "appliedenergistics2:storage_cell_1k",
+      "amount": 2,
+      "localized_name": "§61k§r ME Storage Cell"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

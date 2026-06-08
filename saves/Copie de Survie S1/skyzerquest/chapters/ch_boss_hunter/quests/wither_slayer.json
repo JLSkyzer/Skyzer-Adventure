@@ -1,0 +1,60 @@
+{
+  "id": "wither_slayer",
+  "title": "Wither Slayer",
+  "description": "Summon the three-headed abomination and prove your strength. Defeat the Wither and claim the legendary nether star.",
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#FF6F00",
+    "border": "#FFD54F"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_boss_hunter",
+  "dependencies": [
+    "wither_prep"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "minecraft:wither",
+      "amount": 1,
+      "localized_name": "minecraft:wither"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 5000.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:nether_star",
+      "amount": 1,
+      "localized_name": "Nether Star"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 2
+    },
+    {
+      "type": "xp_level",
+      "amount": 30
+    },
+    {
+      "type": "item",
+      "item": "minecraft:beacon",
+      "amount": 1,
+      "localized_name": "Beacon"
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

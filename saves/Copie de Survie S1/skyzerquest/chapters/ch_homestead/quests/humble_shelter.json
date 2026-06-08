@@ -1,0 +1,56 @@
+{
+  "id": "humble_shelter",
+  "title": "Humble Shelter",
+  "description": "Every adventurer needs a place to call home. Build the foundation of your shelter with wooden planks and craft a bed to set your spawn point. This is where your empire begins.",
+  "icon": {
+    "item": "minecraft:planks"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4E342E",
+    "border": "#8D6E63"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_homestead",
+  "dependencies": [
+    "ch_first_steps/punch_tree"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "place",
+      "block": "minecraft:planks",
+      "amount": 64,
+      "localized_name": "Oak Wood Planks"
+    },
+    {
+      "type": "place",
+      "block": "minecraft:bed",
+      "amount": 1,
+      "localized_name": "Air"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 200.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:painting",
+      "amount": 3,
+      "localized_name": "Painting"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "common_loot",
+      "rolls": 1
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

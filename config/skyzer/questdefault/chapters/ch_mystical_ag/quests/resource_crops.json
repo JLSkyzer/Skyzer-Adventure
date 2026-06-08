@@ -1,0 +1,76 @@
+{
+  "id": "resource_crops",
+  "title": "Resource Crops",
+  "description": "Grow precious resources! Diamond, Iron, and Gold essence can be crafted into their respective materials.",
+  "icon": {
+    "item": "minecraft:diamond"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#F57F17",
+    "border": "#FFCA28"
+  },
+  "position": {
+    "x": 200,
+    "y": 100
+  },
+  "chapter_id": "ch_mystical_ag",
+  "dependencies": [
+    "prudentium_essence"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:diamond_essence",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Diamond Essence"
+    },
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:iron_essence",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Iron Essence"
+    },
+    {
+      "type": "collect",
+      "item": "mysticalagriculture:gold_essence",
+      "amount": 16,
+      "consume": false,
+      "localized_name": "Gold Essence"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 800.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:diamond",
+      "amount": 16,
+      "localized_name": "Diamond"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:iron_ingot",
+      "amount": 32,
+      "localized_name": "Iron Ingot"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:gold_ingot",
+      "amount": 32,
+      "localized_name": "Gold Ingot"
+    },
+    {
+      "type": "xp_level",
+      "amount": 15
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

@@ -1,0 +1,11 @@
+{
+  "id": "ch_mystical_ag",
+  "name": "Mystical Agriculture",
+  "description": "Grow anything from diamonds to dragon eggs. Master essence farming and resource generation.",
+  "icon": {
+    "item": "mysticalagriculture:crafting"
+  },
+  "order": 2,
+  "unlocked_by_default": true,
+  "unlock_requirements": {}
+}

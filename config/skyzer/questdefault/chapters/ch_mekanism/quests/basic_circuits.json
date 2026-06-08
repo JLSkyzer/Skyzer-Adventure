@@ -1,0 +1,49 @@
+{
+  "id": "basic_circuits",
+  "title": "Basic Circuits",
+  "description": "Craft basic control circuits to power your Mekanism machines and systems.",
+  "icon": {
+    "item": "mekanism:controlcircuit"
+  },
+  "shape": "hexagon",
+  "colors": {
+    "background": "#1565C0",
+    "border": "#64B5F6"
+  },
+  "position": {
+    "x": 100,
+    "y": 0
+  },
+  "chapter_id": "ch_mekanism",
+  "dependencies": [
+    "osmium_discovery"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "craft",
+      "item": "mekanism:controlcircuit",
+      "amount": 8,
+      "localized_name": "§aBasic Control Circuit"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "mekanism:energytablet",
+      "amount": 4,
+      "localized_name": "§eEnergy Tablet"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

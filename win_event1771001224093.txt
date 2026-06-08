@@ -1,0 +1,47 @@
+Detected that Windows reported recent critical or error events in the Application log,
+which can indicate that a process (including the Minecraft JVM) terminated unexpectedly.
+Scope: Application log; Levels: Error & Critical; Window: last ~15 seconds.
+
+If no java.exe (or related JVM processes) are listed below, you can disregard this message.
+To inspect these events manually:
+  1) Press Win+R, type "eventvwr.msc", press Enter.
+  2) Open "Windows Logs" → "Application".
+  3) Sort by Date and look for entries with Level = Error or Critical near the crash time.
+
+-----------------------
+Time: 2026-02-13 17:46:49.599 CET
+Source: Application Error
+Event ID: 1000
+Level: Error
+
+Message:
+  Nom de l'application défaillante : disp.exe, version : 0.0.0.0, horodatage : 0x6963ed9b
+  Nom du module défaillant : ucrtbase.dll, version : 10.0.26100.7623, horodatage : 0x53a0792e
+  Exception code: 0xc0000409
+  Fault offset: 0x00000000000a4ace
+  Identifiant du processus défaillant : 0xA0CC
+  Heure de début de l'application défaillante : 0x1DC9D0856FC3D32
+  Chemin de l'application défaillante : C:\ProgramData\NVIDIA Corporation\nvtopps\rise\disp.exe
+  Chemin du module défaillant : C:\WINDOWS\System32\ucrtbase.dll
+  ID du rapport : 44b29bea-a953-456b-be6d-335ff9703e1a
+  Nom complet du package défaillant : 
+  Package défaillant – ID d'application relatif :
+
+
+Details:
+  - AppName: disp.exe
+  - AppVersion: 0.0.0.0
+  - AppTimeStamp: 6963ed9b
+  - ModuleName: ucrtbase.dll
+  - ModuleVersion: 10.0.26100.7623
+  - ModuleTimeStamp: 53a0792e
+  - ExceptionCode: c0000409
+  - FaultingOffset: 00000000000a4ace
+  - Process ID: 41164 [0xa0cc]
+  - ProcessCreationTime: 0x1dc9d0856fc3d32
+  - AppPath: C:\ProgramData\NVIDIA Corporation\nvtopps\rise\disp.exe
+  - ModulePath: C:\WINDOWS\System32\ucrtbase.dll
+  - IntegratorReportId: 44b29bea-a953-456b-be6d-335ff9703e1a
+  - Exception Code: 3221226505 [0xc0000409]
+-----------------------
+

@@ -1,0 +1,63 @@
+{
+  "id": "celestial_power",
+  "title": "Celestial Power",
+  "description": "Attune yourself to the celestial forces and create perfect crystals.",
+  "icon": {
+    "item": "astralsorcery:itemcelestialcrystal"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#E040FB"
+  },
+  "position": {
+    "x": 300,
+    "y": 0
+  },
+  "chapter_id": "ch_astral",
+  "dependencies": [
+    "starmetal_forge"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemcelestialcrystal",
+      "amount": 4,
+      "consume": true,
+      "localized_name": "Celestial Crystal"
+    },
+    {
+      "type": "collect",
+      "item": "astralsorcery:itemcraftingcomponent",
+      "amount": 8,
+      "consume": true,
+      "meta": 2,
+      "localized_name": "Stardust"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 1500.0
+    },
+    {
+      "type": "item",
+      "item": "astralsorcery:itemcape",
+      "amount": 1,
+      "localized_name": "Mantle of Stars"
+    },
+    {
+      "type": "reward_table",
+      "table_id": "epic_loot",
+      "rolls": 1
+    },
+    {
+      "type": "xp_level",
+      "amount": 20
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

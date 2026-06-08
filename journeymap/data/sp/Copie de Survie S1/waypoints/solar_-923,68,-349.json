@@ -1,0 +1,18 @@
+{
+  "id": "solar_-923,68,-349",
+  "name": "solar",
+  "icon": "waypoint-normal.png",
+  "x": -923,
+  "y": 68,
+  "z": -349,
+  "r": 224,
+  "g": 106,
+  "b": 162,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}

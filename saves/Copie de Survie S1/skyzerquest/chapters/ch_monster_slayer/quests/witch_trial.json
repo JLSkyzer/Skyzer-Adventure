@@ -1,0 +1,69 @@
+{
+  "id": "witch_trial",
+  "title": "Witch Trial",
+  "description": "Cackling witches brew potions of misfortune. Put 10 witches to rest and recover 8 glass bottles from their huts.",
+  "icon": {
+    "item": "minecraft:brewing_stand"
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#4A148C",
+    "border": "#CE93D8"
+  },
+  "position": {
+    "x": 200,
+    "y": 50
+  },
+  "chapter_id": "ch_monster_slayer",
+  "dependencies": [
+    "bone_collector",
+    "spider_slayer"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "kill",
+      "entity": "specialmobs:specialwitch",
+      "amount": 10,
+      "localized_name": "specialmobs:specialwitch"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:glass_bottle",
+      "amount": 8,
+      "consume": false,
+      "localized_name": "Glass Bottle"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:glowstone_dust",
+      "amount": 8,
+      "localized_name": "Glowstone Dust"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:redstone",
+      "amount": 4,
+      "localized_name": "Redstone"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:brewing_stand",
+      "amount": 1,
+      "localized_name": "Brewing Stand"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

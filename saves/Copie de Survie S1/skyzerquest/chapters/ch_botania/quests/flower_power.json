@@ -1,0 +1,170 @@
+{
+  "id": "flower_power",
+  "title": "Flower Power",
+  "description": "Collect all 16 colors of mystical flowers to master botanical diversity.",
+  "icon": {
+    "item": "botania:flower",
+    "meta": 4
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#880E4F",
+    "border": "#F48FB1"
+  },
+  "position": {
+    "x": 0,
+    "y": 100
+  },
+  "chapter_id": "ch_botania",
+  "dependencies": [
+    "petal_gatherer"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "localized_name": "Mystical White Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 1,
+      "localized_name": "Mystical Orange Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 2,
+      "localized_name": "Mystical Magenta Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 3,
+      "localized_name": "Mystical Light Blue Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 4,
+      "localized_name": "Mystical Yellow Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 5,
+      "localized_name": "Mystical Lime Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 6,
+      "localized_name": "Mystical Pink Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 7,
+      "localized_name": "Mystical Gray Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 8,
+      "localized_name": "Mystical Light Gray Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 9,
+      "localized_name": "Mystical Cyan Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 10,
+      "localized_name": "Mystical Purple Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 11,
+      "localized_name": "Mystical Blue Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 12,
+      "localized_name": "Mystical Brown Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 13,
+      "localized_name": "Mystical Green Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 14,
+      "localized_name": "Mystical Red Flower"
+    },
+    {
+      "type": "collect",
+      "item": "botania:flower",
+      "amount": 4,
+      "consume": false,
+      "meta": 15,
+      "localized_name": "Mystical Black Flower"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500.0
+    },
+    {
+      "type": "money",
+      "min": 200.0,
+      "max": 800.0
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

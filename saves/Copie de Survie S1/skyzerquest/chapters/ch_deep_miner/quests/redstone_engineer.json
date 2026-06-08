@@ -1,0 +1,62 @@
+{
+  "id": "redstone_engineer",
+  "title": "Redstone Engineer",
+  "description": "Redstone powers the machinery of the future. Break 64 redstone ore and collect 128 redstone dust.",
+  "icon": {
+    "item": "minecraft:redstone"
+  },
+  "shape": "circle",
+  "colors": {
+    "background": "#B71C1C",
+    "border": "#EF5350"
+  },
+  "position": {
+    "x": 100,
+    "y": 100
+  },
+  "chapter_id": "ch_deep_miner",
+  "dependencies": [
+    "iron_vein"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "break",
+      "block": "minecraft:redstone_ore",
+      "amount": 64,
+      "localized_name": "Redstone Ore"
+    },
+    {
+      "type": "collect",
+      "item": "minecraft:redstone",
+      "amount": 128,
+      "consume": true,
+      "localized_name": "Redstone"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 400.0
+    },
+    {
+      "type": "item",
+      "item": "minecraft:repeater",
+      "amount": 16,
+      "localized_name": "Redstone Repeater"
+    },
+    {
+      "type": "item",
+      "item": "minecraft:comparator",
+      "amount": 8,
+      "localized_name": "Redstone Comparator"
+    },
+    {
+      "type": "xp_level",
+      "amount": 10
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}

@@ -1,0 +1,60 @@
+{
+  "id": "copper_tin_age",
+  "title": "Copper \u0026 Tin Age",
+  "description": "Begin your industrial revolution with copper and tin, the foundation of thermal technology.",
+  "icon": {
+    "item": "thermalfoundation:material",
+    "meta": 128
+  },
+  "shape": "square",
+  "colors": {
+    "background": "#E65100",
+    "border": "#FF9800"
+  },
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "chapter_id": "ch_thermal",
+  "dependencies": [
+    "ch_deep_miner/iron_vein"
+  ],
+  "dependency_type": "all_required",
+  "goals": [
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 32,
+      "consume": true,
+      "meta": 128,
+      "localized_name": "Copper Ingot"
+    },
+    {
+      "type": "collect",
+      "item": "thermalfoundation:material",
+      "amount": 32,
+      "consume": true,
+      "meta": 129,
+      "localized_name": "Tin Ingot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 300.0
+    },
+    {
+      "type": "item",
+      "item": "thermalfoundation:wrench",
+      "amount": 1,
+      "localized_name": "Crescent Hammer"
+    },
+    {
+      "type": "xp_level",
+      "amount": 8
+    }
+  ],
+  "repeatable": false,
+  "cooldown": 0,
+  "hidden_until_unlocked": false
+}
